@@ -1,9 +1,14 @@
+# TEST jSON CODE EXPERIMENTATION
+
 import jsonata
 import json
 import openpyxl
 
+# close old json file
+
 # Read JSON file
-with open('ReCoPad.json', 'r') as file:
+
+with open('EliLilly_NCT03421379_Diabetes.json', 'r') as file:
     data=json.load (file)
 # expr= jsonata.Jsonata("$count(study.versions.studyDesigns.arms)")
 # result=expr.evaluate(data)
