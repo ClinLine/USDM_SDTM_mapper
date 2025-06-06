@@ -26,6 +26,7 @@ with open(JsonInput, 'r') as file:
                 result = expr.evaluate(data)            
             except:
                 result = "Error in expression for "+ MapName + ": " + codeSnip
+        if result is None: result = " "
         print(result)
         result= str(result)
         try:
