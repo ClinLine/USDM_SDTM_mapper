@@ -23,10 +23,17 @@ ts_sheet = wb['TS Parameters']
 
 with open('ReCoPad.json', 'r') as file:
     data=json.load (file)
-    for row in range(2, 8):
+    for row in range(30, 32):
         codeSnip= ts_sheet[f'G{row}'].value
-        print(codeSnip)
-        expr = jsonata.Jsonata(codeSnip)
-        result=expr.evaluate(data)
-        print(result)
+        varDesc= ts_sheet[f'A{row}'].value
+        # print(codeSnip)
+        try:
+            expr = jsonata.Jsonata(codeSnip)
+            result=expr.evaluate(data)
+            result2 = result.replace("’", " ")
+            if result is not None:
+                print(result2)
+        except:
+            result2="Error in expression"
+        # if result is not None:
     
