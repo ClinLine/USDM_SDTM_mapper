@@ -17,8 +17,10 @@ ts_sheet = wb['TS Parameters']
 
 # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
 for i in range(1, ts_sheet.max_row + 1):
-    print(ts_sheet.cell(row=i, column=1).value)
+    c1 = ts_sheet.cell(row=i, column=1).value
+    print(c1)
     print(ts_sheet.cell(row=i, column=7).value)
-    ts_sheet.cell(row=i, column=8).value = "no data"
+    if ts_sheet.cell(row=i, column=7).value is not None:
+        ts_sheet.cell(row=i, column=8).value = c1
     print(ts_sheet.cell(row=i, column=8).value)
 wb.save("Maps/sdtm_mapping_paths.xlsx")
