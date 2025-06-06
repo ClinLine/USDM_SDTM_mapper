@@ -24,12 +24,14 @@ with open(JsonInput, 'r') as file:
             result = expr.evaluate(data)            
         except:
             result = None
+        # print(result)
+        result= str(result)
         try:
             result2 = result.replace("’", " ")
         except:
             result2 = None
         if result is None: result2= " "
         if result2 is not None:
-            ts_sheet.cell(row=i, column=7).value = result2
-            print(result2)
+            ts_sheet.cell(row=i, column=7).value = result2            
+         #   print(result2)
 wb.save("Output/sdtm_mapping_results.xlsx")
