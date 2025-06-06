@@ -27,7 +27,7 @@ with open(JsonInput, 'r') as file:
             expr = jsonata.Jsonata(codeSnip)
             result = expr.evaluate(data)            
         except:
-            result = "No result"
+            result = None
         try:
             result2 = result.replace("’", " ")
         except:
