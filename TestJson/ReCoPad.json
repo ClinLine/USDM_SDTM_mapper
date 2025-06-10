@@ -9,7 +9,7 @@
         "id": "StudyVersion_1",
         "extensionAttributes": [],
         "versionIdentifier": "2",
-        "rationale": "The discontinuation rate associated with this oral dosing regimen was 58.6% in previous studies, and alternative clinical strategies have been sought to improve tolerance for the compound. To that end, development of a Transdermal Therapeutic System (TTS) has been initiated.",
+        "rationale": "...",
         "documentVersionIds": [
           "StudyDefinitionDocumentVersion_1",
           "StudyDefinitionDocumentVersion_2"
@@ -3825,7 +3825,7 @@
           {
             "id": "StudyTitle_1",
             "extensionAttributes": [],
-            "text": "LZZT",
+            "text": "ReCoPaD",
             "type": {
               "id": "Code_7",
               "extensionAttributes": [],
@@ -3840,7 +3840,7 @@
           {
             "id": "StudyTitle_2",
             "extensionAttributes": [],
-            "text": "Xanomeline (LY246708)",
+            "text": "Beroclin Phase II Study",
             "type": {
               "id": "Code_9",
               "extensionAttributes": [],
@@ -3855,7 +3855,7 @@
           {
             "id": "StudyTitle_3",
             "extensionAttributes": [],
-            "text": "Safety and Efficacy of the Xanomeline Transdermal Therapeutic System (TTS) in Patients with Mild to Moderate Alzheimer's Disease",
+            "text": "A Phase II, Placebo-, Real-World Data Controlled study of Beroclin in subjects with early Parkinson disease",
             "type": {
               "id": "Code_10",
               "extensionAttributes": [],
@@ -3870,7 +3870,7 @@
           {
             "id": "StudyTitle_4",
             "extensionAttributes": [],
-            "text": "Safety and Efficacy of the Xanomeline Transdermal Therapeutic System (TTS) in Patients with Mild to Moderate Alzheimer's Disease",
+            "text": "A Phase II, Placebo-, Real-World Data Controlled study of Beroclin in subjects with early Parkinson disease",
             "type": {
               "id": "Code_11",
               "extensionAttributes": [],
@@ -5030,11 +5030,11 @@
           {
             "id": "StudyIntervention_1",
             "extensionAttributes": [],
-            "name": "BERO",
-            "label": "Beroclin",
-            "description": "Beroclin 20 MG BID",
+            "name": "LY",
+            "label": "LY900018",
+            "description": "LY900018",
             "role": {
-              "id": "Code_559",
+              "id": "Code_510",
               "extensionAttributes": [],
               "code": "C41161",
               "codeSystem": "http://www.cdisc.org",
@@ -5043,7 +5043,7 @@
               "instanceType": "Code"
             },
             "type": {
-              "id": "Code_560",
+              "id": "Code_511",
               "extensionAttributes": [],
               "code": "C1909",
               "codeSystem": "http://www.cdisc.org",
@@ -5054,12 +5054,12 @@
             "minimumResponseDuration": {
               "id": "Quantity_4",
               "extensionAttributes": [],
-              "value": 1,
+              "value": 1.0,
               "unit": {
-                "id": "AliasCode_217",
+                "id": "AliasCode_229",
                 "extensionAttributes": [],
                 "standardCode": {
-                  "id": "Code_561",
+                  "id": "Code_512",
                   "extensionAttributes": [],
                   "code": "C25301",
                   "codeSystem": "http://www.cdisc.org",
@@ -5074,12 +5074,12 @@
             },
             "codes": [
               {
-                "id": "Code_558",
+                "id": "Code_509",
                 "extensionAttributes": [],
-                "code": "XIN",
+                "code": "A",
                 "codeSystem": "SPONSOR",
                 "codeSystemVersion": "12",
-                "decode": "XIN",
+                "decode": "B",
                 "instanceType": "Code"
               }
             ],
@@ -5087,26 +5087,27 @@
               {
                 "id": "Administration_1",
                 "extensionAttributes": [],
-                "name": "PATCH_50",
-                "label": "",
-                "description": "50 cm2 Patch",
+                "name": "BEROCLIN",
+                "label": "Beroclin",
+                "description": "BID dosing of 20 Mg of Beroclin",
                 "duration": {
                   "id": "Duration_1",
                   "extensionAttributes": [],
+                  "text": "Not set",
                   "quantity": {
                     "id": "Quantity_2",
                     "extensionAttributes": [],
-                    "value": 24,
+                    "value": 14,
                     "unit": {
-                      "id": "AliasCode_213",
+                      "id": "AliasCode_225",
                       "extensionAttributes": [],
                       "standardCode": {
-                        "id": "Code_554",
+                        "id": "Code_505",
                         "extensionAttributes": [],
-                        "code": "C29844",
+                        "code": "C25301",
                         "codeSystem": "http://www.cdisc.org",
                         "codeSystemVersion": "2024-09-27",
-                        "decode": "Week",
+                        "decode": "Day",
                         "instanceType": "Code"
                       },
                       "standardCodeAliases": [],
@@ -5114,20 +5115,19 @@
                     },
                     "instanceType": "Quantity"
                   },
-                  "description": "",
                   "durationWillVary": false,
-                  "reasonDurationWillVary": "Need reason",
+                  "reasonDurationWillVary": "Not applicable",
                   "instanceType": "Duration"
                 },
                 "dose": {
                   "id": "Quantity_3",
                   "extensionAttributes": [],
-                  "value": 54,
+                  "value": 20,
                   "unit": {
-                    "id": "AliasCode_214",
+                    "id": "AliasCode_226",
                     "extensionAttributes": [],
                     "standardCode": {
-                      "id": "Code_555",
+                      "id": "Code_506",
                       "extensionAttributes": [],
                       "code": "C28253",
                       "codeSystem": "http://www.cdisc.org",
@@ -5141,127 +5141,58 @@
                   "instanceType": "Quantity"
                 },
                 "route": {
-                  "id": "AliasCode_215",
+                  "id": "AliasCode_227",
                   "extensionAttributes": [],
                   "standardCode": {
-                    "id": "Code_556",
+                    "id": "Code_507",
                     "extensionAttributes": [],
                     "code": "C38288",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2024-09-27",
-                    "decode": "Oral Route of Administration",
+                    "decode": "ORAL",
                     "instanceType": "Code"
                   },
                   "standardCodeAliases": [],
                   "instanceType": "AliasCode"
                 },
                 "frequency": {
-                  "id": "AliasCode_216",
+                  "id": "AliasCode_228",
                   "extensionAttributes": [],
                   "standardCode": {
-                    "id": "Code_557",
+                    "id": "Code_508",
                     "extensionAttributes": [],
-                    "code": "C25473",
+                    "code": "C64496",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2024-09-27",
-                    "decode": "Daily",
+                    "decode": "BID",
                     "instanceType": "Code"
                   },
                   "standardCodeAliases": [],
                   "instanceType": "AliasCode"
                 },
-                "administrableProductId": null,
-                "medicalDeviceId": null,
-                "notes": [],
-                "instanceType": "Administration"
-              },
-              {
-                "id": "Administration_2",
-                "extensionAttributes": [],
-                "name": "PATCH_75",
-                "label": "",
-                "description": "75 cm2 Patch",
-                "duration": {
-                  "id": "Duration_2",
-                  "extensionAttributes": [],
-                  "quantity": {
-                    "id": "Quantity_5",
-                    "extensionAttributes": [],
-                    "value": 24,
-                    "unit": {
-                      "id": "AliasCode_218",
-                      "extensionAttributes": [],
-                      "standardCode": {
-                        "id": "Code_562",
-                        "extensionAttributes": [],
-                        "code": "C29844",
-                        "codeSystem": "http://www.cdisc.org",
-                        "codeSystemVersion": "2024-09-27",
-                        "decode": "Week",
-                        "instanceType": "Code"
-                      },
-                      "standardCodeAliases": [],
-                      "instanceType": "AliasCode"
-                    },
-                    "instanceType": "Quantity"
-                  },
-                  "description": "",
-                  "durationWillVary": false,
-                  "reasonDurationWillVary": "Need reason",
-                  "instanceType": "Duration"
-                },
-                "dose": {
-                  "id": "Quantity_6",
-                  "extensionAttributes": [],
-                  "value": 81,
-                  "unit": {
-                    "id": "AliasCode_219",
-                    "extensionAttributes": [],
-                    "standardCode": {
-                      "id": "Code_563",
-                      "extensionAttributes": [],
-                      "code": "C28253",
-                      "codeSystem": "http://www.cdisc.org",
-                      "codeSystemVersion": "2024-09-27",
-                      "decode": "Milligram",
-                      "instanceType": "Code"
-                    },
-                    "standardCodeAliases": [],
-                    "instanceType": "AliasCode"
-                  },
-                  "instanceType": "Quantity"
-                },
-                "route": {
-                  "id": "AliasCode_220",
-                  "extensionAttributes": [],
-                  "standardCode": {
-                    "id": "Code_564",
-                    "extensionAttributes": [],
-                    "code": "C38288",
-                    "codeSystem": "http://www.cdisc.org",
-                    "codeSystemVersion": "2024-09-27",
-                    "decode": "Oral Route of Administration",
-                    "instanceType": "Code"
-                  },
-                  "standardCodeAliases": [],
-                  "instanceType": "AliasCode"
-                },
-                "frequency": {
-                  "id": "AliasCode_221",
-                  "extensionAttributes": [],
-                  "standardCode": {
-                    "id": "Code_565",
-                    "extensionAttributes": [],
-                    "code": "C25473",
-                    "codeSystem": "http://www.cdisc.org",
-                    "codeSystemVersion": "2024-09-27",
-                    "decode": "Daily",
-                    "instanceType": "Code"
-                  },
-                  "standardCodeAliases": [],
-                  "instanceType": "AliasCode"
-                },
-                "administrableProductId": null,
+                "administrableProduct": [
+					{"id": "Admin_prod1",
+					 "name": "BEROCL",
+					 "label": null,
+					 "description": null,
+					 "administrableDoseForm": {
+						"id": "AliasCode_228t",
+						"extensionAttributes": [],
+						"standardCode": {
+							"id": "Code_508",
+							"extensionAttributes": [],
+							"code": "C42998",
+							"codeSystem": "http://www.cdisc.org",
+							"codeSystemVersion": "2024-09-27",
+							"decode": "TABLET",
+					 "instanceType": "Code"}},
+					"sourcing": null,
+					"productDesignation":null,
+					"pharmacologicClass":null,
+					"notes": [],
+					"instanceType": "administrableProduct"
+					}
+					],
                 "medicalDeviceId": null,
                 "notes": [],
                 "instanceType": "Administration"
@@ -5269,8 +5200,7 @@
             ],
             "notes": [],
             "instanceType": "StudyIntervention"
-          }
-        ],
+          }],
         "administrableProducts": [],
         "medicalDevices": [],
         "productOrganizationRoles": [],
