@@ -9,6 +9,16 @@ JsonInput = "TestJson/ReCoPad.json"
 wb = openpyxl.load_workbook("Maps/sdtm_mapping_paths.xlsx")
 
 # Access the 'TS Parameters' sheet
+ts0_sheet = wb['TS']
+for i in range(2, ts0_sheet.max_row + 1):
+    j=i-1
+    #swap the rows and columns
+    varName=ts0_sheet.cell(row=i, column=1).value
+    ts0_sheet.cell(row=1, column=j).value = varName
+    if varName == "STUDYID":
+        StudyIdCodeSnip = ts0_sheet.cell(row=i, column=7).value
+
+
 ts_sheet = wb['TS Parameters']
 
 # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
