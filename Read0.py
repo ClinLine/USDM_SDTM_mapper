@@ -27,9 +27,8 @@ ts_sheet = wb['TS Parameters']
 with open(JsonInput, 'r') as file:
     data=json.load (file)
     # Get StudyId first and start with a row id for the TS sheet
-    print(StudyIdCodeSnip)
-    studyId = jsonata.Jsonata(StudyIdCodeSnip)	
-    print(studyId)
+    expr = jsonata.Jsonata (StudyIdCodeSnip)
+    studyId= expr.evaluate(data)
     x=1
     # Then continue with the mappings in the TS Parameters sheet
     ts_sheet.cell(row=1, column=7).value = "Mapping Results"
@@ -40,6 +39,7 @@ with open(JsonInput, 'r') as file:
         if codeSnip is None:
             result=" "
         else:
+            # print(codeSnip)
             try:
                 expr = jsonata.Jsonata(codeSnip)
                 result = expr.evaluate(data)            
@@ -57,15 +57,16 @@ with open(JsonInput, 'r') as file:
             # filling TS Parameters sheet
             ts_sheet.cell(row=i, column=7).value = result2
             # filling TS sheet
-            x=x+1
-            ts0_sheet.cell(row=x, column=1).value = " "
-            # ts0_sheet.cell(row=x, column=1).value = studyId
-            ts0_sheet.cell(row=x, column=2).value = DomainResult   
-            ts0_sheet.cell(row=x, column=3).value = " "
-            ts0_sheet.cell(row=x, column=4).value = " "
-            ts0_sheet.cell(row=x, column=5).value = MapCode    
-            ts0_sheet.cell(row=x, column=6).value = MapName                
-            ts0_sheet.cell(row=x, column=7).value = result2   
-            ts0_sheet.cell(row=x, column=8).value = " "   
-         #   print(result2)
+            if result2 != " ":
+                x=x+1
+                ts0_sheet.cell(row=x, column=1).value = " "
+                ts0_sheet.cell(row=x, column=1).value = studyId
+                ts0_sheet.cell(row=x, column=2).value = DomainResult   
+                ts0_sheet.cell(row=x, column=3).value = " "
+                ts0_sheet.cell(row=x, column=4).value = " "
+                ts0_sheet.cell(row=x, column=5).value = MapCode    
+                ts0_sheet.cell(row=x, column=6).value = MapName                
+                ts0_sheet.cell(row=x, column=7).value = result2   
+                ts0_sheet.cell(row=x, column=8).value = " "   
+            # print(result2)
 wb.save("Output/sdtm_mapping_results.xlsx")
