@@ -50,6 +50,7 @@ with open(JsonInput, 'r') as file:
             except:
                 result = "Error in expression for "+ MapName + ": " + codeSnip
         if result is None: result = " "
+        if resultCd is None: resultCd = " "
         # print(result)
         result= str(result)
         resultCd=str(resultCd)
@@ -62,6 +63,9 @@ with open(JsonInput, 'r') as file:
         if result2 is not None:
             # filling TS Parameters sheet
             ts_sheet.cell(row=i, column=7).value = result2
+            ts_sheet.cell(row=x, column=8).value = " "   
+            if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
+            ts0_sheet.cell(row=x, column=9).value = resultCd  
             # filling TS sheet
             if result2 != " " or nfValue != " ":
                 x=x+1
@@ -75,6 +79,6 @@ with open(JsonInput, 'r') as file:
                 ts0_sheet.cell(row=x, column=7).value = result2   
                 ts0_sheet.cell(row=x, column=8).value = " "   
                 if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-                ts0_sheet.cell(row=x, column=8).value = resultCd   
+                ts0_sheet.cell(row=x, column=9).value = resultCd   
             # print(result2)
 wb.save("Output/sdtm_mapping_results.xlsx")
