@@ -35,7 +35,8 @@ with open(JsonInput, 'r') as file:
     for i in range(2, ts_sheet.max_row + 1):
         MapName = ts_sheet.cell(row=i, column=1).value
         MapCode = ts_sheet.cell(row=i, column=2).value
-        codeSnip = ts_sheet.cell(row=i, column=7).value
+        codeSnip = ts_sheet.cell(row=i, column=7).value        
+        nfValue = ts_sheet.cell(row=i, column=8).value
         if codeSnip is None:
             result=" "
         else:
@@ -48,6 +49,7 @@ with open(JsonInput, 'r') as file:
         if result is None: result = " "
         # print(result)
         result= str(result)
+        # replace the apostrophes with spaces
         try:
             result2 = result.replace("’", " ")
         except:
@@ -57,7 +59,7 @@ with open(JsonInput, 'r') as file:
             # filling TS Parameters sheet
             ts_sheet.cell(row=i, column=7).value = result2
             # filling TS sheet
-            if result2 != " ":
+            if result2 != " " or nfValue != " ":
                 x=x+1
                 ts0_sheet.cell(row=x, column=1).value = " "
                 ts0_sheet.cell(row=x, column=1).value = studyId
@@ -68,5 +70,6 @@ with open(JsonInput, 'r') as file:
                 ts0_sheet.cell(row=x, column=6).value = MapName                
                 ts0_sheet.cell(row=x, column=7).value = result2   
                 ts0_sheet.cell(row=x, column=8).value = " "   
+                if nfValue != " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
             # print(result2)
 wb.save("Output/sdtm_mapping_results.xlsx")
