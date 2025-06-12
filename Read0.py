@@ -33,11 +33,13 @@ with open(JsonInput, 'r') as file:
     # Then continue with the mappings in the TS Parameters sheet
     ts_sheet.cell(row=1, column=7).value = "Mapping Results"
     for i in range(2, ts_sheet.max_row + 1):
+        # Get all the mapping information from the TS Parameters sheet
         MapName = ts_sheet.cell(row=i, column=1).value
         MapCode = ts_sheet.cell(row=i, column=2).value
         codeSnip = ts_sheet.cell(row=i, column=7).value        
         nfValue = ts_sheet.cell(row=i, column=8).value
         codeSnipCd = ts_sheet.cell(row=i, column=7).value   
+
         if codeSnip is None:
             result=" "
         else:
@@ -51,6 +53,7 @@ with open(JsonInput, 'r') as file:
                 result = "Error in expression for "+ MapName + ": " + codeSnip
         if result is None: result = " "
         if resultCd is None: resultCd = " "
+        if nfValue is None: nfValue = " "
         # print(result)
         result= str(result)
         resultCd=str(resultCd)
@@ -63,9 +66,9 @@ with open(JsonInput, 'r') as file:
         if result2 is not None:
             # filling TS Parameters sheet
             ts_sheet.cell(row=i, column=7).value = result2
-            ts_sheet.cell(row=x, column=8).value = " "   
+            ts_sheet.cell(row=i, column=8).value = " "   
             if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-            ts0_sheet.cell(row=x, column=9).value = resultCd  
+            ts0_sheet.cell(row=i, column=9).value = resultCd  
             # filling TS sheet
             if result2 != " " or nfValue != " ":
                 x=x+1
