@@ -90,30 +90,29 @@ with open(JsonInput, 'r') as file:
         except:
             result2 = None
         if result2 is None: result2= " "
-        if result2 is not None:
-            # filling TS Parameters sheet
-            ts_sheet.cell(row=i, column=7).value = result2
-            ts_sheet.cell(row=i, column=8).value = " "   
+        # filling TS Parameters sheet
+        ts_sheet.cell(row=i, column=7).value = result2
+        ts_sheet.cell(row=i, column=8).value = " "   
+        if result2 == " ": ts_sheet.cell(row=x, column=8).value = nfValue	
+        ts_sheet.cell(row=i, column=9).value = resultCd  
+        ts_sheet.cell(row=i, column=10).value = resultCdRef
+        ts_sheet.cell(row=i, column=11).value = resultCdVer
+        # filling TS sheet
+        if result2 != " " or nfValue != " ":
+            x=x+1
+            ts0_sheet.cell(row=x, column=1).value = " "
+            ts0_sheet.cell(row=x, column=1).value = studyId
+            ts0_sheet.cell(row=x, column=2).value = DomainResult   
+            ts0_sheet.cell(row=x, column=3).value = " "
+            ts0_sheet.cell(row=x, column=4).value = " "
+            ts0_sheet.cell(row=x, column=5).value = MapCode    
+            ts0_sheet.cell(row=x, column=6).value = MapName                
+            ts0_sheet.cell(row=x, column=7).value = result2   
+            ts0_sheet.cell(row=x, column=8).value = " "   
             if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-            ts0_sheet.cell(row=i, column=9).value = resultCd  
-            ts0_sheet.cell(row=i, column=10).value = resultCdRef
-            ts0_sheet.cell(row=i, column=11).value = resultCdVer
-            # filling TS sheet
-            if result2 != " " or nfValue != " ":
-                x=x+1
-                ts0_sheet.cell(row=x, column=1).value = " "
-                ts0_sheet.cell(row=x, column=1).value = studyId
-                ts0_sheet.cell(row=x, column=2).value = DomainResult   
-                ts0_sheet.cell(row=x, column=3).value = " "
-                ts0_sheet.cell(row=x, column=4).value = " "
-                ts0_sheet.cell(row=x, column=5).value = MapCode    
-                ts0_sheet.cell(row=x, column=6).value = MapName                
-                ts0_sheet.cell(row=x, column=7).value = result2   
-                ts0_sheet.cell(row=x, column=8).value = " "   
-                if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-                ts0_sheet.cell(row=x, column=9).value = resultCd                   
-                ts0_sheet.cell(row=x, column=10).value = resultCdRef  
-                ts0_sheet.cell(row=x, column=11).value = resultCdVer
-            # print(result2)
+            ts0_sheet.cell(row=x, column=9).value = resultCd                   
+            ts0_sheet.cell(row=x, column=10).value = resultCdRef  
+            ts0_sheet.cell(row=x, column=11).value = resultCdVer
+        
     file.close
 wb.save("Output/sdtm_mapping_results.xlsx")
