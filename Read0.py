@@ -81,4 +81,5 @@ with open(JsonInput, 'r') as file:
                 if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
                 ts0_sheet.cell(row=x, column=9).value = resultCd   
             # print(result2)
+    file.close
 wb.save("Output/sdtm_mapping_results.xlsx")
