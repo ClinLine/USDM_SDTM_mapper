@@ -1,11 +1,11 @@
 # USDM to SDTM Trial Summary Tool
-The tool shows how the mappings, transformed to jsonata requests can inform the actual creation of the SDTM trial summary datasets TI, TE, TV and TS.
+The tool shows how the mappings, transformed to jsonata requests can inform the actual creation of the SDTM trial summary datasets TA, TE, TV, TI, and TS.
 The tool is based on json, jsonata and opepyxl packages to enable the following steps
 - Read the defined jsonata requests from the input Excel file
 - Open the USDM API file in json format
-- run the jsonata requests on the USDM API file
-- process the request results to create valid output including appropriate sequence numbering and grouping
-- output the results to a result output Excel file
+- Run the jsonata requests on the USDM API file
+- Process the request results to create valid output including appropriate sequence numbering and grouping
+- Output the results to a result output Excel file
 
 ## Input
 The input for the tool is based on the [SDTM mappings available in the CDISC DDF Github] (https://github.com/cdisc-org/DDF-RA/blob/main/Documents/Mappings/sdtm_mapping.xlsx)
@@ -19,10 +19,15 @@ These mappings will be used by the mapping tool and include:
 
 More jsonata mapping will be added until complete.
 
+## Tool Functionality
 For running the python code install the following packages:
+  Jsonata-Python:  pip install jsonata-python
+  Openpyxl: $pip install Openpyxl
 
-Jsonata-Python:
-pip install jsonata-python
+## Output
+The output SDTM datasets TA, TE, TV, TI, and TS is added in the same format as the original input Excel file.
+The results for the TS Summary parameters, if not empty, are added to the TS sheet including the corresponding StudyId.
 
-Openpyxl:
-$pip install Openpyxl
+## Acknowledgements
+This ClinLine open source tool is created by Noah Brezet and Berber Snoeijer
+Please contact us via info@clinline.eu if you like to learn more and/or help with integration of its features.
