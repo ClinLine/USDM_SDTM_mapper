@@ -93,7 +93,7 @@ with open(JsonInput, 'r') as file:
         # filling TS Parameters sheet
         ts_sheet.cell(row=i, column=7).value = result2
         ts_sheet.cell(row=i, column=8).value = " "   
-        if result2 == " ": ts_sheet.cell(row=x, column=8).value = nfValue	
+        if result2 == " ": ts_sheet.cell(row=i, column=8).value = nfValue	
         ts_sheet.cell(row=i, column=9).value = resultCd  
         ts_sheet.cell(row=i, column=10).value = resultCdRef
         ts_sheet.cell(row=i, column=11).value = resultCdVer
