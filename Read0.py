@@ -90,6 +90,24 @@ with open(JsonInput, 'r') as file:
         except:
             result2 = None
         if result2 is None: result2= " "
+        if result2 == "": result2= " "
+        if result2 == "{}": result2 = " "
+        if result2 != " ":
+            if result2[0] == "{":  # check if the result is a list
+                print (result2)
+                n = 0 #letter it is looking at
+                result3 = []
+                while result2[n] != "}":
+                    if result2[n] == "{" or ",":
+                        n += 1
+                        m = n
+                        while m+1 < len(result2) and result2[m+1] not in ("}", ","):
+                            m += 1
+                        result3.append(result2[n:m])
+                        n = m + 1
+                    else: 
+                        n += 1
+                print(result3)      
         # filling TS Parameters sheet
         ts_sheet.cell(row=i, column=7).value = result2
         ts_sheet.cell(row=i, column=8).value = " "   
