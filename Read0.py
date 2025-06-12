@@ -37,18 +37,22 @@ with open(JsonInput, 'r') as file:
         MapCode = ts_sheet.cell(row=i, column=2).value
         codeSnip = ts_sheet.cell(row=i, column=7).value        
         nfValue = ts_sheet.cell(row=i, column=8).value
+        codeSnipCd = ts_sheet.cell(row=i, column=7).value   
         if codeSnip is None:
             result=" "
         else:
             # print(codeSnip)
             try:
                 expr = jsonata.Jsonata(codeSnip)
-                result = expr.evaluate(data)            
+                result = expr.evaluate(data)   
+                expr = jsonata.Jsonata(codeSnipCd)
+                resultCd = expr.evaluate(data)
             except:
                 result = "Error in expression for "+ MapName + ": " + codeSnip
         if result is None: result = " "
         # print(result)
         result= str(result)
+        resultCd=str(resultCd)
         # replace the apostrophes with spaces
         try:
             result2 = result.replace("’", " ")
@@ -70,6 +74,7 @@ with open(JsonInput, 'r') as file:
                 ts0_sheet.cell(row=x, column=6).value = MapName                
                 ts0_sheet.cell(row=x, column=7).value = result2   
                 ts0_sheet.cell(row=x, column=8).value = " "   
-                if nfValue != " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
+                if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
+                ts0_sheet.cell(row=x, column=8).value = resultCd   
             # print(result2)
 wb.save("Output/sdtm_mapping_results.xlsx")
