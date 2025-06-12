@@ -1,4 +1,11 @@
 # USDM to SDTM Trial Summary Tool
+The tool shows how the mappings, transformed to jsonata requests can inform the actual creation of the SDTM trial summary datasets TI, TE, TV and TS.
+The tool is based on json, jsonata and opepyxl packages to enable the following steps
+- Read the defined jsonata requests from the input Excel file
+- Open the USDM API file in json format
+- run the jsonata requests on the USDM API file
+- process the request results to create valid output including appropriate sequence numbering and grouping
+- output the results to a result output Excel file
 
 ## Input
 The input for the tool is based on the [SDTM mappings available in the CDISC DDF Github] (https://github.com/cdisc-org/DDF-RA/blob/main/Documents/Mappings/sdtm_mapping.xlsx)
@@ -9,6 +16,7 @@ These mappings will be used by the mapping tool and include:
 - Code mapping, if applicable
 - Code System mapping, if applicable
 - Code System version mapping, if applicable
+
 More jsonata mapping will be added until complete.
 
 For running the python code install the following packages:
