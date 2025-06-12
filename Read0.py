@@ -38,25 +38,39 @@ with open(JsonInput, 'r') as file:
         MapCode = ts_sheet.cell(row=i, column=2).value
         codeSnip = ts_sheet.cell(row=i, column=7).value        
         nfValue = ts_sheet.cell(row=i, column=8).value
-        codeSnipCd = ts_sheet.cell(row=i, column=7).value   
+        codeSnipCd = ts_sheet.cell(row=i, column=9).value   
+        codeSnipCdRef = ts_sheet.cell(row=i, column=10).value   
+        codeSnipCdVer = ts_sheet.cell(row=i, column=11).value   
 
+        resultCd=" "
+        resultCdRef=" "
+        resultCdVer=" "
         if codeSnip is None:
             result=" "
         else:
             # print(codeSnip)
             try:
                 expr = jsonata.Jsonata(codeSnip)
-                result = expr.evaluate(data)   
+                result = expr.evaluate(data)  
                 expr = jsonata.Jsonata(codeSnipCd)
                 resultCd = expr.evaluate(data)
+                expr = jsonata.Jsonata(codeSnipCdVer)
+                resultCdVer = expr.evaluate(data)
+                expr = jsonata.Jsonata(codeSnipCdRef)
+                resultCdRef = expr.evaluate(data) 
             except:
                 result = "Error in expression for "+ MapName + ": " + codeSnip
+       
         if result is None: result = " "
-        if resultCd is None: resultCd = " "
         if nfValue is None: nfValue = " "
+        if resultCd is None: resultCd = " "
+        if resultCdRef is None: resultCdRef = " "
+        if resultCdVer is None: resultCdVer = " "
         # print(result)
         result= str(result)
         resultCd=str(resultCd)
+        resultCdRef=str(resultCdRef)
+        resultCdVer=str(resultCdVer)
         # replace the apostrophes with spaces
         try:
             result2 = result.replace("’", " ")
@@ -69,6 +83,8 @@ with open(JsonInput, 'r') as file:
             ts_sheet.cell(row=i, column=8).value = " "   
             if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
             ts0_sheet.cell(row=i, column=9).value = resultCd  
+            ts0_sheet.cell(row=i, column=10).value = resultCdRef
+            ts0_sheet.cell(row=i, column=11).value = resultCdVer
             # filling TS sheet
             if result2 != " " or nfValue != " ":
                 x=x+1
@@ -82,7 +98,9 @@ with open(JsonInput, 'r') as file:
                 ts0_sheet.cell(row=x, column=7).value = result2   
                 ts0_sheet.cell(row=x, column=8).value = " "   
                 if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-                ts0_sheet.cell(row=x, column=9).value = resultCd   
+                ts0_sheet.cell(row=x, column=9).value = resultCd                   
+                ts0_sheet.cell(row=x, column=10).value = resultCdRef  
+                ts0_sheet.cell(row=x, column=11).value = resultCdVer
             # print(result2)
     file.close
 wb.save("Output/sdtm_mapping_results.xlsx")
