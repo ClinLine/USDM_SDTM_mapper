@@ -52,14 +52,27 @@ with open(JsonInput, 'r') as file:
             try:
                 expr = jsonata.Jsonata(codeSnip)
                 result = expr.evaluate(data)  
-                expr = jsonata.Jsonata(codeSnipCd)
-                resultCd = expr.evaluate(data)
-                expr = jsonata.Jsonata(codeSnipCdVer)
-                resultCdVer = expr.evaluate(data)
-                expr = jsonata.Jsonata(codeSnipCdRef)
-                resultCdRef = expr.evaluate(data) 
             except:
                 result = "Error in expression for "+ MapName + ": " + codeSnip
+        if codeSnipCd is not None:
+            try:
+                exprCd = jsonata.Jsonata(codeSnipCd)
+                resultCd = exprCd.evaluate(data)  
+            except:
+                resultCd = "Error in expression for "+ MapName + ": " + codeSnipCd
+        if codeSnipCdRef is not None:
+            try:
+                exprCdRef = jsonata.Jsonata(codeSnipCdRef)
+                resultCdRef = exprCdRef.evaluate(data)  
+            except:
+                resultCdRef = "Error in expression for "+ MapName + ": " + codeSnipCdRef
+        if codeSnipCdVer is not None:
+            try:
+                exprCdVer = jsonata.Jsonata(codeSnipCdVer)
+                resultCdVer = exprCdVer.evaluate(data)  
+            except:
+                resultCdVer = "Error in expression for "+ MapName + ": " + codeSnipCdVer
+        
        
         if result is None: result = " "
         if nfValue is None: nfValue = " "
