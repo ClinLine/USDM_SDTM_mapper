@@ -92,6 +92,9 @@ with open(JsonInput, 'r') as file:
         if result2 is None: result2= " "
         if result2 == "": result2= " "
         if result2 == "{}": result2 = " "
+        if result2[0] == "[": 
+            result2 = result2[1:-1]
+            result2 = result2.replace("}, {", " , ")
         if result2 != " ":
             if result2[0] == "{":  # check if the result is a list
                 print (result2)
@@ -107,7 +110,7 @@ with open(JsonInput, 'r') as file:
                         n = m + 1
                     else: 
                         n += 1
-                print(result3)      
+                print(result3)   
         # filling TS Parameters sheet
         ts_sheet.cell(row=i, column=7).value = result2
         ts_sheet.cell(row=i, column=8).value = " "   
