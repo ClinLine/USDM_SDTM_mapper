@@ -25,7 +25,7 @@ For running the python code install the following packages:
   Openpyxl: $pip install Openpyxl
 
 ## Output
-The output SDTM datasets TA, TE, TV, TI, and TS is added in the same format as the original input Excel file.
+The output SDTM datasets TA, TE, TV, TI, and TS is added in the same format as the original input Excel file. The file is stored as [sdtm_mapping_results.xlsx](https://github.com/ClinLine/SDTM_mapper/blob/main/Output/sdtm_mapping_results.xlsx).
 The results for the TS Summary parameters, if not empty, are added to the TS sheet including the corresponding StudyId.
 
 ## Acknowledgements
