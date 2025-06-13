@@ -20,6 +20,18 @@ for i in range(2, ts0_sheet.max_row + 1):
     if varName == "DOMAIN":
         DomainResult =  ts0_sheet.cell(row=i, column=8).value
 
+def string_to_list(imput, result):
+    n = 0 #letter it is looking at
+    while imput[n] != "}": #looking for the end of the list
+        if imput[n] == "{" or ",": # looking for the start of a new item in the list
+            n += 1
+            m = n
+            while m+1 < len(imput) and imput[m+1] not in ("}", ","): # looking for the end of the item
+                m += 1
+            result.append(imput[n:m]) # appending the item to the list
+            n = m + 1
+        else: 
+            n += 1
 
 ts_sheet = wb['TS Parameters']
 
@@ -90,6 +102,55 @@ with open(JsonInput, 'r') as file:
         except:
             result2 = None
         if result2 is None: result2= " "
+        if result2 == "": result2= " "
+        if result2 == "{}": result2 = " "
+        if result2[0] == "[": 
+            result2 = result2[1:-1]
+            result2 = result2.replace("}, {", " , ")
+        if result2 != " " or nfValue != " ":
+            if result2[0] == "{":  # check if the result is a list
+                result3 = []
+                string_to_list(result2, result3)  # convert the string to a list
+                if resultCd != " ":
+                    resultCd2 = []
+                    string_to_list(resultCd, resultCd2)  # convert the string to a list
+                    resultCdRef2 = []
+                    string_to_list(resultCdRef, resultCdRef2)  # convert the string to a list
+                    resultCdVer2 = []
+                    string_to_list(resultCdVer, resultCdVer2)  # convert the string to
+                # filling ts sheet if it is a list 
+                for j in range(0, len(result3)):
+                    x += 1
+                    ts0_sheet.cell(row=x, column=1).value = " "
+                    ts0_sheet.cell(row=x, column=1).value = studyId
+                    ts0_sheet.cell(row=x, column=2).value = DomainResult   
+                    ts0_sheet.cell(row=x, column=3).value = j + 1
+                    ts0_sheet.cell(row=x, column=4).value = " "
+                    ts0_sheet.cell(row=x, column=5).value = MapCode    
+                    ts0_sheet.cell(row=x, column=6).value = MapName                
+                    ts0_sheet.cell(row=x, column=7).value = result3[j]   
+                    ts0_sheet.cell(row=x, column=8).value = " "   
+                    if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue
+                    if resultCd != " ":
+                        ts0_sheet.cell(row=x, column=9).value = resultCd2[j]                   
+                        ts0_sheet.cell(row=x, column=10).value = resultCdRef2[j]  
+                        ts0_sheet.cell(row=x, column=11).value = resultCdVer2[j]
+            else:
+                # filling ts sheet if it is not a list
+                x += 1
+                ts0_sheet.cell(row=x, column=1).value = " "
+                ts0_sheet.cell(row=x, column=1).value = studyId
+                ts0_sheet.cell(row=x, column=2).value = DomainResult   
+                ts0_sheet.cell(row=x, column=3).value = " "
+                ts0_sheet.cell(row=x, column=4).value = " "
+                ts0_sheet.cell(row=x, column=5).value = MapCode    
+                ts0_sheet.cell(row=x, column=6).value = MapName                
+                ts0_sheet.cell(row=x, column=7).value = result2   
+                ts0_sheet.cell(row=x, column=8).value = " "   
+                if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
+                ts0_sheet.cell(row=x, column=9).value = resultCd                   
+                ts0_sheet.cell(row=x, column=10).value = resultCdRef  
+                ts0_sheet.cell(row=x, column=11).value = resultCdVer
         # filling TS Parameters sheet
         ts_sheet.cell(row=i, column=7).value = result2
         ts_sheet.cell(row=i, column=8).value = " "   
@@ -97,22 +158,5 @@ with open(JsonInput, 'r') as file:
         ts_sheet.cell(row=i, column=9).value = resultCd  
         ts_sheet.cell(row=i, column=10).value = resultCdRef
         ts_sheet.cell(row=i, column=11).value = resultCdVer
-        # filling TS sheet
-        if result2 != " " or nfValue != " ":
-            x=x+1
-            ts0_sheet.cell(row=x, column=1).value = " "
-            ts0_sheet.cell(row=x, column=1).value = studyId
-            ts0_sheet.cell(row=x, column=2).value = DomainResult   
-            ts0_sheet.cell(row=x, column=3).value = " "
-            ts0_sheet.cell(row=x, column=4).value = " "
-            ts0_sheet.cell(row=x, column=5).value = MapCode    
-            ts0_sheet.cell(row=x, column=6).value = MapName                
-            ts0_sheet.cell(row=x, column=7).value = result2   
-            ts0_sheet.cell(row=x, column=8).value = " "   
-            if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-            ts0_sheet.cell(row=x, column=9).value = resultCd                   
-            ts0_sheet.cell(row=x, column=10).value = resultCdRef  
-            ts0_sheet.cell(row=x, column=11).value = resultCdVer
-        
     file.close
 wb.save("Output/sdtm_mapping_results.xlsx")
