@@ -1,4 +1,4 @@
-# USDM to SDTM Trial Summary Tool
+# USDM to SDTM Trial Design Domain Tool
 The tool shows how the mappings, transformed to jsonata requests can inform the actual creation of the SDTM trial summary datasets TA, TE, TV, TI, and TS.
 The tool is based on json, jsonata and opepyxl packages to enable the following steps
 - Read the defined jsonata requests from the input Excel file
