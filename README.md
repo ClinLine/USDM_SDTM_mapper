@@ -6,6 +6,7 @@ The tool is based on json, jsonata and opepyxl packages to enable the following 
 - Run the jsonata requests on the USDM API file
 - Process the request results to create valid output including appropriate sequence numbering and grouping
 - Output the results to a result output Excel file
+  
 The initial version includes the creation of the TS domain. The corresponding code is available in TS.py. The other domains will follow.
 
 ## Input
