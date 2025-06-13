@@ -111,6 +111,7 @@ with open(JsonInput, 'r') as file:
                     else: 
                         n += 1
                 print(result3)   
+                for j in range(len(result3)):
         # filling TS Parameters sheet
         ts_sheet.cell(row=i, column=7).value = result2
         ts_sheet.cell(row=i, column=8).value = " "   
