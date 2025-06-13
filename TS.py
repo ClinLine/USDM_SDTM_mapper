@@ -20,18 +20,35 @@ for i in range(2, ts0_sheet.max_row + 1):
     if varName == "DOMAIN":
         DomainResult =  ts0_sheet.cell(row=i, column=8).value
 
-def string_to_list(imput, result):
+def string_to_list(input, result):
     n = 0 #letter it is looking at
-    while imput[n] != "}": #looking for the end of the list
-        if imput[n] == "{" or ",": # looking for the start of a new item in the list
+    while input[n] != "}": #looking for the end of the list
+        if input[n] == "{" or ",": # looking for the start of a new item in the list
             n += 1
             m = n
-            while m+1 < len(imput) and imput[m+1] not in ("}", ","): # looking for the end of the item
+            while m+1 < len(input) and input[m+1] not in ("}", ","): # looking for the end of the item
                 m += 1
-            result.append(imput[n:m]) # appending the item to the list
+            result.append(input[n:m]) # appending the item to the list
             n = m + 1
         else: 
             n += 1
+
+def Parse_jsonata(column):
+    codeSnip = ts0_sheet.cell(row=i, column=column).value
+    if codeSnip is None:
+        result0 = " "
+    else:
+        try:
+            expr = jsonata.Jsonata(codeSnip)
+            result0 = expr.evaluate(data)  
+        except:
+            result0 = "Error in expression for "+ varName + ": " + codeSnip
+    if result0 is None: result0 = " "
+    if result0 == "": result0 = " "
+    if result0 == "{}": result0 = " "
+    result0= str(result0)
+    return result0
+    
 
 ts_sheet = wb['TS Parameters']
 
@@ -48,54 +65,16 @@ with open(JsonInput, 'r') as file:
         # Get all the mapping information from the TS Parameters sheet
         MapName = ts_sheet.cell(row=i, column=1).value
         MapCode = ts_sheet.cell(row=i, column=2).value
-        codeSnip = ts_sheet.cell(row=i, column=7).value        
         nfValue = ts_sheet.cell(row=i, column=8).value
+        result=Parse_jsonata(7)
+        resultCd=Parse_jsonata(9)
+        resultCdRef=Parse_jsonata(10)
+        resultCdVer=Parse_jsonata(11)
+        codeSnip = ts_sheet.cell(row=i, column=7).value        
         codeSnipCd = ts_sheet.cell(row=i, column=9).value   
         codeSnipCdRef = ts_sheet.cell(row=i, column=10).value   
         codeSnipCdVer = ts_sheet.cell(row=i, column=11).value   
-
-        resultCd=" "
-        resultCdRef=" "
-        resultCdVer=" "
-        if codeSnip is None:
-            result=" "
-        else:
-            # print(codeSnip)
-            try:
-                expr = jsonata.Jsonata(codeSnip)
-                result = expr.evaluate(data)  
-            except:
-                result = "Error in expression for "+ MapName + ": " + codeSnip
-        if codeSnipCd is not None:
-            try:
-                exprCd = jsonata.Jsonata(codeSnipCd)
-                resultCd = exprCd.evaluate(data)  
-            except:
-                resultCd = "Error in expression for "+ MapName + ": " + codeSnipCd
-        if codeSnipCdRef is not None:
-            try:
-                exprCdRef = jsonata.Jsonata(codeSnipCdRef)
-                resultCdRef = exprCdRef.evaluate(data)  
-            except:
-                resultCdRef = "Error in expression for "+ MapName + ": " + codeSnipCdRef
-        if codeSnipCdVer is not None:
-            try:
-                exprCdVer = jsonata.Jsonata(codeSnipCdVer)
-                resultCdVer = exprCdVer.evaluate(data)  
-            except:
-                resultCdVer = "Error in expression for "+ MapName + ": " + codeSnipCdVer
-        
-       
-        if result is None: result = " "
-        if nfValue is None: nfValue = " "
-        if resultCd is None: resultCd = " "
-        if resultCdRef is None: resultCdRef = " "
-        if resultCdVer is None: resultCdVer = " "
-        # print(result)
-        result= str(result)
-        resultCd=str(resultCd)
-        resultCdRef=str(resultCdRef)
-        resultCdVer=str(resultCdVer)
+   
         # replace the apostrophes with spaces
         try:
             result2 = result.replace("’", " ")
@@ -103,7 +82,6 @@ with open(JsonInput, 'r') as file:
             result2 = None
         if result2 is None: result2= " "
         if result2 == "": result2= " "
-        if result2 == "{}": result2 = " "
         if result2[0] == "[": 
             result2 = result2[1:-1]
             result2 = result2.replace("}, {", " , ")
