@@ -34,7 +34,7 @@ def string_to_list(input, result):
             n += 1
 
 def Parse_jsonata(column):
-    codeSnip = ts0_sheet.cell(row=i, column=column).value
+    codeSnip = ts_sheet.cell(row=i, column=column).value
     if codeSnip is None:
         result = " "
     else:
