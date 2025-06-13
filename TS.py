@@ -36,17 +36,25 @@ def string_to_list(input, result):
 def Parse_jsonata(column):
     codeSnip = ts0_sheet.cell(row=i, column=column).value
     if codeSnip is None:
-        result0 = " "
+        result = " "
     else:
         try:
             expr = jsonata.Jsonata(codeSnip)
-            result0 = expr.evaluate(data)  
+            result = expr.evaluate(data)  
         except:
-            result0 = "Error in expression for "+ varName + ": " + codeSnip
-    if result0 is None: result0 = " "
-    if result0 == "": result0 = " "
-    if result0 == "{}": result0 = " "
-    result0= str(result0)
+            result = "Error in expression for "+ varName + ": " + codeSnip
+    if result is None: result = " "
+    result= str(result)
+    if result == "": result = " "
+    if result == "{}": result = " "
+    try:
+        result0 = result.replace("’", " ")
+    except:
+        result0 = ""
+    if result0 == "": result0= " "
+    if result0[0] == "[": 
+            result0 = result0[1:-1]
+            result0 = result0.replace("}, {", " , ")
     return result0
     
 
@@ -66,7 +74,7 @@ with open(JsonInput, 'r') as file:
         MapName = ts_sheet.cell(row=i, column=1).value
         MapCode = ts_sheet.cell(row=i, column=2).value
         nfValue = ts_sheet.cell(row=i, column=8).value
-        result=Parse_jsonata(7)
+        result2=Parse_jsonata(7)
         resultCd=Parse_jsonata(9)
         resultCdRef=Parse_jsonata(10)
         resultCdVer=Parse_jsonata(11)
@@ -76,15 +84,6 @@ with open(JsonInput, 'r') as file:
         codeSnipCdVer = ts_sheet.cell(row=i, column=11).value   
    
         # replace the apostrophes with spaces
-        try:
-            result2 = result.replace("’", " ")
-        except:
-            result2 = None
-        if result2 is None: result2= " "
-        if result2 == "": result2= " "
-        if result2[0] == "[": 
-            result2 = result2[1:-1]
-            result2 = result2.replace("}, {", " , ")
         if result2 != " " or nfValue != " ":
             if result2[0] == "{":  # check if the result is a list
                 result3 = []
