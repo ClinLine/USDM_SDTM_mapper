@@ -4,7 +4,7 @@ import openpyxl
 import pandas as pd
 
 # Define the source json file you like to use
-JsonInput = "TestJson/EliLilly_NCT03421379_Diabetes.json"
+JsonInput = "TestJson/ReCoPad.json"
 
 wb = openpyxl.load_workbook("Maps/sdtm_mapping_paths.xlsx")
 
