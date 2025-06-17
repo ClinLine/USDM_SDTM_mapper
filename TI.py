@@ -27,20 +27,19 @@ for i in range(2, ti_sheet.max_row + 1):
 
 def string_to_list(input, result):
     n = 0 #letter it is looking at
-    skip=0
     while input[n] != "}": #looking for the end of the list
-        if input[n] == "'":
-            if skip == 0:  skip = 1
-            else: skip = 0
-        if skip == 0 and input[n] in ["{",","]: # looking for the start of a new item in the list
+        if input[n-1:n+3] == "', '" or input[n] in ["{"]: # looking for the start of a new item in the list
             n += 1
             m = n
-            while m+1 < len(input) and input[m+1] not in ("}", ","): # looking for the end of the item
+            while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
                 m += 1
             result.append(input[n:m]) # appending the item to the list
             n = m + 1
+            #tst=input[n-1:n+3] 
+            #print("tst: ", tst)
         else: 
             n += 1
+            
 
 def Parse_jsonata(codeSnip):
     if codeSnip is None:
@@ -62,7 +61,7 @@ def Parse_jsonata(codeSnip):
     if result0 == "": result0= " "
     if result0[0] == "[": 
             result0 = result0[1:-1]
-            result0 = result0.replace("}, {", " , ")
+            result0 = result0.replace("}, {", ", ")
     return result0
     
 # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
@@ -83,8 +82,10 @@ with open(JsonInput, 'r') as file:
             if result2 != " ":
                 if result2[0] == "{":  # check if the result is a list
                     result3 = []
-                    if i==5: print("result2: ", result2)
                     string_to_list(result2, result3)  # convert the string to a list
+                    #if i==5: 
+                       # print ("result2: ", result2)
+                       # print ("result3: ", result3)
                     # filling ts sheet if it is a list 
                     for j in range(0, len(result3)):
                         x += 1
