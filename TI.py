@@ -27,8 +27,12 @@ for i in range(2, ti_sheet.max_row + 1):
 
 def string_to_list(input, result):
     n = 0 #letter it is looking at
+    skip=0
     while input[n] != "}": #looking for the end of the list
-        if input[n] == "{" or ",": # looking for the start of a new item in the list
+        if input[n] == "'":
+            if skip == 0:  skip = 1
+            else: skip = 0
+        if skip == 0 and input[n] in ["{",","]: # looking for the start of a new item in the list
             n += 1
             m = n
             while m+1 < len(input) and input[m+1] not in ("}", ","): # looking for the end of the item
@@ -79,6 +83,7 @@ with open(JsonInput, 'r') as file:
             if result2 != " ":
                 if result2[0] == "{":  # check if the result is a list
                     result3 = []
+                    if i==5: print("result2: ", result2)
                     string_to_list(result2, result3)  # convert the string to a list
                     # filling ts sheet if it is a list 
                     for j in range(0, len(result3)):
