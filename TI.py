@@ -64,7 +64,11 @@ def Parse_jsonata(codeSnip):
 # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
 with open(JsonInput, 'r') as file:
     data=json.load (file)
-    StudyId=Parse_jsonata(StudyIdCodeSnip)
+    studyId=Parse_jsonata(codeSnip=StudyIdCodeSnip) 
+    
+    print("StudyIdCodeSnip: ", StudyIdCodeSnip)
+    print("StudyIdColumn: ", StudyIDColumn)
+    print("StudyId: ", studyId)
     Version=Parse_jsonata(VersionResult)
     for i in range(2, ti_sheet.max_row + 1):
         # Get all the mapping information from the TS Parameters sheet
@@ -81,14 +85,14 @@ with open(JsonInput, 'r') as file:
                         x += 1
                         c = i-1
                         ti_sheet.cell(row=x, column=c).value = result3[j]
-                        ti_sheet.cell(row=x, column=StudyIDColumn).value = StudyId
+                        ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
                         ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
                         ti_sheet.cell(row=x, column=VersionColumn).value = Version
             else:
                 # filling ts sheet if it is not a list
                 x += 1
                 ti_sheet.cell(row=x, column=c).value = result2
-                ti_sheet.cell(row=x, column=StudyIDColumn).value = StudyId
+                ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
                 ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
                 ti_sheet.cell(row=x, column=VersionColumn).value = Version
     file.close
