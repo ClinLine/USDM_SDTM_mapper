@@ -81,7 +81,6 @@ with open(JsonInput, 'r') as file:
                         x += 1
                         c = i-1
                         ti_sheet.cell(row=x, column=c).value = result3[j]
-                    if i==5:
                         ti_sheet.cell(row=x, column=StudyIDColumn).value = StudyId
                         ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
                         ti_sheet.cell(row=x, column=VersionColumn).value = Version
@@ -89,9 +88,8 @@ with open(JsonInput, 'r') as file:
                 # filling ts sheet if it is not a list
                 x += 1
                 ti_sheet.cell(row=x, column=c).value = result2
-                if i==5:
-                        ti_sheet.cell(row=x, column=StudyIDColumn).value = StudyId
-                        ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
-                        ti_sheet.cell(row=x, column=VersionColumn).value = Version
+                ti_sheet.cell(row=x, column=StudyIDColumn).value = StudyId
+                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
+                ti_sheet.cell(row=x, column=VersionColumn).value = Version
     file.close
 wb.save("Output/sdtm_mapping_results.xlsx")
