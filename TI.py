@@ -71,7 +71,7 @@ def Create_TI(wb, JsonInput):
             DomainResult =  ti_sheet.cell(row=i, column=8).value
             DomainColumn = j
         if varName == "TIVERS":
-            VersionCodeSnip =  ti_sheet.cell(row=i, column=8).value
+            VersionCodeSnip =  ti_sheet.cell(row=i, column=7).value
             VersionColumn = j
 
     # create empty id array for checking value alignment in different columns

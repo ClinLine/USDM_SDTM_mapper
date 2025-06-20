@@ -33,6 +33,7 @@ def string_to_list(input, result):
         else: 
             n += 1
 
+
 def Parse_jsonata(my_sheet,row,column,data):
     codeSnip = my_sheet.cell(row=row, column=column).value
     if codeSnip is None:
@@ -42,7 +43,9 @@ def Parse_jsonata(my_sheet,row,column,data):
             expr = jsonata.Jsonata(codeSnip)
             result = expr.evaluate(data)  
         except:
-            result = "Error in expression for: " + codeSnip
+            result = " "
+            if codeSnip != "" and codeSnip != " " : result = "Error in expression for: " + codeSnip
+            
     if result is None: result = " "
     result= str(result)
     if result == "": result = " "
@@ -60,14 +63,15 @@ def Parse_jsonata(my_sheet,row,column,data):
 def Create_TS(wb, JsonInput):
     ts0_sheet = wb['TS']
     ts_sheet = wb['TS Parameters']
-
+    DomainResult = " "
+    StudyIdCodeSnip = " "
     for i in range(2, ts0_sheet.max_row + 1):
         j=i-1
         #swap the rows and columns in the TS sheet
         varName=ts0_sheet.cell(row=i, column=1).value
+        print("Processing TS variable: " + varName)
         ts0_sheet.cell(row=1, column=j).value = varName
-        DomainResult = " "
-        StudyIdCodeSnip = " "
+        
         # Get standard row value information for TS
         if varName == "STUDYID":
             StudyIdCodeSnip = ts0_sheet.cell(row=i, column=7).value
