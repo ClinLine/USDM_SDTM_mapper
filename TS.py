@@ -20,7 +20,21 @@ def get_ID(ID_string):
             return Id, ID_less
 
 
-def Parse_jsonata(my_sheet,row,column):
+# general function(s)
+def string_to_list(input, result):
+    n = 0 #letter it is looking at
+    while input[n] != "}": #looking for the end of the list
+        if input[n-2:n+2] == "', '" or input[n] in ["{"]: # looking for the start of a new item in the list
+            n += 1
+            m = n
+            while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
+                m += 1
+            result.append(input[n:m]) # appending the item to the list
+            n = m + 1
+        else: 
+            n += 1
+
+def Parse_jsonataE(my_sheet,row,column):
     codeSnip = my_sheet.cell(row=row, column=column).value
     if codeSnip is None:
         result = " "
