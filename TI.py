@@ -22,7 +22,7 @@ for i in range(2, ti_sheet.max_row + 1):
         DomainResult =  ti_sheet.cell(row=i, column=8).value
         DomainColumn = j
     if varName == "TIVERS":
-        VersionResult =  ti_sheet.cell(row=i, column=8).value
+        VersionCodeSnip =  ti_sheet.cell(row=i, column=8).value
         VersionColumn = j
 
 def get_ID(ID_string):
@@ -36,10 +36,10 @@ def get_ID(ID_string):
             return "", ID_string
         else:
             Id = ID_string[1:o-1] # extracting the ID from the string
-            p = o + 2
-            while ID_string[p] != "'" and len(ID_string) < p: #looking for the start of the ID
-                p += 1
-            ID_less = ID_string[o+1:p-1] # extracting the ID from the string
+            if ID_string[-2:-1] == "'":
+                ID_less = ID_string[o+3:-2]  # extracting the ID without the prefix
+            else:
+                ID_less = ID_string[o+3:]  # extracting the ID without the prefix
             return Id, ID_less
 
 def string_to_list(input, result):
@@ -78,40 +78,55 @@ def Parse_jsonata(codeSnip):
             result0 = result0[1:-1]
             result0 = result0.replace("}, {", ", ")
     return result0
-    
+
+id = []
+
 # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
 with open(JsonInput, 'r') as file:
     data=json.load (file)
     studyId=Parse_jsonata(codeSnip=StudyIdCodeSnip) 
+    versionResult=Parse_jsonata(codeSnip=VersionCodeSnip)
     
-    print("StudyIdCodeSnip: ", StudyIdCodeSnip)
-    print("StudyIdColumn: ", StudyIDColumn)
-    print("StudyId: ", studyId)
-    Version=Parse_jsonata(VersionResult)
     for i in range(2, ti_sheet.max_row + 1):
         # Get all the mapping information from the TS Parameters sheet
         if i not in [StudyIDColumn+1, DomainColumn+1, VersionColumn+1]:
             codeSnip = ti_sheet.cell(row=i, column=7).value
             result2=Parse_jsonata(codeSnip=codeSnip)
             x=1
+            c = i - 1
             if result2 != " ":
                 if result2[0] == "{":  # check if the result is a list
                     result3 = []
                     string_to_list(result2, result3)  # convert the string to a list
                     # filling ts sheet if it is a list 
+                    skip = 0
                     for j in range(0, len(result3)):
+                        if len(id) < len(result3):  # if the ID list is empty, append the first ID
+                            idcheck, result4 = get_ID(result3[j])  # extracting the ID from the string
+                            id.append(idcheck)  # appending the ID to the list
+                        else:
+                            idcheck, result4 = get_ID(result3[j])  # extracting the ID from the string
+                            if idcheck != id[j+skip]:
+                                x += 1
+                                skip += 1
                         x += 1
-                        c = i-1
-                        ti_sheet.cell(row=x, column=c).value = result3[j]
+                        ti_sheet.cell(row=x, column=c).value = result4
                         ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
                         ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
-                        ti_sheet.cell(row=x, column=VersionColumn).value = Version
+                        ti_sheet.cell(row=x, column=VersionColumn).value = versionResult
+                else:
+                    # filling ts sheet if it is not a list
+                    idcheck, result2 = get_ID(result2)
+                    x += 1
+                    ti_sheet.cell(row=x, column=c).value = result2
+                    ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
+                    ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
+                    ti_sheet.cell(row=x, column=VersionColumn).value = versionResult
             else:
-                # filling ts sheet if it is not a list
-                x += 1
-                ti_sheet.cell(row=x, column=c).value = result2
-                ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
-                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
-                ti_sheet.cell(row=x, column=VersionColumn).value = Version
-    file.close
+                if len(id)> 0:
+                    for j in range(len(id)):
+                        x += 1
+                        ti_sheet.cell(row=x, column=c).value = " "
+                
+
 wb.save("Output/sdtm_mapping_results.xlsx")
