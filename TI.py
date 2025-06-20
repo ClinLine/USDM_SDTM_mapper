@@ -35,8 +35,6 @@ def string_to_list(input, result):
                 m += 1
             result.append(input[n:m]) # appending the item to the list
             n = m + 1
-            #tst=input[n-1:n+3] 
-            #print("tst: ", tst)
         else: 
             n += 1
             
@@ -83,9 +81,6 @@ with open(JsonInput, 'r') as file:
                 if result2[0] == "{":  # check if the result is a list
                     result3 = []
                     string_to_list(result2, result3)  # convert the string to a list
-                    #if i==5: 
-                       # print ("result2: ", result2)
-                       # print ("result3: ", result3)
                     # filling ts sheet if it is a list 
                     for j in range(0, len(result3)):
                         x += 1

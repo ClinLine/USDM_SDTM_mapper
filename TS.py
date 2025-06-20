@@ -20,13 +20,30 @@ for i in range(2, ts0_sheet.max_row + 1):
     if varName == "DOMAIN":
         DomainResult =  ts0_sheet.cell(row=i, column=8).value
 
+def get_ID(ID_string):
+    if len(ID_string) <2: # if the ID string is None, return empty strings
+        return "", ""
+    else:
+        o = 1 #letter it is looking at
+        while ID_string[o] != ":" and o+1 < len(ID_string): #looking for the end of the ID
+            o += 1
+        if o+1 == len(ID_string): # if the ID is not found, return empty strings
+            return "", ID_string
+        else:
+            Id = ID_string[1:o-1] # extracting the ID from the string
+            p = o + 2
+            while ID_string[p] != "'" and len(ID_string) < p: #looking for the start of the ID
+                p += 1
+            ID_less = ID_string[o+1:p-1] # extracting the ID from the string
+            return Id, ID_less
+
 def string_to_list(input, result):
     n = 0 #letter it is looking at
     while input[n] != "}": #looking for the end of the list
-        if input[n] == "{" or ",": # looking for the start of a new item in the list
+        if input[n-2:n+2] == "', '" or input[n] in ["{"]: # looking for the start of a new item in the list
             n += 1
             m = n
-            while m+1 < len(input) and input[m+1] not in ("}", ","): # looking for the end of the item
+            while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
                 m += 1
             result.append(input[n:m]) # appending the item to the list
             n = m + 1
@@ -98,23 +115,28 @@ with open(JsonInput, 'r') as file:
                 # filling ts sheet if it is a list 
                 for j in range(0, len(result3)):
                     x += 1
+                    id, result4 = get_ID(result3[j])  # extract the ID from the result
                     ts0_sheet.cell(row=x, column=1).value = " "
                     ts0_sheet.cell(row=x, column=1).value = studyId
                     ts0_sheet.cell(row=x, column=2).value = DomainResult   
                     ts0_sheet.cell(row=x, column=3).value = j + 1
-                    ts0_sheet.cell(row=x, column=4).value = " "
+                    ts0_sheet.cell(row=x, column=4).value = id
                     ts0_sheet.cell(row=x, column=5).value = MapCode    
                     ts0_sheet.cell(row=x, column=6).value = MapName                
-                    ts0_sheet.cell(row=x, column=7).value = result3[j]   
+                    ts0_sheet.cell(row=x, column=7).value = result4  
                     ts0_sheet.cell(row=x, column=8).value = " "   
                     if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue
                     if resultCd != " ":
-                        ts0_sheet.cell(row=x, column=9).value = resultCd2[j]                   
-                        ts0_sheet.cell(row=x, column=10).value = resultCdRef2[j]  
-                        ts0_sheet.cell(row=x, column=11).value = resultCdVer2[j]
+                        id, resultcd4 = get_ID(resultCd2[j])
+                        id, resultCdRef4 = get_ID(resultCdRef2[j]) 
+                        id, resultCdVer4 = get_ID(resultCdVer2[j]) 
+                        ts0_sheet.cell(row=x, column=9).value = resultcd4                  
+                        ts0_sheet.cell(row=x, column=10).value = resultCdRef4 
+                        ts0_sheet.cell(row=x, column=11).value = resultCdVer4
             else:
                 # filling ts sheet if it is not a list
                 x += 1
+                id, result2 = get_ID(result2)  # extract the ID from the result
                 ts0_sheet.cell(row=x, column=1).value = " "
                 ts0_sheet.cell(row=x, column=1).value = studyId
                 ts0_sheet.cell(row=x, column=2).value = DomainResult   
@@ -125,9 +147,13 @@ with open(JsonInput, 'r') as file:
                 ts0_sheet.cell(row=x, column=7).value = result2   
                 ts0_sheet.cell(row=x, column=8).value = " "   
                 if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
-                ts0_sheet.cell(row=x, column=9).value = resultCd                   
-                ts0_sheet.cell(row=x, column=10).value = resultCdRef  
-                ts0_sheet.cell(row=x, column=11).value = resultCdVer
+                if resultCd != " ":
+                    id, resultCd = get_ID(resultCd)
+                    id, resultCdRef = get_ID(resultCdRef)
+                    id, resultCdVer = get_ID(resultCdVer)
+                    ts0_sheet.cell(row=x, column=9).value = resultCd                   
+                    ts0_sheet.cell(row=x, column=10).value = resultCdRef  
+                    ts0_sheet.cell(row=x, column=11).value = resultCdVer
         # filling TS Parameters sheet
         ts_sheet.cell(row=i, column=7).value = result2
         ts_sheet.cell(row=i, column=8).value = " "   
