@@ -19,7 +19,6 @@ def get_ID(ID_string):
                 ID_less = ID_string[o+3:]  # extracting the ID without the prefix
             return Id, ID_less
 
-
 # general function(s)
 def string_to_list(input, result):
     n = 0 #letter it is looking at
@@ -34,7 +33,7 @@ def string_to_list(input, result):
         else: 
             n += 1
 
-def Parse_jsonataE(my_sheet,row,column):
+def Parse_jsonata(my_sheet,row,column,data):
     codeSnip = my_sheet.cell(row=row, column=column).value
     if codeSnip is None:
         result = " "
@@ -91,10 +90,10 @@ def Create_TS(wb, JsonInput):
                 MapName = ts_sheet.cell(row=i, column=1).value
                 MapCode = ts_sheet.cell(row=i, column=2).value
                 nfValue = ts_sheet.cell(row=i, column=8).value
-                result2=Parse_jsonata(ts_sheet,i,7)
-                resultCd=Parse_jsonata(ts_sheet,i,9)
-                resultCdRef=Parse_jsonata(ts_sheet,i,10)
-                resultCdVer=Parse_jsonata(ts_sheet,i,11)
+                result2=Parse_jsonata(ts_sheet,i,7,data)
+                resultCd=Parse_jsonata(ts_sheet,i,9,data)
+                resultCdRef=Parse_jsonata(ts_sheet,i,10,data)
+                resultCdVer=Parse_jsonata(ts_sheet,i,11,data)
                 codeSnip = ts_sheet.cell(row=i, column=7).value        
                 codeSnipCd = ts_sheet.cell(row=i, column=9).value   
                 codeSnipCdRef = ts_sheet.cell(row=i, column=10).value   
