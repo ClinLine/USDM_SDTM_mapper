@@ -25,10 +25,27 @@ for i in range(2, ti_sheet.max_row + 1):
         VersionResult =  ti_sheet.cell(row=i, column=8).value
         VersionColumn = j
 
+def get_ID(ID_string):
+    if len(ID_string) <2: # if the ID string is None, return empty strings
+        return "", ""
+    else:
+        o = 1 #letter it is looking at
+        while ID_string[o] != ":" and o+1 < len(ID_string): #looking for the end of the ID
+            o += 1
+        if o+1 == len(ID_string): # if the ID is not found, return empty strings
+            return "", ID_string
+        else:
+            Id = ID_string[1:o-1] # extracting the ID from the string
+            p = o + 2
+            while ID_string[p] != "'" and len(ID_string) < p: #looking for the start of the ID
+                p += 1
+            ID_less = ID_string[o+1:p-1] # extracting the ID from the string
+            return Id, ID_less
+
 def string_to_list(input, result):
     n = 0 #letter it is looking at
     while input[n] != "}": #looking for the end of the list
-        if input[n-1:n+3] == "', '" or input[n] in ["{"]: # looking for the start of a new item in the list
+        if input[n-2:n+2] == "', '" or input[n] in ["{"]: # looking for the start of a new item in the list
             n += 1
             m = n
             while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item

@@ -31,10 +31,10 @@ def get_ID(ID_string):
             return "", ID_string
         else:
             Id = ID_string[1:o-1] # extracting the ID from the string
-            p = o + 2
-            while ID_string[p] != "'" and len(ID_string) < p: #looking for the start of the ID
-                p += 1
-            ID_less = ID_string[o+1:p-1] # extracting the ID from the string
+            if ID_string[-2:-1] == "'":
+                ID_less = ID_string[o+3:-2]  # extracting the ID without the prefix
+            else:
+                ID_less = ID_string[o+3:]  # extracting the ID without the prefix
             return Id, ID_less
 
 def string_to_list(input, result):
