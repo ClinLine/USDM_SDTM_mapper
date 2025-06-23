@@ -14,14 +14,9 @@ def get_ID(ID_string):
             return "", ID_string            
         else:
             Id = ID_string[1:o-1] # extracting the ID from the string
-            ResX = ID_string[o+1:]
-            while ResX[-1]==" " or ResX[-1]=="'": ResX=ResX[:-1] # remove trailing blanks or quotes
-            while ResX[0]==" " or ResX[0]=="'": ResX=ResX[1:] # remove starting blanks or quotes
-            ID_less=ResX
-            # if ID_string[-1] == "'":
-            #     ID_less = ID_string[o+3:-1]  # extracting the ID without the prefix
-            # else:
-            #     ID_less = ID_string[o+3:]  # extracting the ID without the prefix
+            ID_less = ID_string[o+1:]
+            while ID_less[-1]==" " or ID_less[-1]=="'": ID_less=ID_less[:-1] # remove trailing blanks or quotes
+            while ID_less[0]==" " or ID_less[0]=="'": ID_less=ID_less[1:] # remove starting blanks or quotes
             return Id, ID_less
 
 # general function(s)
