@@ -10,12 +10,12 @@ def get_ID(ID_string):
         o = 1 #letter it is looking at
         while ID_string[o] != ":" and o+1 < len(ID_string): #looking for the end of the ID
             o += 1
-        if o+1 == len(ID_string): # if the ID is not found, return empty strings
-            return "", ID_string
+        if o == len(ID_string): # if the ID is not found, return empty strings
+            return "", ID_string            
         else:
             Id = ID_string[1:o-1] # extracting the ID from the string
-            if ID_string[-2:-1] == "'":
-                ID_less = ID_string[o+3:-2]  # extracting the ID without the prefix
+            if ID_string[-1] == "'":
+                ID_less = ID_string[o+3:-1]  # extracting the ID without the prefix
             else:
                 ID_less = ID_string[o+3:]  # extracting the ID without the prefix
             return Id, ID_less
@@ -118,9 +118,12 @@ def Create_TI(wb, JsonInput):
                         for j in range(len(id)):
                             x += 1
                             ti_sheet.cell(row=x, column=c).value = " "
-            else:
+        if len(id)> 0: # add the standard variable values for each row.
+            x=1
+            for j in range(len(id)):
+                x += 1
                 # filling the STUDYID, DOMAIN and TIVERS columns
-                if i== StudyIDColumn+1: ti_sheet.cell(row=2, column=StudyIDColumn).value = studyId
-                if i== DomainColumn+1: ti_sheet.cell(row=2, column=DomainColumn).value = DomainResult
-                if i== VersionColumn+1: ti_sheet.cell(row=2, column=VersionColumn).value = versionResult    
+                ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
+                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
+                ti_sheet.cell(row=x, column=VersionColumn).value = versionResult    
       
