@@ -3,38 +3,41 @@ import json
 import openpyxl
 
 def get_ID(ID_string):
-    Id=""
-    ID_Less=ID_string
-    if len(ID_string) <3: # if the ID string is None, return empty strings
+    if len(ID_string) <2: # if the ID string is None, return empty strings
         return "", ""
-    elif len(ID_string) >2: # if the ID string is only one letter, return empty strings
+    else:
         o = 1 #letter it is looking at
         while ID_string[o] != ":" and o+1 < len(ID_string): #looking for the end of the ID
             o += 1
-        if o+1 == len(ID_string): # if the ID is not found, return empty strings
-            return "", ID_string
+        if o == len(ID_string)-1: # if the ID is not found, return empty strings
+            return "", ID_string            
         else:
             Id = ID_string[1:o-1] # extracting the ID from the string
-            if ID_string[-2:-1] == "'":
-                ID_less = ID_string[o+3:-2]  # extracting the ID without the prefix
-            else:
-                ID_less = ID_string[o+3:]  # extracting the ID without the prefix
+            ResX = ID_string[o+1:]
+            while ResX[-1]==" " or ResX[-1]=="'": ResX=ResX[:-1] # remove trailing blanks or quotes
+            while ResX[0]==" " or ResX[0]=="'": ResX=ResX[1:] # remove starting blanks or quotes
+            ID_less=ResX
+            # if ID_string[-1] == "'":
+            #     ID_less = ID_string[o+3:-1]  # extracting the ID without the prefix
+            # else:
+            #     ID_less = ID_string[o+3:]  # extracting the ID without the prefix
             return Id, ID_less
 
 # general function(s)
 def string_to_list(input, result):
     n = 0 #letter it is looking at
     while input[n] != "}": #looking for the end of the list
-        if input[n-2:n+2] == "', '" or input[n-3:n+2] == "' , '" or input[n] in ["{"]: # looking for the start of a new item in the list
+        if input[n-1:n+2] == ", '" or input[n] in ["{"]: # looking for the start of a new item in the list
             n += 1
             m = n
             while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
                 m += 1
-            result.append(input[n:m]) # appending the item to the list
+            resX=input[n:m+1]
+            if resX[-1]==",": resX=resX[:-1]
+            result.append(resX) # appending the item to the list
             n = m + 1
         else: 
             n += 1
-
 
 def Parse_jsonata(my_sheet,row,column,data):
     codeSnip = my_sheet.cell(row=row, column=column).value
