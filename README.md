@@ -36,4 +36,4 @@ The results for the TS Summary parameters, if not empty, are added to the TS she
 
 ## Acknowledgements
 This ClinLine open source tool is created by Noah Brezet and Berber Snoeijer
-Please contact us via info@clinline.eu if you like to learn more and/or help with integration of its features.
+Please contact us via info@clinline.eu if you like to learn more and/or support for integration of its features.
