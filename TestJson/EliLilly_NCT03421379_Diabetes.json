@@ -6207,7 +6207,27 @@
           }
         ],
         "abbreviations": [],
-        "roles": [],
+        "roles": [
+          {
+            "id": "StudyRole_1",
+            "extensionAttributes": [],
+            "name": "ROLE_1",
+            "label": "Sponsor",
+            "description": "Sponsor role",
+            "code": {
+              "id": "Code_617",
+              "extensionAttributes": [],
+              "code": "C70793",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2024-09-27",
+              "decode": "Sponsor",
+              "instanceType": "Code"
+            },
+            "appliesToIds": [],
+            "assignedPersons": [],
+            "organizationIds": [
+              "Organization_1"
+            ],
         "organizations": [
           {
             "id": "Organization_1",
