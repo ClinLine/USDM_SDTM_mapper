@@ -1,13 +1,15 @@
 # USDM to SDTM Trial Design Domain Tool
 The tool shows how the mappings, transformed to jsonata requests can inform the actual creation of the SDTM trial summary datasets TA, TE, TV, TI, and TS.
-The tool is based on json, jsonata and opepyxl packages to enable the following steps
+The tool is based on json, jsonata and opepyxl packages to enable the following steps:
 - Read the defined jsonata requests from the input Excel file
 - Open the USDM API file in json format
 - Run the jsonata requests on the USDM API file
 - Process the request results to create valid output including appropriate sequence numbering and grouping
 - Output the results to a result output Excel file
   
-The initial version includes the creation of the TS domain. The corresponding code is available in TS.py. The other domains will follow.
+The current version includes the creation of the TS and TI domain. 
+The corresponding code is available in TS.py and TI.py and is invoked by running Main.py. Main.py includes the references to the corresponding in- and output files.
+The other domains will follow.
 
 ## Input
 The input for the tool is based on the [SDTM mappings available in the CDISC DDF Github] (https://github.com/cdisc-org/DDF-RA/blob/main/Documents/Mappings/sdtm_mapping.xlsx)
@@ -23,8 +25,8 @@ More jsonata mapping will be added until complete.
 
 ## Tool Functionality
 For running the python code install the following packages:
-  Jsonata-Python:  pip install jsonata-python
-  Openpyxl: $pip install Openpyxl
+ - Jsonata-Python:  pip install jsonata-python
+ - Openpyxl: pip install Openpyxl
 
 ## Output
 The output SDTM datasets TA, TE, TV, TI, and TS is added in the same format as the original input Excel file. The file is stored as [sdtm_mapping_results.xlsx](https://github.com/ClinLine/SDTM_mapper/blob/main/Output/sdtm_mapping_results.xlsx).
