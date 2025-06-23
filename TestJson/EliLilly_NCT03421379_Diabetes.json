@@ -6228,6 +6228,15 @@
             "organizationIds": [
               "Organization_1"
             ],
+            "masking": {
+              "id": "Masking_1",
+              "extensionAttributes": [],
+              "text": "Masked",
+              "isMasked": true,
+              "instanceType": "Masking"
+            },
+            "instanceType": "StudyRole"
+          }],
         "organizations": [
           {
             "id": "Organization_1",
