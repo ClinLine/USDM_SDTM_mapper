@@ -11,6 +11,8 @@ The current version includes the creation of the TS and TI domain.
 The corresponding code is available in TS.py and TI.py and is invoked by running Main.py. Main.py includes the references to the corresponding in- and output files.
 The other domains will follow.
 
+We recorded a video which explains the tool in more detail. See [Youtube video] (https://youtu.be/J_linpJjQiw)
+
 ## Input
 The input for the tool is based on the [SDTM mappings available in the CDISC DDF Github] (https://github.com/cdisc-org/DDF-RA/blob/main/Documents/Mappings/sdtm_mapping.xlsx)
 The mappings in this file are converted to Jsonata and added to the input Excel [file sdtm_mapping_paths.xlsx] (https://github.com/ClinLine/SDTM_mapper/blob/main/Maps/sdtm_mapping_paths.xlsx)
