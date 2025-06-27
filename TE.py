@@ -63,6 +63,7 @@ def Parse_jsonata(codeSnip,data):
 
 def Create_TE(wb, JsonInput):
     ti_sheet = wb['TE']
+    r = ti_sheet.max_row
     for i in range(2, ti_sheet.max_row + 1):
         j=i-1
         #swap the rows and columns in the TI sheet
@@ -74,7 +75,9 @@ def Create_TE(wb, JsonInput):
         if varName == "DOMAIN":
             DomainResult =  ti_sheet.cell(row=i, column=8).value
             DomainColumn = j
-
+    for i in range(r, ti_sheet.max_column):
+        for j in range(1, r):
+            ti_sheet.cell(row=j, column=i).value = ""
     # create empty id array for checking value alignment in different columns
     id = []
     # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
