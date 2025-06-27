@@ -5,7 +5,7 @@ import TI
 import TE
 
 # Define the source json file you like to use
-JsonInput = "TestJson/EliLilly_NCT03421379_Diabetes.json"
+JsonInput = "TestJson/Alexion_NCT04573309_Wilsons.json"
 # define the mapping input file
 MapInput = "Maps/sdtm_mapping_paths.xlsx"
 # Define the resulting output file

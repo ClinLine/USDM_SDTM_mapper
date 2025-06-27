@@ -9,16 +9,24 @@ def get_ID(ID_string):
         o = 1 #letter it is looking at
         while ID_string[o] != ":" and o+1 < len(ID_string): #looking for the end of the ID
             o += 1
-        if o == len(ID_string)-1: # if the ID is not found, return empty strings
-            return "", ID_string            
-        else:
-            Id = ID_string[1:o-1] # extracting the ID from the string
-            ID_less = ID_string[o+1:]
-            while ID_less[-1]==" " or ID_less[-1]=="'": 
+        if o == len(ID_string) - 1: # if the ID is not found, return empty strings
+            ID_less = ID_string
+            while ID_less[-1]==" " or ID_less[-1]=="'" or ID_less[-1]=="]": # remove trailing blanks or quotes
                 ID_less=ID_less[:-1] # remove trailing blanks or quotes
                 if len(ID_less) == 0: # if the ID_less is empty, return empty strings
                     return Id, ""
-            while ID_less[0]==" " or ID_less[0]=="'": ID_less=ID_less[1:] # remove starting blanks or quotes
+                while ID_less[0]==" " or ID_less[0]=="'" or ID_less[0]=="[": ID_less=ID_less[1:] # remove starting blanks or quotes
+            return "", ID_less       
+        else:
+            Id = ID_string[1:o-1] # extracting the ID from the string
+            ID_less = ID_string[o+1:]
+            if len(ID_less) == 0: # if the ID_less is empty, return empty strings
+                return Id, ""
+            while ID_less[-1]==" " or ID_less[-1]=="'" or ID_less[-1]=="]": # remove trailing blanks or quotes
+                ID_less=ID_less[:-1] # remove trailing blanks or quotes
+                if len(ID_less) == 0: # if the ID_less is empty, return empty strings
+                    return Id, ""
+            while ID_less[0]==" " or ID_less[0]=="'" or ID_less[0]=="[": ID_less=ID_less[1:] # remove starting blanks or quotes
             return Id, ID_less
 
 # general function(s)
@@ -122,6 +130,11 @@ def Create_TS(wb, JsonInput):
                     for j in range(0, len(result3)):
                         x += 1
                         id, result4 = get_ID(result3[j])  # extract the ID from the result
+                        if j == 0:
+                            base_id = id  # store the base ID for the first item
+                        else:
+                            if id == "":  # if the ID is empty, use the base ID
+                                id = base_id
                         ts0_sheet.cell(row=x, column=1).value = " "
                         ts0_sheet.cell(row=x, column=1).value = studyId
                         ts0_sheet.cell(row=x, column=2).value = DomainResult   
