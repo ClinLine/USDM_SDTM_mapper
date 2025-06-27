@@ -61,8 +61,8 @@ def Parse_jsonata(codeSnip,data):
                 result0 = result0.replace("}, {", ", ")
         return result0
 
-def Create_TI(wb, JsonInput):
-    ti_sheet = wb['TI']
+def Create_TE(wb, JsonInput):
+    ti_sheet = wb['TE']
     for i in range(2, ti_sheet.max_row + 1):
         j=i-1
         #swap the rows and columns in the TI sheet
@@ -74,9 +74,6 @@ def Create_TI(wb, JsonInput):
         if varName == "DOMAIN":
             DomainResult =  ti_sheet.cell(row=i, column=8).value
             DomainColumn = j
-        if varName == "TIVERS":
-            VersionCodeSnip =  ti_sheet.cell(row=i, column=7).value
-            VersionColumn = j
 
     # create empty id array for checking value alignment in different columns
     id = []
@@ -85,12 +82,10 @@ def Create_TI(wb, JsonInput):
         data=json.load (file)
         studyId=Parse_jsonata(codeSnip=StudyIdCodeSnip,data=data)         
         print("StudyId: ", studyId)
-
-        versionResult=Parse_jsonata(codeSnip=VersionCodeSnip,data=data)
         
         for i in range(2, ti_sheet.max_row + 1):
             # Get all the mapping information from the TS Parameters sheet
-            if i not in [StudyIDColumn+1, DomainColumn+1, VersionColumn+1]:
+            if i not in [StudyIDColumn+1, DomainColumn+1]:
                 codeSnip = ti_sheet.cell(row=i, column=7).value
                 result2=Parse_jsonata(codeSnip=codeSnip,data=data)
                 x=1
@@ -128,6 +123,5 @@ def Create_TI(wb, JsonInput):
                 x += 1
                 # filling the STUDYID, DOMAIN and TIVERS columns
                 ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
-                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
-                ti_sheet.cell(row=x, column=VersionColumn).value = versionResult    
+                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult  
       

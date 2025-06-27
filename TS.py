@@ -14,7 +14,10 @@ def get_ID(ID_string):
         else:
             Id = ID_string[1:o-1] # extracting the ID from the string
             ID_less = ID_string[o+1:]
-            while ID_less[-1]==" " or ID_less[-1]=="'": ID_less=ID_less[:-1] # remove trailing blanks or quotes
+            while ID_less[-1]==" " or ID_less[-1]=="'": 
+                ID_less=ID_less[:-1] # remove trailing blanks or quotes
+                if len(ID_less) == 0: # if the ID_less is empty, return empty strings
+                    return Id, ""
             while ID_less[0]==" " or ID_less[0]=="'": ID_less=ID_less[1:] # remove starting blanks or quotes
             return Id, ID_less
 
