@@ -126,5 +126,9 @@ def Create_TE(wb, JsonInput):
                 x += 1
                 # filling the STUDYID, DOMAIN and TIVERS columns
                 ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
-                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult  
+                ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult 
+    x = x+1
+    for i in range(x, ti_sheet.max_row + 1):
+        for j in range(1, ti_sheet.max_column):
+            ti_sheet.cell(row=i, column=j).value = ""
       
