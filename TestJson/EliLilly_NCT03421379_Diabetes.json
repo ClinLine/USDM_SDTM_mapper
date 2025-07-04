@@ -1337,7 +1337,7 @@
                 "id": "StudyArm_1",
                 "extensionAttributes": [],
                 "name": "LY-G",
-                "label": "",
+                "label": "LY-G",
                 "description": "LY900018-IMG",
                 "type": {
                   "id": "Code_119",
@@ -1366,7 +1366,7 @@
                 "id": "StudyArm_2",
                 "extensionAttributes": [],
                 "name": "G-LY",
-                "label": "",
+                "label": "G-LY",
                 "description": "IMG-LY900018",
                 "type": {
                   "id": "Code_121",
