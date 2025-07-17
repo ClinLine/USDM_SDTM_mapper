@@ -4,6 +4,7 @@ import TS
 import TI
 import TE
 import TA
+import TV
 
 # Define the source json file you like to use
 JsonInput = "TestJson/EliLilly_NCT03421379_Diabetes.json"
@@ -19,5 +20,6 @@ if __name__ == "__main__":
     TI.Create_TI(wb, JsonInput)
     TE.Create_TE(wb, JsonInput)
     TA.Create_TA(wb, JsonInput)
+    TV.Create_TV(wb, JsonInput)
     wb.save(Output)
     wb.close()
