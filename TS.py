@@ -1,77 +1,8 @@
 import jsonata
 import json
 import openpyxl
+import definition
 
-def get_ID(ID_string):
-    if len(ID_string) <2: # if the ID string is None, return empty strings
-        return "", ""
-    else:
-        o = 1 #letter it is looking at
-        while ID_string[o] != ":" and o+1 < len(ID_string): #looking for the end of the ID
-            o += 1
-        if o == len(ID_string) - 1: # if the ID is not found, return empty strings
-            ID_less = ID_string
-            while ID_less[-1]==" " or ID_less[-1]=="'" or ID_less[-1]=="]": # remove trailing blanks or quotes
-                ID_less=ID_less[:-1] # remove trailing blanks or quotes
-                if len(ID_less) == 0: # if the ID_less is empty, return empty strings
-                    return Id, ""
-                while ID_less[0]==" " or ID_less[0]=="'" or ID_less[0]=="[": ID_less=ID_less[1:] # remove starting blanks or quotes
-            return "", ID_less       
-        else:
-            Id = ID_string[1:o-1] # extracting the ID from the string
-            ID_less = ID_string[o+1:]
-            if len(ID_less) == 0: # if the ID_less is empty, return empty strings
-                return Id, ""
-            while ID_less[-1]==" " or ID_less[-1]=="'" or ID_less[-1]=="]": # remove trailing blanks or quotes
-                ID_less=ID_less[:-1] # remove trailing blanks or quotes
-                if len(ID_less) == 0: # if the ID_less is empty, return empty strings
-                    return Id, ""
-            while ID_less[0]==" " or ID_less[0]=="'" or ID_less[0]=="[": ID_less=ID_less[1:] # remove starting blanks or quotes
-            return Id, ID_less
-
-# general function(s)
-def string_to_list(input, result):
-    n = 0 #letter it is looking at
-    while input[n] != "}": #looking for the end of the list
-        if input[n-1:n+2] == ", '" or input[n] in ["{"]: # looking for the start of a new item in the list
-            n += 1
-            m = n
-            while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
-                m += 1
-            resX=input[n:m+1]
-            if resX[-1]==",": resX=resX[:-1]
-            result.append(resX) # appending the item to the list
-            n = m + 1
-        else: 
-            n += 1
-
-def Parse_jsonata(my_sheet,row,column,data):
-    codeSnip = my_sheet.cell(row=row, column=column).value
-    if codeSnip is None:
-        result = " "
-    else:
-        try:
-            expr = jsonata.Jsonata(codeSnip)
-            result = expr.evaluate(data)  
-        except:
-            result = " "
-            if codeSnip != "" and codeSnip != " " : result = "Error in expression for: " + codeSnip
-            
-    if result is None: result = " "
-    result= str(result)
-    if result == "": result = " "
-    if result == "{}": result = " "
-    try:
-        result0 = result.replace("’", " ")
-    except:
-        result0 = ""
-    if result0 == "": result0= " "
-    if result0[0] == "[": 
-            result0 = result0[1:-1]
-            result0 = result0.replace("}, {", " , ")
-    return result0
-
-  
 def Create_TS(wb, JsonInput):
     ts0_sheet = wb['TS']
     ts_sheet = wb['TS Parameters']
@@ -105,10 +36,14 @@ def Create_TS(wb, JsonInput):
             MapName = ts_sheet.cell(row=i, column=1).value
             MapCode = ts_sheet.cell(row=i, column=2).value
             nfValue = ts_sheet.cell(row=i, column=8).value
-            result2=Parse_jsonata(ts_sheet,i,7,data)
-            resultCd=Parse_jsonata(ts_sheet,i,9,data)
-            resultCdRef=Parse_jsonata(ts_sheet,i,10,data)
-            resultCdVer=Parse_jsonata(ts_sheet,i,11,data)
+            codeSnip = ts_sheet.cell(row=i, column=7).value
+            result2=definition.Parse_jsonata(codeSnip,data)
+            codeSnip = ts_sheet.cell(row=i, column=9).value
+            resultCd=definition.Parse_jsonata(codeSnip,data)
+            codeSnip = ts_sheet.cell(row=i, column=10).value
+            resultCdRef=definition.Parse_jsonata(codeSnip,data)
+            codeSnip = ts_sheet.cell(row=i, column=11).value
+            resultCdVer=definition.Parse_jsonata(codeSnip,data)
             codeSnip = ts_sheet.cell(row=i, column=7).value        
             codeSnipCd = ts_sheet.cell(row=i, column=9).value   
             codeSnipCdRef = ts_sheet.cell(row=i, column=10).value   
@@ -118,18 +53,18 @@ def Create_TS(wb, JsonInput):
             if result2 != " " or nfValue != " ":
                 if result2[0] == "{":  # check if the result is a list
                     result3 = []
-                    string_to_list(result2, result3)  # convert the string to a list
+                    definition.string_to_list(result2, result3)  # convert the string to a list
                     if resultCd != " ":
                         resultCd2 = []
-                        string_to_list(resultCd, resultCd2)  # convert the string to a list
+                        definition.string_to_list(resultCd, resultCd2)  # convert the string to a list
                         resultCdRef2 = []
-                        string_to_list(resultCdRef, resultCdRef2)  # convert the string to a list
+                        definition.string_to_list(resultCdRef, resultCdRef2)  # convert the string to a list
                         resultCdVer2 = []
-                        string_to_list(resultCdVer, resultCdVer2)  # convert the string to
+                        definition.string_to_list(resultCdVer, resultCdVer2)  # convert the string to
                     # filling ts sheet if it is a list 
                     for j in range(0, len(result3)):
                         x += 1
-                        id, result4 = get_ID(result3[j])  # extract the ID from the result
+                        id, result4 = definition.get_ID(result3[j])  # extract the ID from the result
                         if j == 0:
                             base_id = id  # store the base ID for the first item
                         else:
@@ -146,9 +81,9 @@ def Create_TS(wb, JsonInput):
                         ts0_sheet.cell(row=x, column=8).value = " "   
                         if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue
                         if resultCd != " ":
-                            id, resultcd4 = get_ID(resultCd2[j])
-                            id, resultCdRef4 = get_ID(resultCdRef2[j]) 
-                            id, resultCdVer4 = get_ID(resultCdVer2[j]) 
+                            id, resultcd4 = definition.get_ID(resultCd2[j])
+                            id, resultCdRef4 = definition.get_ID(resultCdRef2[j]) 
+                            id, resultCdVer4 = definition.get_ID(resultCdVer2[j]) 
                             ts0_sheet.cell(row=x, column=9).value = resultcd4                  
                             ts0_sheet.cell(row=x, column=10).value = resultCdRef4 
                             ts0_sheet.cell(row=x, column=11).value = resultCdVer4
@@ -156,7 +91,7 @@ def Create_TS(wb, JsonInput):
                     # filling ts sheet if it is not a list
                     x += 1
                     if result2[0] == "{":
-                        id, result2 = get_ID(result2)  # extract the ID from the result
+                        id, result2 = definition.get_ID(result2)  # extract the ID from the result
                     
                     ts0_sheet.cell(row=x, column=1).value = " "
                     ts0_sheet.cell(row=x, column=1).value = studyId
@@ -169,9 +104,9 @@ def Create_TS(wb, JsonInput):
                     ts0_sheet.cell(row=x, column=8).value = " "   
                     if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue	
                     if resultCd != " ":
-                        id, resultCd = get_ID(resultCd)
-                        id, resultCdRef = get_ID(resultCdRef)
-                        id, resultCdVer = get_ID(resultCdVer)
+                        id, resultCd = definition.get_ID(resultCd)
+                        id, resultCdRef = definition.get_ID(resultCdRef)
+                        id, resultCdVer = definition.get_ID(resultCdVer)
                         ts0_sheet.cell(row=x, column=9).value = resultCd                   
                         ts0_sheet.cell(row=x, column=10).value = resultCdRef  
                         ts0_sheet.cell(row=x, column=11).value = resultCdVer
