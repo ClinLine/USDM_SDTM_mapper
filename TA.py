@@ -25,6 +25,9 @@ def Create_TA(wb, JsonInput):
         elif i == 5: # varName == "ARM":
             ArmDescriptionCodeSnip = ta_sheet.cell(row=i, column=7).value
             ArmDescriptionColumn = j
+        elif i == 6: # varname == "TAETORD":
+            TaetordCodeSnip = ta_sheet.cell(row=i, column=7).value
+            TaetordColumn = j
         elif i == 7: # varName == "ETCD":
             EtcdCodeSnip = ta_sheet.cell(row=i, column=7).value
             EtcdColumn = j
@@ -45,7 +48,8 @@ def Create_TA(wb, JsonInput):
     # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
     with open(JsonInput, 'r') as file:
         data=json.load (file)
-        studyId=definition.Parse_jsonata(codeSnip=StudyIdCodeSnip,data=data)         
+        studyId=definition.Parse_jsonata(codeSnip=StudyIdCodeSnip,data=data)
+        taetord=definition.Parse_jsonata(codeSnip=TaetordCodeSnip,data=data)        
         x=1
         resultArm=definition.Parse_jsonata(codeSnip=ArmDescriptionCodeSnip,data=data)
         resultArmName=definition.Parse_jsonata(codeSnip=ArmNameCodeSnip,data=data)
@@ -62,6 +66,9 @@ def Create_TA(wb, JsonInput):
         epoch2 = []
         epochArm = []
         resultElArm2 = []
+        taetord2 = []
+        taetordArm = []
+        definition.string_to_nested_list(taetord, taetordArm, taetord2)
         definition.string_to_nested_list(epoch, epochArm, epoch2)  # convert the string to a nested list
         definition.string_to_nested_list(resultEl, resultElArm1, resultEl2)  # convert the string    
         definition.string_to_nested_list(resultElName, resultElArm2, resultElName2)  # convert the string
@@ -70,6 +77,20 @@ def Create_TA(wb, JsonInput):
         Elid2 = {}
         ElNameId2 = {}
         epochId2 = {}
+        taetordOrderNext = {}
+        taetordOrderNow = {}
+        taetordArm3 = {}
+        taetordArm4 = []
+        taetordId2 = []
+        for i in range(len(taetord2)):
+            taetordEpoch, taetordNext = definition.get_ID(taetord2[i])  # extracting the ID from the string
+            taetordArm2, taetordId = definition.get_ID(taetordArm[i])  # extracting the ID from the string   
+            taetordOrderNext[taetordId] = taetordNext  # store the next order in a dictionary with the epoch as key
+            taetordOrderNow[taetordId] = taetordEpoch  # store the current order in a dictionary with the epoch as key
+            taetordArm3[taetordId] = taetordArm2  # store the arm code in a dictionary with the ID as key
+            taetordId2.append(taetordId)  # store the ID in a list
+            if taetordArm2 not in taetordArm4:  # check if the arm code is already in the list
+                taetordArm4.append(taetordArm2)
         for item in epoch2:
             epochId, epoch3 = definition.get_ID(item)  # extracting the ID from the string
             epochId2[epochId] = epoch3  # store the epoch code in a dictionary with the ID as key
@@ -85,16 +106,36 @@ def Create_TA(wb, JsonInput):
         for item in resultElName2:
             ElNameId, resultElName3 = definition.get_ID(item)
             ElNameId2[ElNameId] = resultElName3  # store the element name in a dictionary with the ID as key
-        for item in resultElArm1:
+        taetordId3 = []
+        for m in taetordArm4:
+            currentEpoch = None
+            for n in range(len(taetordArm3)):
+                for i in range(len(taetordArm3)):
+                    if currentEpoch is None:
+                        if taetordOrderNext[taetordId2[i]] == "None":
+                            if taetordArm3[taetordId2[i]] == m:
+                                taetordId3.insert(0,taetordId2[i])
+                                currentEpoch = taetordOrderNow[taetordId2[i]]
+                                break
+                    else:
+                        if taetordOrderNext[taetordId2[i]] == currentEpoch:
+                            if taetordArm3[taetordId2[i]] == m:
+                                taetordId3.insert(0,taetordId2[i])
+                                currentEpoch = taetordOrderNow[taetordId2[i]]
+                                break
+        print("taetordId3", taetordId3)
+        n = 0
+        for item in taetordId3:
             x += 1
-            ArmId9, ElId9 = definition.get_ID(item)
+            ta_sheet.cell(row=x, column=TaetordColumn).value = ""
             ta_sheet.cell(row=x, column=StudyIDColumn).value = studyId
             ta_sheet.cell(row=x, column=DomainColumn).value = DomainResult 
-            ta_sheet.cell(row=x, column=ArmNameColumn).value = ArmNameId2[ArmId9]
-            ta_sheet.cell(row=x, column=ArmDescriptionColumn).value = ArmId2[ArmId9]
-            ta_sheet.cell(row=x, column=EtcdColumn).value = ElNameId2[ElId9] 
-            ta_sheet.cell(row=x, column=ElementColumn).value = Elid2[ElId9]
-            ta_sheet.cell(row=x, column=EpochColumn).value = epochId2[ElId9]
+            ta_sheet.cell(row=x, column=ArmNameColumn).value = ArmNameId2[taetordArm3[item]]
+            ta_sheet.cell(row=x, column=ArmDescriptionColumn).value = ArmId2[taetordArm3[item]]
+            ta_sheet.cell(row=x, column=EtcdColumn).value = ElNameId2[item] 
+            ta_sheet.cell(row=x, column=ElementColumn).value = Elid2[item]
+            ta_sheet.cell(row=x, column=EpochColumn).value = epochId2[item]
+            n += 1
         for j in rem:
             for i in range(2, x + 1):
                 ta_sheet.cell(row=i, column=j).value = ""
