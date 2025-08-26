@@ -6,6 +6,7 @@ import definition
 
 def Create_TI(wb, JsonInput):
     ti_sheet = wb['TI']
+    overflowcolumn = ti_sheet.max_row-1
     for i in range(2, ti_sheet.max_row + 1):
         j=i-1
         #swap the rows and columns in the TI sheet
@@ -54,12 +55,40 @@ def Create_TI(wb, JsonInput):
                                     x += 1
                                     skip += 1
                             x += 1
-                            ti_sheet.cell(row=x, column=c).value = result4
+                            breakoff = 0
+                            while len(result4) > 200:
+                                for k in range(200, 0, -1):
+                                    if result4[k] == " ":
+                                        if breakoff == 0:
+                                            ti_sheet.cell(row=x, column=c).value = result4[0:k]
+                                        else:
+                                            ti_sheet.cell(row=x, column=overflowcolumn+breakoff).value = result4[0:k]
+                                        result4 = result4[k+1:len(result4)]
+                                        breakoff += 1
+                                        break
+                            if breakoff == 0:
+                                ti_sheet.cell(row=x, column=c).value = result4
+                            else:
+                                ti_sheet.cell(row=x, column=overflowcolumn+breakoff).value = result4
                     else:
                         # filling ts sheet if it is not a list
                         idcheck, result2 = definition.get_ID(result2)
                         x += 1
-                        ti_sheet.cell(row=x, column=c).value = result2
+                        breakoff = 0
+                        while len(result2) > 200:
+                            for k in range(200, 0, -1):
+                                if result2[k] == " ":
+                                    if breakoff == 0:
+                                        ti_sheet.cell(row=x, column=c).value = result2[0:k]
+                                    else:
+                                        ti_sheet.cell(row=x, column=overflowcolumn+breakoff).value = result2[0:k]
+                                    result2 = result2[k+1:len(result2)]
+                                    breakoff += 1
+                                    break
+                        if breakoff == 0:
+                            ti_sheet.cell(row=x, column=c).value = result2
+                        else:
+                            ti_sheet.cell(row=x, column=overflowcolumn+breakoff).value = result2
                 else:
                     if len(id)> 0:
                         for j in range(len(id)):
@@ -73,4 +102,7 @@ def Create_TI(wb, JsonInput):
                 ti_sheet.cell(row=x, column=StudyIDColumn).value = studyId
                 ti_sheet.cell(row=x, column=DomainColumn).value = DomainResult
                 ti_sheet.cell(row=x, column=VersionColumn).value = versionResult    
-      
+        if ti_sheet.max_column > 8:   
+            for i in range(9, ti_sheet.max_column):
+                newname = f"IETEST {i-7}"
+                ti_sheet.cell(row=1, column=i).value = newname
