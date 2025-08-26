@@ -107,6 +107,7 @@ def Create_TA(wb, JsonInput):
             ElNameId, resultElName3 = definition.get_ID(item)
             ElNameId2[ElNameId] = resultElName3  # store the element name in a dictionary with the ID as key
         taetordId3 = []
+        taetordId4 = {}
         for m in taetordArm4:
             currentEpoch = None
             for n in range(len(taetordArm3)):
@@ -116,18 +117,29 @@ def Create_TA(wb, JsonInput):
                             if taetordArm3[taetordId2[i]] == m:
                                 taetordId3.insert(0,taetordId2[i])
                                 currentEpoch = taetordOrderNow[taetordId2[i]]
+                                taetordId4[taetordId2[i]] = n + 1
                                 break
                     else:
                         if taetordOrderNext[taetordId2[i]] == currentEpoch:
                             if taetordArm3[taetordId2[i]] == m:
                                 taetordId3.insert(0,taetordId2[i])
                                 currentEpoch = taetordOrderNow[taetordId2[i]]
+                                taetordId4[taetordId2[i]] = n + 1
                                 break
-        print("taetordId3", taetordId3)
+
+        values = [v for v in taetordId4.values()]
+        val = max(values) + 1
+
+        # Flip the values
+        taetordId5 = {
+            k: (val - v)
+            for k, v in taetordId4.items()
+        }
+        
         n = 0
         for item in taetordId3:
             x += 1
-            ta_sheet.cell(row=x, column=TaetordColumn).value = ""
+            ta_sheet.cell(row=x, column=TaetordColumn).value = taetordId5[item]
             ta_sheet.cell(row=x, column=StudyIDColumn).value = studyId
             ta_sheet.cell(row=x, column=DomainColumn).value = DomainResult 
             ta_sheet.cell(row=x, column=ArmNameColumn).value = ArmNameId2[taetordArm3[item]]
