@@ -7,11 +7,9 @@ The tool is based on json, jsonata and opepyxl packages to enable the following 
 - Process the request results to create valid output including appropriate sequence numbering and grouping
 - Output the results to a result output Excel file
   
-The current version includes the creation of the TS and TI domain. 
-The corresponding code is available in TS.py and TI.py and is invoked by running Main.py. Main.py includes the references to the corresponding in- and output files.
-The other domains will follow.
+The current version includes the creation of all Trial design domains. Some additional functionality like HTML parsing and reference resolution will be added soon.
 
-We recorded a video which explains the tool in more detail. See [Youtube video](https://youtu.be/J_linpJjQiw)
+We presented this tool at the CDISC COSA webinar on 23 September 2025 which explains the tool in more detail. See [Youtube video](https://youtu.be/j0myfrOjCcs)
 
 ## Input
 The input for the tool is based on the [SDTM mappings available in the CDISC DDF Github](https://github.com/cdisc-org/DDF-RA/blob/main/Documents/Mappings/sdtm_mapping.xlsx)
