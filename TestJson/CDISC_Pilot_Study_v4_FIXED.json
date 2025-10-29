@@ -66,7 +66,7 @@
               "code": {
                 "id": "Code_88",
                 "extensionAttributes": [],
-                "code": "C99904x3",
+                "code": "C207605",
                 "codeSystem": "http://www.cdisc.org",
                 "codeSystemVersion": "2025-09-26",
                 "decode": "IRB/IEC Feedback",
@@ -129,7 +129,7 @@
                 "type": {
                   "id": "Code_93",
                   "extensionAttributes": [],
-                  "code": "C99912x1",
+                  "code": "C215665",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
                   "decode": "Study Subject Safety",
@@ -339,7 +339,7 @@
                 "extensionAttributes": [],
                 "code": "26929004",
                 "codeSystem": "SNOMED",
-                "codeSystemVersion": "'2025-02-01'",
+                "codeSystemVersion": "2025-02-01",
                 "decode": "Alzheimer's disease",
                 "instanceType": "Code"
               }
@@ -348,10 +348,10 @@
               {
                 "id": "Code_157",
                 "extensionAttributes": [],
-                "code": "C99907x1",
+                "code": "C207613",
                 "codeSystem": "http://www.cdisc.org",
                 "codeSystemVersion": "2025-09-26",
-                "decode": "EXTENSION",
+                "decode": "Extension",
                 "instanceType": "Code"
               },
               {
@@ -360,7 +360,7 @@
                 "code": "C98704",
                 "codeSystem": "http://www.cdisc.org",
                 "codeSystemVersion": "2025-09-26",
-                "decode": "ADAPTIVE",
+                "decode": "Adaptive",
                 "instanceType": "Code"
               }
             ],
@@ -387,7 +387,7 @@
                   {
                     "id": "Code_99",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -417,7 +417,7 @@
                 "transitionEndRule": {
                   "id": "TransitionRule_2",
                   "extensionAttributes": [],
-                  "name": "ENCOUNTER_START_RULE_1",
+                  "name": "ENCOUNTER_END_RULE_2",
                   "label": null,
                   "description": null,
                   "text": "completion of screening activities",
@@ -448,7 +448,7 @@
                   {
                     "id": "Code_102",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -501,7 +501,7 @@
                   {
                     "id": "Code_105",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -531,7 +531,7 @@
                 "transitionEndRule": {
                   "id": "TransitionRule_5",
                   "extensionAttributes": [],
-                  "name": "ENCOUNTER_START_RULE_3",
+                  "name": "ENCOUNTER_END_RULE_5",
                   "label": null,
                   "description": null,
                   "text": "Radomized",
@@ -562,7 +562,7 @@
                   {
                     "id": "Code_108",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -607,7 +607,7 @@
                   {
                     "id": "Code_111",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -652,7 +652,7 @@
                   {
                     "id": "Code_114",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -697,7 +697,7 @@
                   {
                     "id": "Code_117",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -751,7 +751,7 @@
                   {
                     "id": "Code_121",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -805,7 +805,7 @@
                   {
                     "id": "Code_125",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -859,7 +859,7 @@
                   {
                     "id": "Code_129",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -913,7 +913,7 @@
                   {
                     "id": "Code_133",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -958,7 +958,7 @@
                   {
                     "id": "Code_136",
                     "extensionAttributes": [],
-                    "code": "C51282",
+                    "code": "C211570",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "CLINIC",
@@ -1077,7 +1077,7 @@
                   {
                     "id": "Procedure_4",
                     "extensionAttributes": [],
-                    "name": "PR3",
+                    "name": "PR4",
                     "label": "Assign patient number",
                     "description": "",
                     "procedureType": "Administrative",
@@ -1320,7 +1320,7 @@
 					{
                     "id": "Procedure_7",
                     "extensionAttributes": [],
-                    "name": "PR6",
+                    "name": "PR7",
                     "label": "Randomisation",
                     "description": "",
                     "procedureType": "Administrative",
@@ -1675,7 +1675,7 @@
                     "description": "",
                     "procedureType": "Medication",
                     "code": {
-                      "id": "CodeX_15",
+                      "id": "CodeXY_15",
                       "extensionAttributes": [],
                       "code": "395170001",
                       "codeSystem": "SNOMED",
@@ -2599,7 +2599,7 @@
                   "code": "C85826",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
-                  "decode": "Primary Objective",
+                  "decode": "Study Primary Objective",
                   "instanceType": "Code"
                 },
                 "endpoints": [
@@ -2663,7 +2663,7 @@
                   "code": "C85826",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
-                  "decode": "Primary Objective",
+                  "decode": "Study Primary Objective",
                   "instanceType": "Code"
                 },
                 "endpoints": [
@@ -2748,7 +2748,7 @@
                   "code": "C85827",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
-                  "decode": "Secondary Objective",
+                  "decode": "Study Secondary Objective",
                   "instanceType": "Code"
                 },
                 "endpoints": [
@@ -2833,7 +2833,7 @@
                   "code": "C85827",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
-                  "decode": "Secondary Objective",
+                  "decode": "Study Secondary Objective",
                   "instanceType": "Code"
                 },
                 "endpoints": [
@@ -2876,7 +2876,7 @@
                   "code": "C85827",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
-                  "decode": "Secondary Objective",
+                  "decode": "Study Secondary Objective",
                   "instanceType": "Code"
                 },
                 "endpoints": [
@@ -2919,7 +2919,7 @@
                   "code": "C85827",
                   "codeSystem": "http://www.cdisc.org",
                   "codeSystemVersion": "2025-09-26",
-                  "decode": "Secondary Objective",
+                  "decode": "Study Secondary Objective",
                   "instanceType": "Code"
                 },
                 "endpoints": [
@@ -3584,7 +3584,7 @@
                     "label": "Week 16 Home decision",
                     "description": "Decide if Week 16 at home timing",
                     "type": {
-                      "id": "Code_56",
+                      "id": "CodeX_56",
                       "extensionAttributes": [],
                       "code": "C201356",
                       "codeSystem": "http://www.cdisc.org",
@@ -3595,7 +3595,7 @@
                     "value": "P0D",
                     "valueLabel": "0 Days",
                     "relativeToFrom": {
-                      "id": "Code_57",
+                      "id": "CodeX_57",
                       "extensionAttributes": [],
                       "code": "C201355",
                       "codeSystem": "http://www.cdisc.org",
@@ -5262,6 +5262,15 @@
                 "codeSystemVersion": "2025-09-26",
                 "decode": "Treatment Study",
                 "instanceType": "Code"
+              },
+              {
+                "id": "Code_152_a",
+                "extensionAttributes": [],
+                "code": "C49654",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Cure Study",
+                "instanceType": "Code"
               }
             ],
             "blindingSchema": {
@@ -5304,7 +5313,7 @@
             "type": {
               "id": "Code_9",
               "extensionAttributes": [],
-              "code": "C99905x1",
+              "code": "C207615",
               "codeSystem": "http://www.cdisc.org",
               "codeSystemVersion": "2025-09-26",
               "decode": "Brief Study Title",
@@ -5319,7 +5328,7 @@
             "type": {
               "id": "Code_10",
               "extensionAttributes": [],
-              "code": "C99905x2",
+              "code": "C207616",
               "codeSystem": "http://www.cdisc.org",
               "codeSystemVersion": "2025-09-26",
               "decode": "Official Study Title",
@@ -5334,7 +5343,7 @@
             "type": {
               "id": "Code_11",
               "extensionAttributes": [],
-              "code": "C99905x3",
+              "code": "C207617",
               "codeSystem": "http://www.cdisc.org",
               "codeSystemVersion": "2025-09-26",
               "decode": "Public Study Title",
@@ -6385,7 +6394,7 @@
               "code": "C70793",
               "codeSystem": "http://www.cdisc.org",
               "codeSystemVersion": "2025-09-26",
-              "decode": "SPONSOR",
+              "decode": "Sponsor",
               "instanceType": "Code"
             },
             "appliesToIds": [],
@@ -6551,7 +6560,7 @@
           {
             "id": "StudyIntervention_1",
             "extensionAttributes": [],
-            "name": "XINONILINE",
+            "name": "XINONILINE50",
             "label": "Xinomiline",
             "description": "Xinomiline",
             "role": {
@@ -6790,6 +6799,291 @@
             ],
             "notes": [],
             "instanceType": "StudyIntervention"
+          },
+		  
+          {
+            "id": "StudyIntervention_2",
+            "extensionAttributes": [],
+            "name": "XINONILINE25",
+            "label": "Xinomiline",
+            "description": "Xinomiline",
+            "role": {
+              "id": "Code_611_a",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Experimental Intervention",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_612_a",
+              "extensionAttributes": [],
+              "code": "C1909",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "DRUG",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": {
+              "id": "Quantity_4_a",
+              "extensionAttributes": [],
+              "value": 1.0,
+              "unit": {
+                "id": "AliasCode_246",
+                "extensionAttributes": [],
+                "standardCode": {
+                  "id": "Code_613_a",
+                  "extensionAttributes": [],
+                  "code": "C25301",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Day",
+                  "instanceType": "Code"
+                },
+                "standardCodeAliases": [],
+                "instanceType": "AliasCode"
+              },
+              "instanceType": "Quantity"
+            },
+            "codes": [
+              {
+                "id": "Code_610_a",
+                "extensionAttributes": [],
+                "code": "XIN",
+                "codeSystem": "SPONSOR",
+                "codeSystemVersion": "12",
+                "decode": "XIN",
+                "instanceType": "Code"
+              }
+            ],
+            "administrations": [
+              {
+                "id": "Administration_3",
+                "extensionAttributes": [],
+                "name": "PATCH_25",
+                "label": "",
+                "description": "25 cm2 Patch",
+                "duration": {
+                  "id": "Duration_3",
+                  "extensionAttributes": [],
+                  "text": "",
+                  "quantity": {
+                    "id": "Quantity_2_b",
+                    "extensionAttributes": [],
+                    "value": 24.0,
+                    "unit": {
+                      "id": "AliasCode_242_b",
+                      "extensionAttributes": [],
+                      "standardCode": {
+                        "id": "Code_606_b",
+                        "extensionAttributes": [],
+                        "code": "C29844",
+                        "codeSystem": "http://www.cdisc.org",
+                        "codeSystemVersion": "2025-09-26",
+                        "decode": "Week",
+                        "instanceType": "Code"
+                      },
+                      "standardCodeAliases": [],
+                      "instanceType": "AliasCode"
+                    },
+                    "instanceType": "Quantity"
+                  },
+                  "durationWillVary": false,
+                  "reasonDurationWillVary": "",
+                  "instanceType": "Duration"
+                },
+                "dose": {
+                  "id": "Quantity_3_b",
+                  "extensionAttributes": [],
+                  "value": 54.0,
+                  "unit": {
+                    "id": "AliasCode_243_b",
+                    "extensionAttributes": [],
+                    "standardCode": {
+                      "id": "Code_607_b",
+                      "extensionAttributes": [],
+                      "code": "C28253",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Milligram",
+                      "instanceType": "Code"
+                    },
+                    "standardCodeAliases": [],
+                    "instanceType": "AliasCode"
+                  },
+                  "instanceType": "Quantity"
+                },
+                "route": {
+                  "id": "AliasCode_244_b",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_608_b",
+                    "extensionAttributes": [],
+                    "code": "C38288",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "ORAL",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "frequency": {
+                  "id": "AliasCode_245_b",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_609_b",
+                    "extensionAttributes": [],
+                    "code": "C25473",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "QD",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "administrableProductId": "AdmProd_1",
+                "medicalDeviceId": null,
+                "notes": [],
+                "instanceType": "Administration"
+              }
+            ],
+            "notes": [],
+            "instanceType": "StudyIntervention"
+          },
+          {
+            "id": "StudyIntervention_3",
+            "extensionAttributes": [],
+            "name": "PLACEBO",
+            "label": "placebo",
+            "description": null,
+            "role": {
+              "id": "Code_611_c",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Experimental Intervention",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_612_c",
+              "extensionAttributes": [],
+              "code": "C1909",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "DRUG",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": {
+              "id": "Quantity_4_c",
+              "extensionAttributes": [],
+              "value": 1.0,
+              "unit": {
+                "id": "AliasCode_246_c",
+                "extensionAttributes": [],
+                "standardCode": {
+                  "id": "Code_613",
+                  "extensionAttributes": [],
+                  "code": "C25301",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Day",
+                  "instanceType": "Code"
+                },
+                "standardCodeAliases": [],
+                "instanceType": "AliasCode"
+              },
+              "instanceType": "Quantity"
+            },
+            "codes": [
+              {
+                "id": "Code_610_C",
+                "extensionAttributes": [],
+                "code": "PLAC",
+                "codeSystem": "SPONSOR",
+                "codeSystemVersion": "12",
+                "decode": "Placebo",
+                "instanceType": "Code"
+              }
+            ],
+            "administrations": [
+              {
+                "id": "Administration_6",
+                "extensionAttributes": [],
+                "name": "PATCH_PLAC",
+                "label": "",
+                "description": "Placebo Patch",
+                "duration": {
+                  "id": "Duration_1_c",
+                  "extensionAttributes": [],
+                  "text": "",
+                  "quantity": {
+                    "id": "Quantity_2_c",
+                    "extensionAttributes": [],
+                    "value": 24.0,
+                    "unit": {
+                      "id": "AliasCode_242_c",
+                      "extensionAttributes": [],
+                      "standardCode": {
+                        "id": "Code_606_c",
+                        "extensionAttributes": [],
+                        "code": "C29844",
+                        "codeSystem": "http://www.cdisc.org",
+                        "codeSystemVersion": "2025-09-26",
+                        "decode": "Week",
+                        "instanceType": "Code"
+                      },
+                      "standardCodeAliases": [],
+                      "instanceType": "AliasCode"
+                    },
+                    "instanceType": "Quantity"
+                  },
+                  "durationWillVary": false,
+                  "reasonDurationWillVary": "",
+                  "instanceType": "Duration"
+                },
+                "dose": null,
+                "route": {
+                  "id": "AliasCode_244_c",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_608_c",
+                    "extensionAttributes": [],
+                    "code": "C38288",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "ORAL",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "frequency": {
+                  "id": "AliasCode_245_c",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_609_c",
+                    "extensionAttributes": [],
+                    "code": "C25473",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "QD",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "administrableProductId": "AdmProd_1",
+                "medicalDeviceId": null,
+                "notes": [],
+                "instanceType": "Administration"
+              }
+            ],
+            "notes": [],
+            "instanceType": "StudyIntervention"
           }
         ],
         "administrableProducts": [
@@ -6805,7 +7099,7 @@
                   "standardCode": {
                     "id": "Code_p01",
                     "extensionAttributes": [],
-                    "code": "C66726",
+                    "code": "C42968",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "PATCH",
@@ -6840,7 +7134,7 @@
                 "type": {
                     "id": "Code_p04",
                     "extensionAttributes": [],
-                    "code": "C215479",
+                    "code": "C45997",
                     "codeSystem": "http://www.cdisc.org",
                     "codeSystemVersion": "2025-09-26",
                     "decode": "pH",
@@ -6929,7 +7223,7 @@
               {
                 "id": "BiomedicalConceptProperty_131",
                 "extensionAttributes": [],
-                "name": "Collection Date Time",
+                "name": "ColDT1",
                 "label": "Collection Date Time",
                 "isRequired": true,
                 "isEnabled": true,
@@ -7012,7 +7306,7 @@
               {
                 "id": "BiomedicalConceptProperty_133",
                 "extensionAttributes": [],
-                "name": "Collection Date Time",
+                "name": "ColDT2",
                 "label": "Collection Date Time",
                 "isRequired": true,
                 "isEnabled": true,
@@ -7058,7 +7352,7 @@
           {
             "id": "BiomedicalConcept_22",
             "extensionAttributes": [],
-            "name": "Temperature",
+            "name": "TEMP2",
             "label": "Temperature",
             "synonyms": [
               "Temperature",
@@ -7069,7 +7363,7 @@
               {
                 "id": "BiomedicalConceptProperty_134",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD1",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -7361,7 +7655,7 @@
           {
             "id": "BiomedicalConcept_23",
             "extensionAttributes": [],
-            "name": "Weight",
+            "name": "WGT2",
             "label": "Weight",
             "synonyms": [
               "WEIGHT",
@@ -7372,7 +7666,7 @@
               {
                 "id": "BiomedicalConceptProperty_139",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD2",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -7551,7 +7845,7 @@
           {
             "id": "BiomedicalConcept_24",
             "extensionAttributes": [],
-            "name": "Height",
+            "name": "HGT2",
             "label": "Height",
             "synonyms": [
               "HEIGHT",
@@ -7562,7 +7856,7 @@
               {
                 "id": "BiomedicalConceptProperty_143",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD3",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -7741,7 +8035,7 @@
           {
             "id": "BiomedicalConcept_25",
             "extensionAttributes": [],
-            "name": "Alanine Aminotransferase Concentration in Serum/Plasma",
+            "name": "ALT2",
             "label": "Alanine Aminotransferase Concentration in Serum/Plasma",
             "synonyms": [
               "ALT",
@@ -8011,7 +8305,7 @@
           {
             "id": "BiomedicalConcept_26",
             "extensionAttributes": [],
-            "name": "Albumin Presence in Urine",
+            "name": "ALBU2",
             "label": "Albumin Presence in Urine",
             "synonyms": [
               "Albumin",
@@ -8184,7 +8478,7 @@
           {
             "id": "BiomedicalConcept_27",
             "extensionAttributes": [],
-            "name": "Alkaline Phosphatase Concentration in Serum/Plasma",
+            "name": "ALKPHOS2",
             "label": "Alkaline Phosphatase Concentration in Serum/Plasma",
             "synonyms": [
               "Alkaline Phosphatase",
@@ -8436,7 +8730,7 @@
           {
             "id": "BiomedicalConcept_28",
             "extensionAttributes": [],
-            "name": "Aspartate Aminotransferase in Serum/Plasma",
+            "name": "AST2",
             "label": "Aspartate Aminotransferase in Serum/Plasma",
             "synonyms": [
               "AST",
@@ -8689,7 +8983,7 @@
           {
             "id": "BiomedicalConcept_29",
             "extensionAttributes": [],
-            "name": "Creatinine Concentration in Urine",
+            "name": "CREAU2",
             "label": "Creatinine Concentration in Urine",
             "synonyms": [
               "Creatinine",
@@ -8958,7 +9252,7 @@
           {
             "id": "BiomedicalConcept_30",
             "extensionAttributes": [],
-            "name": "Potassium Concentration in Urine",
+            "name": "POTU2",
             "label": "Potassium Concentration in Urine",
             "synonyms": [
               "Potassium",
@@ -9211,7 +9505,7 @@
           {
             "id": "BiomedicalConcept_31",
             "extensionAttributes": [],
-            "name": "Sodium Concentration in Urine",
+            "name": "SODU2",
             "label": "Sodium Concentration in Urine",
             "synonyms": [
               "Sodium",
@@ -10784,7 +11078,7 @@
           {
             "id": "BiomedicalConcept_2",
             "extensionAttributes": [],
-            "name": "Systolic Blood Pressure",
+            "name": "SBP1",
             "label": "Systolic Blood Pressure",
             "synonyms": [
               "SYSBP",
@@ -10795,7 +11089,7 @@
               {
                 "id": "BiomedicalConceptProperty_27",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD4",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -11227,7 +11521,7 @@
           {
             "id": "BiomedicalConcept_3",
             "extensionAttributes": [],
-            "name": "Diastolic Blood Pressure",
+            "name": "DBP1",
             "label": "Diastolic Blood Pressure",
             "synonyms": [
               "DIABP",
@@ -11238,7 +11532,7 @@
               {
                 "id": "BiomedicalConceptProperty_34",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD5",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -11670,7 +11964,7 @@
           {
             "id": "BiomedicalConcept_4",
             "extensionAttributes": [],
-            "name": "Temperature",
+            "name": "TEMP1",
             "label": "Temperature",
             "synonyms": [
               "Temperature",
@@ -11681,7 +11975,7 @@
               {
                 "id": "BiomedicalConceptProperty_41",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD6",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -11973,7 +12267,7 @@
           {
             "id": "BiomedicalConcept_5",
             "extensionAttributes": [],
-            "name": "Weight",
+            "name": "WGT1",
             "label": "Weight",
             "synonyms": [
               "WEIGHT",
@@ -11984,7 +12278,7 @@
               {
                 "id": "BiomedicalConceptProperty_46",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD7",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -12163,7 +12457,7 @@
           {
             "id": "BiomedicalConcept_6",
             "extensionAttributes": [],
-            "name": "Height",
+            "name": "HGT1",
             "label": "Height",
             "synonyms": [
               "HEIGHT",
@@ -12174,7 +12468,7 @@
               {
                 "id": "BiomedicalConceptProperty_50",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD8",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -12353,7 +12647,7 @@
           {
             "id": "BiomedicalConcept_7",
             "extensionAttributes": [],
-            "name": "Alanine Aminotransferase Concentration in Serum/Plasma",
+            "name": "ALT1",
             "label": "Alanine Aminotransferase Concentration in Serum/Plasma",
             "synonyms": [
               "ALT",
@@ -12623,7 +12917,7 @@
           {
             "id": "BiomedicalConcept_8",
             "extensionAttributes": [],
-            "name": "Albumin Presence in Urine",
+            "name": "ALBU1",
             "label": "Albumin Presence in Urine",
             "synonyms": [
               "Albumin",
@@ -12796,7 +13090,7 @@
           {
             "id": "BiomedicalConcept_9",
             "extensionAttributes": [],
-            "name": "Alkaline Phosphatase Concentration in Serum/Plasma",
+            "name": "ALKPHOS1",
             "label": "Alkaline Phosphatase Concentration in Serum/Plasma",
             "synonyms": [
               "Alkaline Phosphatase",
@@ -13048,7 +13342,7 @@
           {
             "id": "BiomedicalConcept_10",
             "extensionAttributes": [],
-            "name": "Aspartate Aminotransferase in Serum/Plasma",
+            "name": "AST1",
             "label": "Aspartate Aminotransferase in Serum/Plasma",
             "synonyms": [
               "AST",
@@ -13301,7 +13595,7 @@
           {
             "id": "BiomedicalConcept_11",
             "extensionAttributes": [],
-            "name": "Creatinine Concentration in Urine",
+            "name": "CREAU1",
             "label": "Creatinine Concentration in Urine",
             "synonyms": [
               "Creatinine",
@@ -13570,7 +13864,7 @@
           {
             "id": "BiomedicalConcept_12",
             "extensionAttributes": [],
-            "name": "Potassium Concentration in Urine",
+            "name": "POTU1",
             "label": "Potassium Concentration in Urine",
             "synonyms": [
               "Potassium",
@@ -13823,7 +14117,7 @@
           {
             "id": "BiomedicalConcept_13",
             "extensionAttributes": [],
-            "name": "Sodium Concentration in Urine",
+            "name": "SODU1",
             "label": "Sodium Concentration in Urine",
             "synonyms": [
               "Sodium",
@@ -14076,7 +14370,7 @@
           {
             "id": "BiomedicalConcept_14",
             "extensionAttributes": [],
-            "name": "Systolic Blood Pressure",
+            "name": "SBP2",
             "label": "Systolic Blood Pressure",
             "synonyms": [
               "SYSBP",
@@ -14087,7 +14381,7 @@
               {
                 "id": "BiomedicalConceptProperty_88",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD9",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -14519,7 +14813,7 @@
           {
             "id": "BiomedicalConcept_15",
             "extensionAttributes": [],
-            "name": "Diastolic Blood Pressure",
+            "name": "DBP2",
             "label": "Diastolic Blood Pressure",
             "synonyms": [
               "DIABP",
@@ -14530,7 +14824,7 @@
               {
                 "id": "BiomedicalConceptProperty_95",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD10",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -14962,7 +15256,7 @@
           {
             "id": "BiomedicalConcept_16",
             "extensionAttributes": [],
-            "name": "Heart Rate",
+            "name": "HR1",
             "label": "Heart Rate",
             "synonyms": [
               "HR",
@@ -14973,7 +15267,7 @@
               {
                 "id": "BiomedicalConceptProperty_102",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD11",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -15405,7 +15699,7 @@
           {
             "id": "BiomedicalConcept_17",
             "extensionAttributes": [],
-            "name": "Systolic Blood Pressure",
+            "name": "SBP3",
             "label": "Systolic Blood Pressure",
             "synonyms": [
               "SYSBP",
@@ -15416,7 +15710,7 @@
               {
                 "id": "BiomedicalConceptProperty_109",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD12",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -15848,7 +16142,7 @@
           {
             "id": "BiomedicalConcept_18",
             "extensionAttributes": [],
-            "name": "Diastolic Blood Pressure",
+            "name": "DBP3",
             "label": "Diastolic Blood Pressure",
             "synonyms": [
               "DIABP",
@@ -15859,7 +16153,7 @@
               {
                 "id": "BiomedicalConceptProperty_116",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD13",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -16532,7 +16826,7 @@
           {
             "id": "BiomedicalConcept_19",
             "extensionAttributes": [],
-            "name": "Heart Rate",
+            "name": "HR2",
             "label": "Heart Rate",
             "synonyms": [
               "HR",
@@ -16543,7 +16837,7 @@
               {
                 "id": "BiomedicalConceptProperty_123",
                 "extensionAttributes": [],
-                "name": "VSTESTCD",
+                "name": "VSTESTCD14",
                 "label": "VSTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
@@ -17146,7 +17440,7 @@
               "ScheduledActivityInstance_9"
             ],
             "appliesToIds": [
-              "Activity_24xxx"
+              "Activity_24"
             ]
           },
           {
@@ -17160,7 +17454,7 @@
             "notes": [],
             "instanceType": "Condition",
             "contextIds": [
-              "ScheduledActivityInstance_9xxx"
+              "ScheduledActivityInstance_9"
             ],
             "appliesToIds": [
               "Activity_27",
@@ -17178,7 +17472,7 @@
       {
         "id": "StudyDefinitionDocument_1",
         "extensionAttributes": [],
-        "name": "Protocol_Document_CDISC PILOT - LZZT",
+        "name": "SPONSOR_DOC",
         "label": null,
         "description": null,
         "language": {
@@ -17218,7 +17512,7 @@
               {
                 "id": "GovernanceDate_2",
                 "extensionAttributes": [],
-                "name": "P_APPROVE",
+                "name": "P_APPROVE1",
                 "label": "Protocol Approval",
                 "description": "Protocol document approval date",
                 "type": {
@@ -17270,8 +17564,8 @@
                 "id": "NarrativeContent_1",
                 "extensionAttributes": [],
                 "name": "NC_1",
-                "sectionNumber": "0",
-                "sectionTitle": "Title Page",
+                "sectionNumber": null,
+                "sectionTitle": null,
                 "displaySectionNumber": false,
                 "displaySectionTitle": false,
                 "childIds": [],
@@ -18418,7 +18712,7 @@
       {
         "id": "StudyDefinitionDocument_2",
         "extensionAttributes": [],
-        "name": "Protocol_Document_CDISC PILOT - LZZT",
+        "name": "M11_DOC",
         "label": null,
         "description": null,
         "language": {
@@ -18458,7 +18752,7 @@
               {
                 "id": "GovernanceDate_4",
                 "extensionAttributes": [],
-                "name": "P_APPROVE",
+                "name": "P_APPROVE2",
                 "label": "Protocol Approval",
                 "description": "Protocol document approval date",
                 "type": {
@@ -18551,20 +18845,6 @@
                   "NarrativeContent_81"
                 ],
                 "previousId": "NarrativeContent_78",
-                "nextId": "NarrativeContent_80",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_80",
-                "extensionAttributes": [],
-                "name": "NC_103",
-                "sectionNumber": "1.1.1",
-                "sectionTitle": "Primary and Secondary Objectives and Estimands",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_79",
                 "nextId": "NarrativeContent_81",
                 "contentItemId": null,
                 "instanceType": "NarrativeContent"
@@ -18607,2247 +18887,8 @@
                 "displaySectionTitle": true,
                 "childIds": [],
                 "previousId": "NarrativeContent_82",
-                "nextId": "NarrativeContent_84",
-                "contentItemId": "NarrativeContentItem_80",
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_84",
-                "extensionAttributes": [],
-                "name": "NC_107",
-                "sectionNumber": "2",
-                "sectionTitle": "INTRODUCTION",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_85",
-                  "NarrativeContent_86"
-                ],
-                "previousId": "NarrativeContent_83",
-                "nextId": "NarrativeContent_85",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_85",
-                "extensionAttributes": [],
-                "name": "NC_108",
-                "sectionNumber": "2.1",
-                "sectionTitle": "Purpose of Trial",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_84",
-                "nextId": "NarrativeContent_86",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_86",
-                "extensionAttributes": [],
-                "name": "NC_109",
-                "sectionNumber": "2.2",
-                "sectionTitle": "Summary of Benefits and Risks",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_87",
-                  "NarrativeContent_88",
-                  "NarrativeContent_89"
-                ],
-                "previousId": "NarrativeContent_85",
-                "nextId": "NarrativeContent_87",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_87",
-                "extensionAttributes": [],
-                "name": "NC_110",
-                "sectionNumber": "2.2.1",
-                "sectionTitle": "Benefit Summary",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_86",
-                "nextId": "NarrativeContent_88",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_88",
-                "extensionAttributes": [],
-                "name": "NC_111",
-                "sectionNumber": "2.2.2",
-                "sectionTitle": "Risk Summary and Mitigation Strategy",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_87",
-                "nextId": "NarrativeContent_89",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_89",
-                "extensionAttributes": [],
-                "name": "NC_112",
-                "sectionNumber": "2.2.3",
-                "sectionTitle": "Overall Benefit:Risk Conclusion",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_88",
-                "nextId": "NarrativeContent_90",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_90",
-                "extensionAttributes": [],
-                "name": "NC_113",
-                "sectionNumber": "3",
-                "sectionTitle": "TRIAL OBJECTIVES AND ESTIMANDS",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_91",
-                  "NarrativeContent_93",
-                  "NarrativeContent_94"
-                ],
-                "previousId": "NarrativeContent_89",
-                "nextId": "NarrativeContent_91",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_91",
-                "extensionAttributes": [],
-                "name": "NC_114",
-                "sectionNumber": "3.1",
-                "sectionTitle": "Primary Objective(s) and Associated Estimand(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_92"
-                ],
-                "previousId": "NarrativeContent_90",
-                "nextId": "NarrativeContent_92",
-                "contentItemId": "NarrativeContentItem_81",
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_92",
-                "extensionAttributes": [],
-                "name": "NC_115",
-                "sectionNumber": "3.1.1",
-                "sectionTitle": "{Primary Estimand}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_91",
-                "nextId": "NarrativeContent_93",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_93",
-                "extensionAttributes": [],
-                "name": "NC_116",
-                "sectionNumber": "3.2",
-                "sectionTitle": "Secondary Objective(s) and Associated Estimand(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_92",
-                "nextId": "NarrativeContent_94",
-                "contentItemId": "NarrativeContentItem_82",
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_94",
-                "extensionAttributes": [],
-                "name": "NC_117",
-                "sectionNumber": "3.3",
-                "sectionTitle": "Exploratory Objective(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_93",
-                "nextId": "NarrativeContent_95",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_95",
-                "extensionAttributes": [],
-                "name": "NC_118",
-                "sectionNumber": "4",
-                "sectionTitle": "TRIAL DESIGN",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_96",
-                  "NarrativeContent_98",
-                  "NarrativeContent_106",
-                  "NarrativeContent_107",
-                  "NarrativeContent_108"
-                ],
-                "previousId": "NarrativeContent_94",
-                "nextId": "NarrativeContent_96",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_96",
-                "extensionAttributes": [],
-                "name": "NC_119",
-                "sectionNumber": "4.1",
-                "sectionTitle": "Description of Trial Design",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_97"
-                ],
-                "previousId": "NarrativeContent_95",
-                "nextId": "NarrativeContent_97",
-                "contentItemId": "NarrativeContentItem_83",
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_97",
-                "extensionAttributes": [],
-                "name": "NC_120",
-                "sectionNumber": "4.1.1",
-                "sectionTitle": "Stakeholder Input into Design",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_96",
-                "nextId": "NarrativeContent_98",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_98",
-                "extensionAttributes": [],
-                "name": "NC_121",
-                "sectionNumber": "4.2",
-                "sectionTitle": "Rationale for Trial Design",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_99",
-                  "NarrativeContent_100",
-                  "NarrativeContent_101",
-                  "NarrativeContent_102",
-                  "NarrativeContent_103",
-                  "NarrativeContent_104",
-                  "NarrativeContent_105"
-                ],
-                "previousId": "NarrativeContent_97",
-                "nextId": "NarrativeContent_99",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_99",
-                "extensionAttributes": [],
-                "name": "NC_122",
-                "sectionNumber": "4.2.1",
-                "sectionTitle": "Rationale for Intervention Model",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_98",
-                "nextId": "NarrativeContent_100",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_100",
-                "extensionAttributes": [],
-                "name": "NC_123",
-                "sectionNumber": "4.2.2",
-                "sectionTitle": "Rationale for Duration",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_99",
-                "nextId": "NarrativeContent_101",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_101",
-                "extensionAttributes": [],
-                "name": "NC_124",
-                "sectionNumber": "4.2.3",
-                "sectionTitle": "Rationale for Estimands",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_100",
-                "nextId": "NarrativeContent_102",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_102",
-                "extensionAttributes": [],
-                "name": "NC_125",
-                "sectionNumber": "4.2.4",
-                "sectionTitle": "Rationale for Interim Analysis",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_101",
-                "nextId": "NarrativeContent_103",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_103",
-                "extensionAttributes": [],
-                "name": "NC_126",
-                "sectionNumber": "4.2.5",
-                "sectionTitle": "Rationale for Control Type",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_102",
-                "nextId": "NarrativeContent_104",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_104",
-                "extensionAttributes": [],
-                "name": "NC_127",
-                "sectionNumber": "4.2.6",
-                "sectionTitle": "Rationale for Adaptive or Novel Trial Design",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_103",
-                "nextId": "NarrativeContent_105",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_105",
-                "extensionAttributes": [],
-                "name": "NC_128",
-                "sectionNumber": "4.2.7",
-                "sectionTitle": "Rationale for Other Trial Design Aspects",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_104",
-                "nextId": "NarrativeContent_106",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_106",
-                "extensionAttributes": [],
-                "name": "NC_129",
-                "sectionNumber": "4.3",
-                "sectionTitle": "Trial Stopping Rules",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_105",
-                "nextId": "NarrativeContent_107",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_107",
-                "extensionAttributes": [],
-                "name": "NC_130",
-                "sectionNumber": "4.4",
-                "sectionTitle": "Start of Trial and End of Trial",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_106",
-                "nextId": "NarrativeContent_108",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_108",
-                "extensionAttributes": [],
-                "name": "NC_131",
-                "sectionNumber": "4.5",
-                "sectionTitle": "Access to Trial Intervention After End of Trial",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_107",
-                "nextId": "NarrativeContent_109",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_109",
-                "extensionAttributes": [],
-                "name": "NC_132",
-                "sectionNumber": "5",
-                "sectionTitle": "TRIAL POPULATION",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_110",
-                  "NarrativeContent_111",
-                  "NarrativeContent_112",
-                  "NarrativeContent_113",
-                  "NarrativeContent_116",
-                  "NarrativeContent_121"
-                ],
-                "previousId": "NarrativeContent_108",
-                "nextId": "NarrativeContent_110",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_110",
-                "extensionAttributes": [],
-                "name": "NC_133",
-                "sectionNumber": "5.1",
-                "sectionTitle": "Description of Trial Population and Rationale",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_109",
-                "nextId": "NarrativeContent_111",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_111",
-                "extensionAttributes": [],
-                "name": "NC_134",
-                "sectionNumber": "5.2",
-                "sectionTitle": "Inclusion Criteria",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_110",
-                "nextId": "NarrativeContent_112",
-                "contentItemId": "NarrativeContentItem_84",
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_112",
-                "extensionAttributes": [],
-                "name": "NC_135",
-                "sectionNumber": "5.3",
-                "sectionTitle": "Exclusion Criteria",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_111",
-                "nextId": "NarrativeContent_113",
-                "contentItemId": "NarrativeContentItem_85",
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_113",
-                "extensionAttributes": [],
-                "name": "NC_136",
-                "sectionNumber": "5.4",
-                "sectionTitle": "Contraception",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_114",
-                  "NarrativeContent_115"
-                ],
-                "previousId": "NarrativeContent_112",
-                "nextId": "NarrativeContent_114",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_114",
-                "extensionAttributes": [],
-                "name": "NC_137",
-                "sectionNumber": "5.4.1",
-                "sectionTitle": "Definitions Related to Childbearing Potential",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_113",
-                "nextId": "NarrativeContent_115",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_115",
-                "extensionAttributes": [],
-                "name": "NC_138",
-                "sectionNumber": "5.4.2",
-                "sectionTitle": "Contraception Requirements",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_114",
-                "nextId": "NarrativeContent_116",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_116",
-                "extensionAttributes": [],
-                "name": "NC_139",
-                "sectionNumber": "5.5",
-                "sectionTitle": "Lifestyle Restrictions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_117",
-                  "NarrativeContent_118",
-                  "NarrativeContent_119",
-                  "NarrativeContent_120"
-                ],
-                "previousId": "NarrativeContent_115",
-                "nextId": "NarrativeContent_117",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_117",
-                "extensionAttributes": [],
-                "name": "NC_140",
-                "sectionNumber": "5.5.1",
-                "sectionTitle": "Meals and Dietary Restrictions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_116",
-                "nextId": "NarrativeContent_118",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_118",
-                "extensionAttributes": [],
-                "name": "NC_141",
-                "sectionNumber": "5.5.2",
-                "sectionTitle": "Caffeine, Alcohol, Tobacco,and Other Restrictions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_117",
-                "nextId": "NarrativeContent_119",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_119",
-                "extensionAttributes": [],
-                "name": "NC_142",
-                "sectionNumber": "5.5.3",
-                "sectionTitle": "Physical Activity Restrictions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_118",
-                "nextId": "NarrativeContent_120",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_120",
-                "extensionAttributes": [],
-                "name": "NC_143",
-                "sectionNumber": "5.5.4",
-                "sectionTitle": "Other Activity Restrictions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_119",
-                "nextId": "NarrativeContent_121",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_121",
-                "extensionAttributes": [],
-                "name": "NC_144",
-                "sectionNumber": "5.6",
-                "sectionTitle": "Screen Failure and Rescreening",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_120",
-                "nextId": "NarrativeContent_122",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_122",
-                "extensionAttributes": [],
-                "name": "NC_145",
-                "sectionNumber": "6",
-                "sectionTitle": "TRIAL INTERVENTION AND CONCOMITANT THERAPY",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_123",
-                  "NarrativeContent_124",
-                  "NarrativeContent_125",
-                  "NarrativeContent_126",
-                  "NarrativeContent_127",
-                  "NarrativeContent_128",
-                  "NarrativeContent_129",
-                  "NarrativeContent_133",
-                  "NarrativeContent_138",
-                  "NarrativeContent_139",
-                  "NarrativeContent_143"
-                ],
-                "previousId": "NarrativeContent_121",
-                "nextId": "NarrativeContent_123",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_123",
-                "extensionAttributes": [],
-                "name": "NC_146",
-                "sectionNumber": "6.1",
-                "sectionTitle": "Overview of Trial Interventions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_122",
-                "nextId": "NarrativeContent_124",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_124",
-                "extensionAttributes": [],
-                "name": "NC_147",
-                "sectionNumber": "6.2",
-                "sectionTitle": "Description of Investigational Trial Intervention",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_123",
-                "nextId": "NarrativeContent_125",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_125",
-                "extensionAttributes": [],
-                "name": "NC_148",
-                "sectionNumber": "6.3",
-                "sectionTitle": "Rationale for Investigational Trial Intervention Dose and Regimen",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_124",
-                "nextId": "NarrativeContent_126",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_126",
-                "extensionAttributes": [],
-                "name": "NC_149",
-                "sectionNumber": "6.4",
-                "sectionTitle": "Investigational Trial Intervention Administration",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_125",
-                "nextId": "NarrativeContent_127",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_127",
-                "extensionAttributes": [],
-                "name": "NC_150",
-                "sectionNumber": "6.5",
-                "sectionTitle": "Investigational Trial Intervention Dose Modification",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_126",
-                "nextId": "NarrativeContent_128",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_128",
-                "extensionAttributes": [],
-                "name": "NC_151",
-                "sectionNumber": "6.6",
-                "sectionTitle": "Management of Investigational Trial Intervention Overdose",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_127",
-                "nextId": "NarrativeContent_129",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_129",
-                "extensionAttributes": [],
-                "name": "NC_152",
-                "sectionNumber": "6.7",
-                "sectionTitle": "Preparation,Storage,Handling and Accountability of Investigational Trial Intervention(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_130",
-                  "NarrativeContent_131",
-                  "NarrativeContent_132"
-                ],
-                "previousId": "NarrativeContent_128",
-                "nextId": "NarrativeContent_130",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_130",
-                "extensionAttributes": [],
-                "name": "NC_153",
-                "sectionNumber": "6.7.1",
-                "sectionTitle": "Preparation of Investigational Trial Intervention(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_129",
-                "nextId": "NarrativeContent_131",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_131",
-                "extensionAttributes": [],
-                "name": "NC_154",
-                "sectionNumber": "6.7.2",
-                "sectionTitle": "Storage and Handling of Investigational Trial Intervention",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_130",
-                "nextId": "NarrativeContent_132",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_132",
-                "extensionAttributes": [],
-                "name": "NC_155",
-                "sectionNumber": "6.7.3",
-                "sectionTitle": "Accountability of Investigational Trial Intervention",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_131",
-                "nextId": "NarrativeContent_133",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_133",
-                "extensionAttributes": [],
-                "name": "NC_156",
-                "sectionNumber": "6.8",
-                "sectionTitle": "Investigational Trial Intervention Assignment,Randomisation and Blinding",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_134",
-                  "NarrativeContent_135",
-                  "NarrativeContent_136",
-                  "NarrativeContent_137"
-                ],
-                "previousId": "NarrativeContent_132",
-                "nextId": "NarrativeContent_134",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_134",
-                "extensionAttributes": [],
-                "name": "NC_157",
-                "sectionNumber": "6.8.1",
-                "sectionTitle": "Participant Assignment to Investigational Trial Intervention",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_133",
-                "nextId": "NarrativeContent_135",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_135",
-                "extensionAttributes": [],
-                "name": "NC_158",
-                "sectionNumber": "6.8.2",
-                "sectionTitle": "Randomisation",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_134",
-                "nextId": "NarrativeContent_136",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_136",
-                "extensionAttributes": [],
-                "name": "NC_159",
-                "sectionNumber": "6.8.3",
-                "sectionTitle": "{Blinding}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_135",
-                "nextId": "NarrativeContent_137",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_137",
-                "extensionAttributes": [],
-                "name": "NC_160",
-                "sectionNumber": "6.8.4",
-                "sectionTitle": "{Emergency Unblinding at the Site}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_136",
-                "nextId": "NarrativeContent_138",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_138",
-                "extensionAttributes": [],
-                "name": "NC_161",
-                "sectionNumber": "6.9",
-                "sectionTitle": "Investigational Trial Intervention Compliance",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_137",
-                "nextId": "NarrativeContent_139",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_139",
-                "extensionAttributes": [],
-                "name": "NC_162",
-                "sectionNumber": "6.10",
-                "sectionTitle": "Description of Non-Investigational Trial Intervention(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_140",
-                  "NarrativeContent_141",
-                  "NarrativeContent_142"
-                ],
-                "previousId": "NarrativeContent_138",
-                "nextId": "NarrativeContent_140",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_140",
-                "extensionAttributes": [],
-                "name": "NC_163",
-                "sectionNumber": "6.10.1",
-                "sectionTitle": "{Background Intervention}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_139",
-                "nextId": "NarrativeContent_141",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_141",
-                "extensionAttributes": [],
-                "name": "NC_164",
-                "sectionNumber": "6.10.2",
-                "sectionTitle": "{Rescue Therapy}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_140",
-                "nextId": "NarrativeContent_142",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_142",
-                "extensionAttributes": [],
-                "name": "NC_165",
-                "sectionNumber": "6.10.3",
-                "sectionTitle": "{Other Non-investigational Intervention}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_141",
-                "nextId": "NarrativeContent_143",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_143",
-                "extensionAttributes": [],
-                "name": "NC_166",
-                "sectionNumber": "6.11",
-                "sectionTitle": "Concomitant Therapy",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_144",
-                  "NarrativeContent_145"
-                ],
-                "previousId": "NarrativeContent_142",
-                "nextId": "NarrativeContent_144",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_144",
-                "extensionAttributes": [],
-                "name": "NC_167",
-                "sectionNumber": "6.11.1",
-                "sectionTitle": "{Prohibited Concomitant Therapy}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_143",
-                "nextId": "NarrativeContent_145",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_145",
-                "extensionAttributes": [],
-                "name": "NC_168",
-                "sectionNumber": "6.11.2",
-                "sectionTitle": "{Permitted Concomitant Therapy}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_144",
-                "nextId": "NarrativeContent_146",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_146",
-                "extensionAttributes": [],
-                "name": "NC_169",
-                "sectionNumber": "7",
-                "sectionTitle": "PARTICIPANT DISCONTINUATION OF TRIAL INTERVENTION AND DISCONTINUATION OR WITHDRAWAL FROM TRIAL",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_147",
-                  "NarrativeContent_151",
-                  "NarrativeContent_152"
-                ],
-                "previousId": "NarrativeContent_145",
-                "nextId": "NarrativeContent_147",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_147",
-                "extensionAttributes": [],
-                "name": "NC_170",
-                "sectionNumber": "7.1",
-                "sectionTitle": "Discontinuation of Trial Intervention for Individual Participants",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_148",
-                  "NarrativeContent_149",
-                  "NarrativeContent_150"
-                ],
-                "previousId": "NarrativeContent_146",
-                "nextId": "NarrativeContent_148",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_148",
-                "extensionAttributes": [],
-                "name": "NC_171",
-                "sectionNumber": "7.1.1",
-                "sectionTitle": "Permanent Discontinuation of Trial Intervention",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_147",
-                "nextId": "NarrativeContent_149",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_149",
-                "extensionAttributes": [],
-                "name": "NC_172",
-                "sectionNumber": "7.1.2",
-                "sectionTitle": "Temporary Discontinuation of Trial Intervention",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_148",
-                "nextId": "NarrativeContent_150",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_150",
-                "extensionAttributes": [],
-                "name": "NC_173",
-                "sectionNumber": "7.1.3",
-                "sectionTitle": "Rechallenge",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_149",
-                "nextId": "NarrativeContent_151",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_151",
-                "extensionAttributes": [],
-                "name": "NC_174",
-                "sectionNumber": "7.2",
-                "sectionTitle": "Discontinuation or Withdrawal from the Trial",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_150",
-                "nextId": "NarrativeContent_152",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_152",
-                "extensionAttributes": [],
-                "name": "NC_175",
-                "sectionNumber": "7.3",
-                "sectionTitle": "Lost to Follow-Up",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_151",
-                "nextId": "NarrativeContent_153",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_153",
-                "extensionAttributes": [],
-                "name": "NC_176",
-                "sectionNumber": "8",
-                "sectionTitle": "TRIAL ASSESSMENTS AND PROCEDURES",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_154",
-                  "NarrativeContent_155",
-                  "NarrativeContent_156",
-                  "NarrativeContent_157",
-                  "NarrativeContent_164",
-                  "NarrativeContent_165",
-                  "NarrativeContent_169",
-                  "NarrativeContent_170"
-                ],
-                "previousId": "NarrativeContent_152",
-                "nextId": "NarrativeContent_154",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_154",
-                "extensionAttributes": [],
-                "name": "NC_177",
-                "sectionNumber": "8.1",
-                "sectionTitle": "Trial Assessments and Procedures Considerations",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_153",
-                "nextId": "NarrativeContent_155",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_155",
-                "extensionAttributes": [],
-                "name": "NC_178",
-                "sectionNumber": "8.2",
-                "sectionTitle": "Screening/Baseline Assessments and Procedures",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_154",
-                "nextId": "NarrativeContent_156",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_156",
-                "extensionAttributes": [],
-                "name": "NC_179",
-                "sectionNumber": "8.3",
-                "sectionTitle": "Efficacy Assessments and Procedures",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_155",
-                "nextId": "NarrativeContent_157",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_157",
-                "extensionAttributes": [],
-                "name": "NC_180",
-                "sectionNumber": "8.4",
-                "sectionTitle": "Safety Assessments and Procedures",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_158",
-                  "NarrativeContent_159",
-                  "NarrativeContent_160",
-                  "NarrativeContent_161",
-                  "NarrativeContent_162",
-                  "NarrativeContent_163"
-                ],
-                "previousId": "NarrativeContent_156",
-                "nextId": "NarrativeContent_158",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_158",
-                "extensionAttributes": [],
-                "name": "NC_181",
-                "sectionNumber": "8.4.1",
-                "sectionTitle": "{Physical Examination}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_157",
-                "nextId": "NarrativeContent_159",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_159",
-                "extensionAttributes": [],
-                "name": "NC_182",
-                "sectionNumber": "8.4.2",
-                "sectionTitle": "{Vital Signs}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_158",
-                "nextId": "NarrativeContent_160",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_160",
-                "extensionAttributes": [],
-                "name": "NC_183",
-                "sectionNumber": "8.4.3",
-                "sectionTitle": "{Electrocardiograms}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_159",
-                "nextId": "NarrativeContent_161",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_161",
-                "extensionAttributes": [],
-                "name": "NC_184",
-                "sectionNumber": "8.4.4",
-                "sectionTitle": "{Clinical Laboratory Assessments}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_160",
-                "nextId": "NarrativeContent_162",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_162",
-                "extensionAttributes": [],
-                "name": "NC_185",
-                "sectionNumber": "8.4.5",
-                "sectionTitle": "{Pregnancy Testing}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_161",
-                "nextId": "NarrativeContent_163",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_163",
-                "extensionAttributes": [],
-                "name": "NC_186",
-                "sectionNumber": "8.4.6",
-                "sectionTitle": "{Suicidal Ideation and Behaviour Risk Monitoring}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_162",
-                "nextId": "NarrativeContent_164",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_164",
-                "extensionAttributes": [],
-                "name": "NC_187",
-                "sectionNumber": "8.5",
-                "sectionTitle": "Pharmacokinetics",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_163",
-                "nextId": "NarrativeContent_165",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_165",
-                "extensionAttributes": [],
-                "name": "NC_188",
-                "sectionNumber": "8.6",
-                "sectionTitle": "Biomarkers",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_166",
-                  "NarrativeContent_167",
-                  "NarrativeContent_168"
-                ],
-                "previousId": "NarrativeContent_164",
-                "nextId": "NarrativeContent_166",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_166",
-                "extensionAttributes": [],
-                "name": "NC_189",
-                "sectionNumber": "8.6.1",
-                "sectionTitle": "Genetics and Pharmacogenomics",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_165",
-                "nextId": "NarrativeContent_167",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_167",
-                "extensionAttributes": [],
-                "name": "NC_190",
-                "sectionNumber": "8.6.2",
-                "sectionTitle": "Pharmacodynamic Biomarkers",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_166",
-                "nextId": "NarrativeContent_168",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_168",
-                "extensionAttributes": [],
-                "name": "NC_191",
-                "sectionNumber": "8.6.3",
-                "sectionTitle": "{Other Biomarkers}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_167",
-                "nextId": "NarrativeContent_169",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_169",
-                "extensionAttributes": [],
-                "name": "NC_192",
-                "sectionNumber": "8.7",
-                "sectionTitle": "Immunogenicity Assessments",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_168",
-                "nextId": "NarrativeContent_170",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_170",
-                "extensionAttributes": [],
-                "name": "NC_193",
-                "sectionNumber": "8.8",
-                "sectionTitle": "Medical Resource Utilisation and Health Economics",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_169",
-                "nextId": "NarrativeContent_171",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_171",
-                "extensionAttributes": [],
-                "name": "NC_194",
-                "sectionNumber": "9",
-                "sectionTitle": "ADVERSE EVENTS,SERIOUS ADVERSE EVENTS,PRODUCT COMPLAINTS,PREGNANCY AND POSTPARTUM INFORMATION",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_172",
-                  "NarrativeContent_176",
-                  "NarrativeContent_177",
-                  "NarrativeContent_182",
-                  "NarrativeContent_186"
-                ],
-                "previousId": "NarrativeContent_170",
-                "nextId": "NarrativeContent_172",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_172",
-                "extensionAttributes": [],
-                "name": "NC_195",
-                "sectionNumber": "9.1",
-                "sectionTitle": "Definitions",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_173",
-                  "NarrativeContent_174",
-                  "NarrativeContent_175"
-                ],
-                "previousId": "NarrativeContent_171",
-                "nextId": "NarrativeContent_173",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_173",
-                "extensionAttributes": [],
-                "name": "NC_196",
-                "sectionNumber": "9.1.1",
-                "sectionTitle": "Definitions of Adverse Events",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_172",
-                "nextId": "NarrativeContent_174",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_174",
-                "extensionAttributes": [],
-                "name": "NC_197",
-                "sectionNumber": "9.1.2",
-                "sectionTitle": "Definitions of Serious Adverse Events",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_173",
-                "nextId": "NarrativeContent_175",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_175",
-                "extensionAttributes": [],
-                "name": "NC_198",
-                "sectionNumber": "9.1.3",
-                "sectionTitle": "{Definition of Medical Device Product Complaints}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_174",
-                "nextId": "NarrativeContent_176",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_176",
-                "extensionAttributes": [],
-                "name": "NC_199",
-                "sectionNumber": "9.2",
-                "sectionTitle": "Timing and Mechanism for Collection and Reporting",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_175",
-                "nextId": "NarrativeContent_177",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_177",
-                "extensionAttributes": [],
-                "name": "NC_200",
-                "sectionNumber": "9.3",
-                "sectionTitle": "Identification,Recording and Follow-Up",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_178",
-                  "NarrativeContent_179",
-                  "NarrativeContent_180",
-                  "NarrativeContent_181"
-                ],
-                "previousId": "NarrativeContent_176",
-                "nextId": "NarrativeContent_178",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_178",
-                "extensionAttributes": [],
-                "name": "NC_201",
-                "sectionNumber": "9.3.1",
-                "sectionTitle": "Identification",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_177",
-                "nextId": "NarrativeContent_179",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_179",
-                "extensionAttributes": [],
-                "name": "NC_202",
-                "sectionNumber": "9.3.2",
-                "sectionTitle": "Severity",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_178",
-                "nextId": "NarrativeContent_180",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_180",
-                "extensionAttributes": [],
-                "name": "NC_203",
-                "sectionNumber": "9.3.3",
-                "sectionTitle": "Causality",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_179",
-                "nextId": "NarrativeContent_181",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_181",
-                "extensionAttributes": [],
-                "name": "NC_204",
-                "sectionNumber": "9.3.4",
-                "sectionTitle": "Follow-up",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_180",
-                "nextId": "NarrativeContent_182",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_182",
-                "extensionAttributes": [],
-                "name": "NC_205",
-                "sectionNumber": "9.4",
-                "sectionTitle": "Reporting",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_183",
-                  "NarrativeContent_184",
-                  "NarrativeContent_185"
-                ],
-                "previousId": "NarrativeContent_181",
-                "nextId": "NarrativeContent_183",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_183",
-                "extensionAttributes": [],
-                "name": "NC_206",
-                "sectionNumber": "9.4.1",
-                "sectionTitle": "Regulatory Reporting Requirements",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_182",
-                "nextId": "NarrativeContent_184",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_184",
-                "extensionAttributes": [],
-                "name": "NC_207",
-                "sectionNumber": "9.4.2",
-                "sectionTitle": "Adverse Events of Special Interest",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_183",
-                "nextId": "NarrativeContent_185",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_185",
-                "extensionAttributes": [],
-                "name": "NC_208",
-                "sectionNumber": "9.4.3",
-                "sectionTitle": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_184",
-                "nextId": "NarrativeContent_186",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_186",
-                "extensionAttributes": [],
-                "name": "NC_209",
-                "sectionNumber": "9.5",
-                "sectionTitle": "Pregnancy and Postpartum Information",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_187",
-                  "NarrativeContent_188"
-                ],
-                "previousId": "NarrativeContent_185",
-                "nextId": "NarrativeContent_187",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_187",
-                "extensionAttributes": [],
-                "name": "NC_210",
-                "sectionNumber": "9.5.1",
-                "sectionTitle": "{Participants Who Become Pregnant During the Trial}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_186",
-                "nextId": "NarrativeContent_188",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_188",
-                "extensionAttributes": [],
-                "name": "NC_211",
-                "sectionNumber": "9.5.2",
-                "sectionTitle": "{Participants Whose Partners Become Pregnant}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_187",
-                "nextId": "NarrativeContent_189",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_189",
-                "extensionAttributes": [],
-                "name": "NC_212",
-                "sectionNumber": "10",
-                "sectionTitle": "STATISTICAL CONSIDERATIONS",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_190",
-                  "NarrativeContent_191",
-                  "NarrativeContent_192",
-                  "NarrativeContent_193",
-                  "NarrativeContent_199",
-                  "NarrativeContent_205",
-                  "NarrativeContent_206",
-                  "NarrativeContent_207",
-                  "NarrativeContent_208",
-                  "NarrativeContent_209",
-                  "NarrativeContent_210"
-                ],
-                "previousId": "NarrativeContent_188",
-                "nextId": "NarrativeContent_190",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_190",
-                "extensionAttributes": [],
-                "name": "NC_213",
-                "sectionNumber": "10.1",
-                "sectionTitle": "General Considerations",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_189",
-                "nextId": "NarrativeContent_191",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_191",
-                "extensionAttributes": [],
-                "name": "NC_214",
-                "sectionNumber": "10.2",
-                "sectionTitle": "Analysis Sets",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_190",
-                "nextId": "NarrativeContent_192",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_192",
-                "extensionAttributes": [],
-                "name": "NC_215",
-                "sectionNumber": "10.3",
-                "sectionTitle": "Analyses of Demographics and Other Baseline Variables",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_191",
-                "nextId": "NarrativeContent_193",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_193",
-                "extensionAttributes": [],
-                "name": "NC_216",
-                "sectionNumber": "10.4",
-                "sectionTitle": "Analyses Associated with the Primary Objective(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_194",
-                  "NarrativeContent_195",
-                  "NarrativeContent_196",
-                  "NarrativeContent_197",
-                  "NarrativeContent_198"
-                ],
-                "previousId": "NarrativeContent_192",
-                "nextId": "NarrativeContent_194",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_194",
-                "extensionAttributes": [],
-                "name": "NC_217",
-                "sectionNumber": "10.4.1",
-                "sectionTitle": "Statistical Method of Analysis",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_193",
-                "nextId": "NarrativeContent_195",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_195",
-                "extensionAttributes": [],
-                "name": "NC_218",
-                "sectionNumber": "10.4.2",
-                "sectionTitle": "Handling of Data in Relation to Primary Estimand(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_194",
-                "nextId": "NarrativeContent_196",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_196",
-                "extensionAttributes": [],
-                "name": "NC_219",
-                "sectionNumber": "10.4.3",
-                "sectionTitle": "Handling of Missing Data",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_195",
-                "nextId": "NarrativeContent_197",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_197",
-                "extensionAttributes": [],
-                "name": "NC_220",
-                "sectionNumber": "10.4.4",
-                "sectionTitle": "{Sensitivity Analysis}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_196",
-                "nextId": "NarrativeContent_198",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_198",
-                "extensionAttributes": [],
-                "name": "NC_221",
-                "sectionNumber": "10.4.5",
-                "sectionTitle": "{Supplementary Analysis}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_197",
-                "nextId": "NarrativeContent_199",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_199",
-                "extensionAttributes": [],
-                "name": "NC_222",
-                "sectionNumber": "10.5",
-                "sectionTitle": "Analysis Associated with the Secondary Objective(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_200",
-                  "NarrativeContent_201",
-                  "NarrativeContent_202",
-                  "NarrativeContent_203",
-                  "NarrativeContent_204"
-                ],
-                "previousId": "NarrativeContent_198",
-                "nextId": "NarrativeContent_200",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_200",
-                "extensionAttributes": [],
-                "name": "NC_223",
-                "sectionNumber": "10.5.1",
-                "sectionTitle": "{Statistical Method of Analysis}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_199",
-                "nextId": "NarrativeContent_201",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_201",
-                "extensionAttributes": [],
-                "name": "NC_224",
-                "sectionNumber": "10.5.2",
-                "sectionTitle": "{Handling of Data in Relation to Secondary Estimand(s)}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_200",
-                "nextId": "NarrativeContent_202",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_202",
-                "extensionAttributes": [],
-                "name": "NC_225",
-                "sectionNumber": "10.5.3",
-                "sectionTitle": "{Handling of Missing Data}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_201",
-                "nextId": "NarrativeContent_203",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_203",
-                "extensionAttributes": [],
-                "name": "NC_226",
-                "sectionNumber": "10.5.4",
-                "sectionTitle": "{Sensitivity Analyses}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_202",
-                "nextId": "NarrativeContent_204",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_204",
-                "extensionAttributes": [],
-                "name": "NC_227",
-                "sectionNumber": "10.5.5",
-                "sectionTitle": "{Supplementary Analyses}",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_203",
-                "nextId": "NarrativeContent_205",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_205",
-                "extensionAttributes": [],
-                "name": "NC_228",
-                "sectionNumber": "10.6",
-                "sectionTitle": "Analysis Associated with the Exploratory Objective(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_204",
-                "nextId": "NarrativeContent_206",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_206",
-                "extensionAttributes": [],
-                "name": "NC_229",
-                "sectionNumber": "10.7",
-                "sectionTitle": "Safety Analyses",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_205",
-                "nextId": "NarrativeContent_207",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_207",
-                "extensionAttributes": [],
-                "name": "NC_230",
-                "sectionNumber": "10.8",
-                "sectionTitle": "Other Analyses",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_206",
-                "nextId": "NarrativeContent_208",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_208",
-                "extensionAttributes": [],
-                "name": "NC_231",
-                "sectionNumber": "10.9",
-                "sectionTitle": "Interim Analyses",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_207",
-                "nextId": "NarrativeContent_209",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_209",
-                "extensionAttributes": [],
-                "name": "NC_232",
-                "sectionNumber": "10.10",
-                "sectionTitle": "Multiplicity Adjustments",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_208",
-                "nextId": "NarrativeContent_210",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_210",
-                "extensionAttributes": [],
-                "name": "NC_233",
-                "sectionNumber": "10.11",
-                "sectionTitle": "Sample Size Determination",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_209",
-                "nextId": "NarrativeContent_211",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_211",
-                "extensionAttributes": [],
-                "name": "NC_234",
-                "sectionNumber": "11",
-                "sectionTitle": "TRIAL OVERSIGHT AND OTHER GENERAL CONSIDERATIONS",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_212",
-                  "NarrativeContent_213",
-                  "NarrativeContent_216",
-                  "NarrativeContent_219",
-                  "NarrativeContent_220",
-                  "NarrativeContent_221",
-                  "NarrativeContent_222",
-                  "NarrativeContent_223",
-                  "NarrativeContent_224",
-                  "NarrativeContent_225"
-                ],
-                "previousId": "NarrativeContent_210",
-                "nextId": "NarrativeContent_212",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_212",
-                "extensionAttributes": [],
-                "name": "NC_235",
-                "sectionNumber": "11.1",
-                "sectionTitle": "Regulatory and Ethical Considerations",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_211",
-                "nextId": "NarrativeContent_213",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_213",
-                "extensionAttributes": [],
-                "name": "NC_236",
-                "sectionNumber": "11.2",
-                "sectionTitle": "Trial Oversight",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_214",
-                  "NarrativeContent_215"
-                ],
-                "previousId": "NarrativeContent_212",
-                "nextId": "NarrativeContent_214",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_214",
-                "extensionAttributes": [],
-                "name": "NC_237",
-                "sectionNumber": "11.2.1",
-                "sectionTitle": "Investigator Responsibilities",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_213",
-                "nextId": "NarrativeContent_215",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_215",
-                "extensionAttributes": [],
-                "name": "NC_238",
-                "sectionNumber": "11.2.2",
-                "sectionTitle": "Sponsor Responsibilities",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_214",
-                "nextId": "NarrativeContent_216",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_216",
-                "extensionAttributes": [],
-                "name": "NC_239",
-                "sectionNumber": "11.3",
-                "sectionTitle": "Informed Consent Process",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_217",
-                  "NarrativeContent_218"
-                ],
-                "previousId": "NarrativeContent_215",
-                "nextId": "NarrativeContent_217",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_217",
-                "extensionAttributes": [],
-                "name": "NC_240",
-                "sectionNumber": "11.3.1",
-                "sectionTitle": "Informed Consent for Rescreening",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_216",
-                "nextId": "NarrativeContent_218",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_218",
-                "extensionAttributes": [],
-                "name": "NC_241",
-                "sectionNumber": "11.3.2",
-                "sectionTitle": "Informed Consent for Use of Remaining Samples in Exploratory Research",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_217",
-                "nextId": "NarrativeContent_219",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_219",
-                "extensionAttributes": [],
-                "name": "NC_242",
-                "sectionNumber": "11.4",
-                "sectionTitle": "Committees",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_218",
-                "nextId": "NarrativeContent_220",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_220",
-                "extensionAttributes": [],
-                "name": "NC_243",
-                "sectionNumber": "11.5",
-                "sectionTitle": "Insurance and Indemnity",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_219",
-                "nextId": "NarrativeContent_221",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_221",
-                "extensionAttributes": [],
-                "name": "NC_244",
-                "sectionNumber": "11.6",
-                "sectionTitle": "Risk Management",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_220",
-                "nextId": "NarrativeContent_222",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_222",
-                "extensionAttributes": [],
-                "name": "NC_245",
-                "sectionNumber": "11.7",
-                "sectionTitle": "Data Governance",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_221",
-                "nextId": "NarrativeContent_223",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_223",
-                "extensionAttributes": [],
-                "name": "NC_246",
-                "sectionNumber": "11.8",
-                "sectionTitle": "Source Data",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_222",
-                "nextId": "NarrativeContent_224",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_224",
-                "extensionAttributes": [],
-                "name": "NC_247",
-                "sectionNumber": "11.9",
-                "sectionTitle": "Protocol Deviations",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_223",
-                "nextId": "NarrativeContent_225",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_225",
-                "extensionAttributes": [],
-                "name": "NC_248",
-                "sectionNumber": "11.10",
-                "sectionTitle": "Early Site Closure",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_224",
-                "nextId": "NarrativeContent_226",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_226",
-                "extensionAttributes": [],
-                "name": "NC_249",
-                "sectionNumber": "12",
-                "sectionTitle": "APPENDIX: SUPPORTING DETAILS",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [
-                  "NarrativeContent_227",
-                  "NarrativeContent_228",
-                  "NarrativeContent_229"
-                ],
-                "previousId": "NarrativeContent_225",
-                "nextId": "NarrativeContent_227",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_227",
-                "extensionAttributes": [],
-                "name": "NC_250",
-                "sectionNumber": "12.1",
-                "sectionTitle": "Clinical Laboratory Tests",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_226",
-                "nextId": "NarrativeContent_228",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_228",
-                "extensionAttributes": [],
-                "name": "NC_251",
-                "sectionNumber": "12.2",
-                "sectionTitle": "Country/Region-Specific Differences",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_227",
-                "nextId": "NarrativeContent_229",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_229",
-                "extensionAttributes": [],
-                "name": "NC_252",
-                "sectionNumber": "12.3",
-                "sectionTitle": "Prior Protocol Amendment(s)",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_228",
-                "nextId": "NarrativeContent_230",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_230",
-                "extensionAttributes": [],
-                "name": "NC_253",
-                "sectionNumber": "13",
-                "sectionTitle": "APPENDIX:  GLOSSARY OF TERMS AND ABBREVIATIONS",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_229",
-                "nextId": "NarrativeContent_231",
-                "contentItemId": null,
-                "instanceType": "NarrativeContent"
-              },
-              {
-                "id": "NarrativeContent_231",
-                "extensionAttributes": [],
-                "name": "NC_254",
-                "sectionNumber": "14",
-                "sectionTitle": "APPENDIX:  REFERENCES",
-                "displaySectionNumber": true,
-                "displaySectionTitle": true,
-                "childIds": [],
-                "previousId": "NarrativeContent_230",
                 "nextId": null,
-                "contentItemId": null,
+                "contentItemId": "NarrativeContentItem_80",
                 "instanceType": "NarrativeContent"
               }
             ],

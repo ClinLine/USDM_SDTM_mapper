@@ -19,7 +19,7 @@ def Create_TS(wb, JsonInput):
             StudyIdCodeSnip = ts0_sheet.cell(row=i, column=7).value
         if varName == "DOMAIN":
             DomainResult =  ts0_sheet.cell(row=i, column=8).value
-
+    
     with open(JsonInput, 'r') as file:
         data=json.load (file)
         # Get StudyId first and start with a row id for the TS sheet            

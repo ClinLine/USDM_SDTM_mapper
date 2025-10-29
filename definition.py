@@ -2,6 +2,7 @@ import jsonata
 import json
 import openpyxl
 import pandas as pd
+import re
 
 def strip(stripped):
     done = False
@@ -87,3 +88,60 @@ def Parse_jsonata(codeSnip,data):
                 result0 = result0[1:-1]
                 result0 = result0.replace("}, {", ", ")
         return result0
+
+def ResolveTag(Txt,data):
+# <usdm:tag name="min_age"/>
+   result=Txt
+   m = re.search(r'.*<usdm:tag name="([^"]*)"/>', Txt, re.DOTALL | re.IGNORECASE)
+   if m:
+        attrs = m.group(1)
+        # print (attrs, m.end(0), m.start(1))
+        NewTxt=Get_TagLocation(attrs,data)
+        Txt2=Txt[0:m.start(1)-16] + str(NewTxt) + Txt[m.end(0):len(Txt)]
+        # print(Txt2)
+        result=Txt2
+   return result   
+
+
+def Get_TagLocation(tag,data):
+    jsonataString = "study.versions.dictionaries.parameterMaps[tag='" + tag + "'].reference"
+    expr = jsonata.Jsonata(jsonataString)
+    reference = expr.evaluate(data)
+    # print("location : ", reference)
+    if reference is None:
+        value="//TAG NOT IN DICTIONARY//"
+    else:
+        if reference[0] != "<": 
+            value=reference
+        else:
+            try:
+                m = re.search(r'.*klass="([^"]*)"', reference, re.DOTALL | re.IGNORECASE)
+                klass = m.group(1)
+                m = re.search(r'.*id="([^"]*)"', reference, re.DOTALL | re.IGNORECASE)
+                id = m.group(1)
+                m = re.search(r'.*attribute="([^"]*)"', reference, re.DOTALL | re.IGNORECASE)
+                attr = m.group(1)
+                jsonataString2 = "study.versions" + ClassToRelation(klass) + "[id='" + id + "']." + attr
+                # print(jsonataString2)
+                expr2 = jsonata.Jsonata(jsonataString2)
+                value = expr2.evaluate(data)
+                # print("value: ", value)
+            except:
+                value="//TAG REFERENCE PARSING ERROR//"
+    return value
+   
+def ClassToRelation(klass):
+    if klass == "Activity": return ".studyDesigns.activities"
+    elif klass == "Quantity": return "..."   
+    elif klass == "Indication": return ".studyDesigns.indications"
+    elif klass == "Objective": return ".studyDesigns.objectives"
+    elif klass == "Endpoints": return ".studyDesigns.objectives.endpoints"
+    elif klass == "StudyDesignPopulation": return ".studyDesigns.population"
+    elif klass == "BiomedicalConcept": return ".biomedicalConcepts"
+    elif klass == "BiomedicalConceptProperty": return ".biomedicalConcepts.properties"
+    elif klass == "StudyIntervention": return ".studyInterventions"
+    elif klass == "AdministrableProduct": return ".administrableProducts"
+    elif klass == "ResponseCode": return "biomedicalConcepts.properties.responseCodes"
+    elif klass == "MedicalDevice": return ".medicalDevices"
+    elif klass == "StudyRole": return ".roles"
+    else: return None

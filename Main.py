@@ -7,7 +7,7 @@ import TA
 import TV
 
 # Define the source json file you like to use
-JsonInput = "TestJson/EliLilly_NCT03421379_Diabetes.json"
+JsonInput = "TestJson/CDISC_Pilot_Study_v4_FIXED.json"
 # define the mapping input file
 MapInput = "Maps/sdtm_mapping_paths.xlsx"
 # Define the resulting output file

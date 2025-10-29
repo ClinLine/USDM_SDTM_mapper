@@ -21,6 +21,8 @@ def Create_TI(wb, JsonInput):
         if varName == "TIVERS":
             VersionCodeSnip =  ti_sheet.cell(row=i, column=7).value
             VersionColumn = j
+        if varName == "IETEST":
+            TestColumn = j
 
     # create empty id array for checking value alignment in different columns
     id = []
@@ -28,12 +30,12 @@ def Create_TI(wb, JsonInput):
     with open(JsonInput, 'r') as file:
         data=json.load (file)
         studyId=definition.Parse_jsonata(codeSnip=StudyIdCodeSnip,data=data)         
-        print("StudyId: ", studyId)
+        print("TI StudyId: ", studyId)
 
         versionResult=definition.Parse_jsonata(codeSnip=VersionCodeSnip,data=data)
         
         for i in range(2, ti_sheet.max_row + 1):
-            # Get all the mapping information from the TS Parameters sheet
+            # Get all the mapping information from the TI sheet
             if i not in [StudyIDColumn+1, DomainColumn+1, VersionColumn+1]:
                 codeSnip = ti_sheet.cell(row=i, column=7).value
                 result2=definition.Parse_jsonata(codeSnip=codeSnip,data=data)
@@ -43,7 +45,7 @@ def Create_TI(wb, JsonInput):
                     if result2[0] == "{":  # check if the result is a list
                         result3 = []
                         definition.string_to_list(result2, result3)  # convert the string to a list
-                        # filling ts sheet if it is a list 
+                        # filling ti sheet if it is a list 
                         skip = 0
                         for j in range(0, len(result3)):
                             if len(id) < len(result3):  # if the ID list is empty, append the first ID
@@ -56,6 +58,9 @@ def Create_TI(wb, JsonInput):
                                     skip += 1
                             x += 1
                             breakoff = 0
+                            # resolve tags in result4
+                            if c==TestColumn: 
+                                result4=definition.ResolveTag(result4,data)
                             while len(result4) > 200:
                                 for k in range(200, 0, -1):
                                     if result4[k] == " ":
