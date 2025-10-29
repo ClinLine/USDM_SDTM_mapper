@@ -91,15 +91,18 @@ def Parse_jsonata(codeSnip,data):
 
 def ResolveTag(Txt,data):
 # <usdm:tag name="min_age"/>
+
+   while Txt.find("<usdm:tag") != -1:
+        m = re.search(r'.*<usdm:tag name="([^"]*)"/>', Txt, re.DOTALL | re.IGNORECASE)
+        if m:
+            attrs = m.group(1)
+            # print (attrs, m.end(0), m.start(1))
+            NewTxt=Get_TagLocation(attrs,data)
+            Txt2=Txt[0:m.start(1)-16] + str(NewTxt) + Txt[m.end(0):len(Txt)]
+            # print(Txt2)
+            Txt=Txt2
+
    result=Txt
-   m = re.search(r'.*<usdm:tag name="([^"]*)"/>', Txt, re.DOTALL | re.IGNORECASE)
-   if m:
-        attrs = m.group(1)
-        # print (attrs, m.end(0), m.start(1))
-        NewTxt=Get_TagLocation(attrs,data)
-        Txt2=Txt[0:m.start(1)-16] + str(NewTxt) + Txt[m.end(0):len(Txt)]
-        # print(Txt2)
-        result=Txt2
    return result   
 
 
