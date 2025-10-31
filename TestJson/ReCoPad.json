@@ -3985,7 +3985,7 @@
             "name": "IN07",
             "label": null,
             "description": null,
-            "text": "<p>Parkinson’s disease subjects deemed appropriate for treatment of motor symptoms with a <usdm:tag name=\"BC1_UDPRS\"/> Part III score ><usdm:tag name=\"BC1_MinValExcl\"/>.</p>",
+            "text": "<p>Parkinson's disease subjects deemed appropriate for treatment of motor symptoms with a <usdm:tag name=\"BC1_UDPRS\"/> Part III score ><usdm:tag name=\"BC1_MinValExcl\"/>.</p>",
             "dictionaryId": null,
             "notes": [],
             "instanceType": "EligibilityCriterionItem"
