@@ -109,5 +109,5 @@ def Create_TI(wb, JsonInput):
                 ti_sheet.cell(row=x, column=VersionColumn).value = versionResult    
         if ti_sheet.max_column > 8:   
             for i in range(9, ti_sheet.max_column):
-                newname = f"IETEST {i-7}"
+                newname = f"IETEST{i-7}"
                 ti_sheet.cell(row=1, column=i).value = newname

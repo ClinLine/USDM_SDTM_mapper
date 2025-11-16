@@ -156,7 +156,7 @@ def Get_plainText(TxtRich):
     # collapse whitespace
     TxtRich = re.sub(r'\s+', ' ', TxtRich).strip()
    
-    print(TxtRich)
+    # print(TxtRich)
     return TxtRich
 
 

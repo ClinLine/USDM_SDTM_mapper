@@ -13153,7 +13153,7 @@
                 "id": "ParameterMap_5",
                 "extensionAttributes": [],
                 "tag": "BC1_UDPRS",
-                "reference": "<usdm:ref klass=\"AliasCode\" id=\"BiomedicalConcept_11\" attribute=\"label\"></usdm:ref>",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_11\" attribute=\"label\"></usdm:ref>",
                 "instanceType": "ParameterMap"
               },
               {
