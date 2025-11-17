@@ -7,7 +7,7 @@ import TA
 import TV
 
 # Define the source json file you like to use
-JsonInput = "TestJson/ReCoPad.json"
+JsonInput = "TestJson/Excel_USDM.json"
 # define the mapping input file
 MapInput = "Maps/sdtm_mapping_paths.xlsx"
 # Define the resulting output file
