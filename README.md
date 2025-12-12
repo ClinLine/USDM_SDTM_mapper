@@ -9,7 +9,7 @@ The tool is based on json, jsonata and opepyxl packages to enable the following 
   
 The current version includes the creation of all Trial design domains. Some additional functionality like HTML parsing and reference resolution will be added soon.
 
-We presented this tool at the CDISC COSA webinar on 23 September 2025 which explains the tool in more detail. See [Youtube video](https://youtu.be/7xfPWnCjrQ8)
+We presented this tool at the ClinLine Break & Learn webinar on 10 December 2025 which explains the tool in more detail. See [Youtube video](https://youtu.be/7xfPWnCjrQ8)
 
 ## Input
 The input for the tool is based on the [SDTM mappings available in the CDISC DDF Github](https://github.com/cdisc-org/DDF-RA/blob/main/Documents/Mappings/sdtm_mapping.xlsx)
