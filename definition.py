@@ -45,6 +45,41 @@ def string_to_list(input, result):
         else: 
             n += 1
 
+def string_to_list2(input, result): # new adapted string_to_list function (dec25)
+    if input[0]=="{":
+        n = 0 #letter it is looking at
+        while input[n] != "}": #looking for the end of the list
+            if input[n-1:n+2] == ", '" or input[n] in ["{"]: # looking for the start of a new item in the list
+                n += 1
+                m = n
+                while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
+                    m += 1
+                result.append(input[n:m+1]) # appending the item to the list
+                n = m + 1
+            else: 
+                n += 1
+    else:
+        result.append(input)
+
+def string_to_ID_list(input, result): # new adapted string_to_list function (dec25)
+    if input[0]=="{":
+        n = 0 #letter it is looking at
+        while input[n] != "}": #looking for the end of the list
+            if input[n-1:n+2] == ", '" or input[n] in ["{"]: # looking for the start of a new item in the list
+                n += 1
+                m = n
+                while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
+                    m += 1
+                Res=input[n:m+1] 
+                id, Res = get_ID(Res)
+                result[id]=Res # appending the item to the list
+                n = m + 1
+            else: 
+                n += 1
+    else:
+        id, Res = get_ID(input)
+        result[id]=Res
+
 def string_to_nested_list(input, resultarm, result):
     n = 0 #letter it is looking at
     while input[n] != "]": #looking for the end of the list
@@ -123,7 +158,9 @@ def Get_plainText(TxtRich):
     TxtRich = TxtRich.replace('&le;', '<=')  
     # replace &gt; with >
     TxtRich = TxtRich.replace('&gt;', '>')  
-    
+    # replace \' with '
+    TxtRich = TxtRich.replace('\'', "'")
+    # replace &gt; with >=
     TxtRich = TxtRich.replace('&gt;', '>=')  
     # replace &amp; with &
     TxtRich = TxtRich.replace('&amp;', '&')     
@@ -159,7 +196,6 @@ def Get_plainText(TxtRich):
     # print(TxtRich)
     return TxtRich
 
-
 def Get_TagValue(tag,data):
     jsonataString = "study.versions.dictionaries.parameterMaps[tag='" + tag + "'].reference"
     expr = jsonata.Jsonata(jsonataString)
@@ -178,27 +214,12 @@ def Get_TagValue(tag,data):
                 id = m.group(1)
                 m = re.search(r'.*attribute="([^"]*)"', reference, re.DOTALL | re.IGNORECASE)
                 attr = m.group(1)
-                jsonataString2 = "study.versions" + ClassToRelation(klass) + "[id='" + id + "']." + attr
+                jsonataString3 = "study.**[instanceType='" + klass + "'  and id='" + id + "']." + attr
                 # print(jsonataString2)
-                expr2 = jsonata.Jsonata(jsonataString2)
+                expr2 = jsonata.Jsonata(jsonataString3)
                 value = expr2.evaluate(data)
                 # print("value: ", value)
             except:
                 value="//TAG REFERENCE PARSING ERROR//"
     return value
    
-def ClassToRelation(klass):
-    if klass == "Activity": return ".studyDesigns.activities"
-    elif klass == "Quantity": return "..."   
-    elif klass == "Indication": return ".studyDesigns.indications"
-    elif klass == "Objective": return ".studyDesigns.objectives"
-    elif klass == "Endpoints": return ".studyDesigns.objectives.endpoints"
-    elif klass == "StudyDesignPopulation": return ".studyDesigns.population"
-    elif klass == "BiomedicalConcept": return ".biomedicalConcepts"
-    elif klass == "BiomedicalConceptProperty": return ".biomedicalConcepts.properties"
-    elif klass == "StudyIntervention": return ".studyInterventions"
-    elif klass == "AdministrableProduct": return ".administrableProducts"
-    elif klass == "ResponseCode": return "biomedicalConcepts.properties.responseCodes"
-    elif klass == "MedicalDevice": return ".medicalDevices"
-    elif klass == "StudyRole": return ".roles"
-    else: return None
