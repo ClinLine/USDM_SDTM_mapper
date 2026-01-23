@@ -82,6 +82,8 @@ def string_to_ID_list(input, result): # new adapted string_to_list function (dec
 
 def string_to_nested_list(input, resultarm, result):
     n = 0 #letter it is looking at
+    if input[0] != "[":
+        input = "[" + input + "]"
     while input[n] != "]": #looking for the end of the list
         if input[n] == "{": # looking for the start of a new item in the list
             n += 1
@@ -172,6 +174,8 @@ def Get_plainText(TxtRich):
     TxtRich = TxtRich.replace('&#169;', ' (C)')
     # replace ≤ with <=
     TxtRich = TxtRich.replace('≤', '<=')
+
+    TxtRich = TxtRich.replace('&#181;', 'micro')
     
     # collapse whitespace
     TxtRich = re.sub(r'\s+', ' ', TxtRich).strip()

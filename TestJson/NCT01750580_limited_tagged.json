@@ -1,0 +1,4516 @@
+{
+  "study": {
+    "id": null,
+    "name": "Example NCT01750580",
+    "description": null,
+    "label": null,
+    "versions": [
+      {
+        "id": "StudyVersion_1",
+        "extensionAttributes": [],
+        "versionIdentifier": "2",
+        "rationale": "No information.",
+        "documentVersionIds": [],
+        "dateValues": [
+          {
+            "id": "GovernanceDate_1",
+            "extensionAttributes": [],
+            "name": "D_APPROVE",
+            "label": "Design Approval",
+            "description": "Design approval date",
+            "type": {
+              "id": "Code_13",
+              "extensionAttributes": [],
+              "code": "C71476",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Approval Date",
+              "instanceType": "Code"
+            },
+            "dateValue": "2006-06-01",
+            "geographicScopes": [
+              {
+                "id": "GeographicScope_1",
+                "extensionAttributes": [],
+                "type": {
+                  "id": "Code_14",
+                  "extensionAttributes": [],
+                  "code": "C68846",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Global",
+                  "instanceType": "Code"
+                },
+                "code": null,
+                "instanceType": "GeographicScope"
+              }
+            ],
+            "instanceType": "GovernanceDate"
+          }
+        ],
+        "amendments": [],
+        "businessTherapeuticAreas": [],
+        "studyIdentifiers": [
+          {
+            "id": "StudyIdentifier_1",
+            "extensionAttributes": [],
+            "text": "Sponsor Identifier tbd",
+            "scopeId": "Organization_1",
+            "instanceType": "StudyIdentifier"
+          },
+          {
+            "id": "StudyIdentifier_2",
+            "extensionAttributes": [],
+            "text": "NCT01750580",
+            "scopeId": "Organization_2",
+            "instanceType": "StudyIdentifier"
+          }
+        ],
+        "referenceIdentifiers": [],
+        "studyDesigns": [
+          { "id": "InterventionalStudyDesign_1",
+            "extensionAttributes": [
+				{"id": "ExtensionAttribute_1",
+				 "url": "https://cdisc.org/usdm/extension-ContraIndic/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ContraIndic_1",
+						 "url": "https://cdisc.org/usdm/extension-ContraIndic/class1",
+						 "extensionAttributes": [{
+							"id": "ClassExtId_1",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-id",
+							"valueId": "ContraIndication_1",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassExtName_1",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-name",
+							"valueString": "BRAIN_META",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassExtLabel_1",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-label",
+							"valueString": "brain metastasis",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassExtCode_1",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-unitType",
+							"valueCode": {
+							  "id": "CodeE_13",
+							  "extensionAttributes": [],
+							  "code": "94225005",
+							  "codeSystem": "SNOMED",
+							  "codeSystemVersion": "2025-02-01",
+							  "decode": "Metastatic malignant neoplasm to brain",
+							  "instanceType": "Code"
+							},
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+					    ],
+					    "instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				},
+				{"id": "ExtensionAttribute_2",
+				 "url": "https://cdisc.org/usdm/extension-ContraIndic/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ContraIndic_2",
+						 "url": "https://cdisc.org/usdm/extension-ContraIndic/class1",
+						 "extensionAttributes": [{
+							"id": "ClassExtId_2",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-id",
+							"valueId": "ContraIndication_2",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassExtName_2",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-name",
+							"valueString": "NEURPAT",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassExtLabel_2",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-label",
+							"valueString": "neuropathy",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassExtCode_2",
+							"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-unitType",
+							"valueCode": {
+							  "id": "CodeE_132",
+							  "extensionAttributes": [],
+							  "code": "386033004",
+							  "codeSystem": "SNOMED",
+							  "codeSystemVersion": "2025-02-01",
+							  "decode": "Neuropathy",
+							  "instanceType": "Code"
+							},
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+					    ],
+					    "instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				}
+			],
+            "name": "Study Design 1",
+            "label": "USDM Example Study Design",
+            "description": "The main design for the study",
+            "studyType": {
+              "id": "Code_159",
+              "extensionAttributes": [],
+              "code": "C98388",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Interventional Study",
+              "instanceType": "Code"
+            },
+            "studyPhase": {
+              "id": "AliasCode_24",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_160",
+                "extensionAttributes": [],
+                "code": "C15600",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Phase I Trial",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "therapeuticAreas": [
+              {
+                "id": "Code_149",
+                "extensionAttributes": [],
+                "code": "LP32910-9",
+                "codeSystem": "LOINC",
+                "codeSystemVersion": "2.80",
+                "decode": "Oncology",
+                "instanceType": "Code"
+              }
+            ],
+            "characteristics": [],
+            "encounters": [
+              {
+                "id": "Encounter_1",
+                "extensionAttributes": [],
+                "name": "E1",
+                "label": "Screening",
+                "description": "Screening encounter",
+                "type": {
+                  "id": "Code_98",
+                  "extensionAttributes": [],
+                  "code": "C25716",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Visit",
+                  "instanceType": "Code"
+                },
+                "previousId": null,
+                "nextId": null,
+                "scheduledAtId": null,
+                "environmentalSettings": [],
+                "contactModes": [],
+                "transitionStartRule": {
+                  "id": "TransitionRule_1",
+                  "extensionAttributes": [],
+                  "name": "ENCOUNTER_START_RULE_1",
+                  "label": null,
+                  "description": null,
+                  "text": "Signed informed consent",
+                  "instanceType": "TransitionRule"
+                },
+                "transitionEndRule": {
+                  "id": "TransitionRule_2",
+                  "extensionAttributes": [],
+                  "name": "ENCOUNTER_END_RULE_2",
+                  "label": null,
+                  "description": null,
+                  "text": "completion of screening activities",
+                  "instanceType": "TransitionRule"
+                },
+                "notes": [],
+                "instanceType": "Encounter"
+              }
+            ],
+            "activities": [
+                {
+                "id": "Activity_1",
+                "extensionAttributes": [],
+                "name": "ACT_1",
+                "label": "Medical History",
+                "description": "",
+                "previousId": null,
+                "nextId": "Activity_2",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_35"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_2",
+                "extensionAttributes": [],
+                "name": "ACT_2",
+                "label": "Inclusion and exclusion criteria",
+                "description": "",
+                "previousId": "Activity_1",
+                "nextId": "Activity_3",
+                "childIds": [],
+                "definedProcedures": [
+                  {
+                    "id": "Procedure_3",
+                    "extensionAttributes": [],
+                    "name": "PR3",
+                    "label": "Eligibility Check",
+                    "description": "",
+                    "procedureType": "Eligibility",
+                    "code": {
+                      "id": "CodeX_3",
+                      "extensionAttributes": [],
+                      "code": "61871000000107",
+                      "codeSystem": "SNOMED",
+                      "codeSystemVersion": "2025-02-01",
+                      "decode": "Eligibility for treatment",
+                      "instanceType": "Code"
+                    },
+                    "studyInterventionId": null,
+                    "notes": [],
+                    "instanceType": "Procedure"
+                  }],
+                "biomedicalConceptIds": [],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_3",
+                "extensionAttributes": [],
+                "name": "ACT_3",
+                "label": "Demographics",
+                "description": "",
+                "previousId": "Activity_2",
+                "nextId": "Activity_4",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_20","BiomedicalConcept_21"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_4",
+                "extensionAttributes": [],
+                "name": "ACT_4",
+                "label": "Physical examination",
+                "description": "",
+                "previousId": "Activity_3",
+                "nextId": "Activity_5",
+                "childIds": [],
+                "definedProcedures": [
+					{
+                    "id": "Procedure_5",
+                    "extensionAttributes": [],
+                    "name": "PR5",
+                    "label": "phyiscal examination",
+                    "description": "",
+                    "procedureType": "Examination",
+                    "code": {
+                      "id": "CodeX_5",
+                      "extensionAttributes": [],
+                      "code": "5880005",
+                      "codeSystem": "SNOMED",
+                      "codeSystemVersion": "2025-02-01",
+                      "decode": "Physical examination",
+                      "instanceType": "Code"
+                    },
+                    "studyInterventionId": null,
+                    "notes": [],
+                    "instanceType": "Procedure"
+                  }],
+                "biomedicalConceptIds": ["BiomedicalConcept_34"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_5",
+                "extensionAttributes": [],
+                "name": "ACT_5",
+                "label": "Concomitant medications",
+                "description": "",
+                "previousId": "Activity_4",
+                "nextId": "Activity_6",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_39"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_6",
+                "extensionAttributes": [],
+                "name": "ACT_6",
+                "label": "Hematology",
+                "description": "",
+                "previousId": "Activity_5",
+                "nextId": "Activity_7",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_01","BiomedicalConcept_02","BiomedicalConcept_03"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_7",
+                "extensionAttributes": [],
+                "name": "ACT_7",
+                "label": "Chemistry",
+                "description": "",
+                "previousId": "Activity_6",
+                "nextId": "Activity_8",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_25","BiomedicalConcept_28"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_8",
+                "extensionAttributes": [],
+                "name": "ACT_8",
+                "label": "Thyroid function",
+                "description": "",
+                "previousId": "Activity_7",
+                "nextId": "Activity_9",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_04","BiomedicalConcept_05","BiomedicalConcept_06"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_9",
+                "extensionAttributes": [],
+                "name": "ACT_9",
+                "label": "RECIST (CT or MRI)",
+                "description": "",
+                "previousId": "Activity_8",
+                "nextId": "Activity_10",
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_07"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              },
+              {
+                "id": "Activity_10",
+                "extensionAttributes": [],
+                "name": "ACT_10",
+                "label": "ECOG",
+                "description": "",
+                "previousId": "Activity_9",
+                "nextId": null,
+                "childIds": [],
+                "definedProcedures": [],
+                "biomedicalConceptIds": ["BiomedicalConcept_08"],
+                "bcCategoryIds": [],
+                "bcSurrogateIds": [],
+                "timelineId": null,
+                "notes": [],
+                "instanceType": "Activity"
+              }
+            ],
+            "arms": [
+              {
+                "id": "StudyArm_1",
+                "extensionAttributes": [],
+                "name": "Arm1",
+                "label": "Lirilumab + Ipilimumab",
+                "description": null,
+                "type": {
+                  "id": "Code_138",
+                  "extensionAttributes": [],
+                  "code": "C174266",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Experimental Arm",
+                  "instanceType": "Code"
+                },
+                "dataOriginDescription": "Data collected from subjects",
+                "dataOriginType": {
+                  "id": "Code_139",
+                  "extensionAttributes": [],
+                  "code": "C188866",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Data Generated Within Study",
+                  "instanceType": "Code"
+                },
+                "populationIds": ["StudyDesignPopulation_1"],
+                "notes": [],
+                "instanceType": "StudyArm"
+              }
+            ],
+            "studyCells": [
+              {
+                "id": "StudyCell_1",
+                "extensionAttributes": [],
+                "armId": "StudyArm_1",
+                "epochId": "StudyEpoch_1",
+                "elementIds": [
+                  "StudyElement_1"
+                ],
+                "instanceType": "StudyCell"
+              }
+            ],
+            "rationale": "Not provided.",
+            "epochs": [
+              {
+                "id": "StudyEpoch_1",
+                "extensionAttributes": [],
+                "name": "Screening",
+                "label": "Screening",
+                "description": "Screening Epoch",
+                "type": {
+                  "id": "Code_144",
+                  "extensionAttributes": [],
+                  "code": "C202487",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Screening Epoch",
+                  "instanceType": "Code"
+                },
+                "previousId": null,
+                "nextId": null,
+                "notes": [],
+                "instanceType": "StudyEpoch"
+              }
+            ],
+            "elements": [
+              {
+                "id": "StudyElement_1",
+                "extensionAttributes": [],
+                "name": "EL1",
+                "label": "Screening",
+                "description": "Screening Element",
+                "transitionStartRule": {
+                  "id": "TransitionRule_7",
+                  "extensionAttributes": [],
+                  "name": "ELEMENT_START_RULE_1",
+                  "label": null,
+                  "description": null,
+                  "text": "Informed consent",
+                  "instanceType": "TransitionRule"
+                },
+                "transitionEndRule": {
+                  "id": "TransitionRule_8",
+                  "extensionAttributes": [],
+                  "name": "ELEMENT_END_RULE_1",
+                  "label": null,
+                  "description": null,
+                  "text": "Completion of all screening activities and no more than 2 weeks from informed consent",
+                  "instanceType": "TransitionRule"
+                },
+                "studyInterventionIds": [],
+                "notes": [],
+                "instanceType": "StudyElement"
+              }
+            ],
+            "estimands": [],
+            "indications": [
+              {
+                "id": "Indication_1",
+                "extensionAttributes": [],
+                "name": "IND1",
+                "label": "Non-Small Cell Lung Cancer (NSCLC)",
+                "description": null,
+                "codes": [
+                  {
+                    "id": "Code_604",
+                    "extensionAttributes": [],
+                    "code": "254637007",
+                    "codeSystem": "SNOMED",
+                    "codeSystemVersion": "2025-02-01",
+                    "decode": "Non-small cell lung cancer",
+                    "instanceType": "Code"
+                  }
+                ],
+                "isRareDisease": false,
+                "notes": [],
+                "instanceType": "Indication"
+              },
+              {
+                "id": "Indication_2",
+                "extensionAttributes": [],
+                "name": "IND2",
+                "label": "Castrate Resistant Prostate Cancer (CRPC)",
+                "description": null,
+                "codes": [
+                  {
+                    "id": "Code_605",
+                    "extensionAttributes": [],
+                    "code": " 427492003",
+                    "codeSystem": "SNOMED",
+                    "codeSystemVersion": "2025-02-01",
+                    "decode": "Hormone refractory prostate cancer",
+                    "instanceType": "Code"
+                  }
+                ],
+                "isRareDisease": false,
+                "notes": [],
+                "instanceType": "Indication"
+              },
+              {
+                "id": "Indication_3",
+                "extensionAttributes": [],
+                "name": "IND3",
+                "label": "Melanoma (MEL)",
+                "description": null,
+                "codes": [
+                  {
+                    "id": "Code_6050",
+                    "extensionAttributes": [],
+                    "code": " 372244006",
+                    "codeSystem": "SNOMED",
+                    "codeSystemVersion": "2025-02-01",
+                    "decode": "Malignant melanoma",
+                    "instanceType": "Code"
+                  }
+                ],
+                "isRareDisease": false,
+                "notes": [],
+                "instanceType": "Indication"
+              }
+            ],
+            "studyInterventionIds": [
+              "StudyIntervention_1",
+              "StudyIntervention_2"
+            ],
+            "objectives": [
+              {
+                "id": "Objective_1",
+                "extensionAttributes": [],
+                "name": "OBJ1",
+                "label": "",
+                "description": "Main objective",
+                "text": "<p>Not available.</p>",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_622",
+                  "extensionAttributes": [],
+                  "code": "C85826",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Study Primary Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_1",
+                    "extensionAttributes": [],
+                    "name": "END1",
+                    "label": "",
+                    "description": "",
+                    "text": "<p>Safety as measured by the rate of adverse events, and serious adverse events [Time Frame: Approximately 510 days]</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_621",
+                      "extensionAttributes": [],
+                      "code": "C94496",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Primary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "Objective_2",
+                "extensionAttributes": [],
+                "name": "OBJ2",
+                "label": "",
+                "description": "Safety",
+                "text": "<p>Not available.</p>",
+                "dictionaryId": null,
+                "notes": [],
+                "instanceType": "Objective",
+                "level": {
+                  "id": "Code_629_o",
+                  "extensionAttributes": [],
+                  "code": "C85827",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "Study Secondary Objective",
+                  "instanceType": "Code"
+                },
+                "endpoints": [
+                  {
+                    "id": "Endpoint_2",
+                    "extensionAttributes": [],
+                    "name": "END3",
+                    "label": "",
+                    "description": "",
+                    "text": "<p>Efficacy as measured by tumor assessment</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_624",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_3",
+                    "extensionAttributes": [],
+                    "name": "END4",
+                    "label": "",
+                    "description": "",
+                    "text": "<p>The maximum observed serum concentration (Cmax) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_626",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_4",
+                    "extensionAttributes": [],
+                    "name": "END5",
+                    "label": "",
+                    "description": null,
+                    "text": "<p>The time of maximum observed serum concentration (Tmax) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_5",
+                    "extensionAttributes": [],
+                    "name": "END6",
+                    "label": "",
+                    "description": null,
+                    "text": "<p>Area under the serum concentration-time curve in one dosing interval [AUC(TAU)] of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_1",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_6",
+                    "extensionAttributes": [],
+                    "name": "END7",
+                    "label": "",
+                    "description": null,
+                    "text": "<p>Area under the serum concentration-time curve from time zero extrapolated to infinite time [AUC(INF)] of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_2",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_7",
+                    "extensionAttributes": [],
+                    "name": "END8",
+                    "label": "",
+                    "description": null,
+                    "id": "Endpoint_7",
+                    "text": "<p>Apparent total body clearance (CL) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_3",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_8",
+                    "extensionAttributes": [],
+                    "name": "END9",
+                    "label": "",
+                    "description": null,
+                    "id": "Endpoint_8",
+                    "text": "<p>Apparent total body clearance (CL) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_4",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_9",
+                    "extensionAttributes": [],
+                    "name": "END10",
+                    "label": "",
+                    "description": null,
+                    "id": "Endpoint_9",
+                    "text": "<p>Apparent volume of distribution at steady state (Vss) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_5",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_10",
+                    "extensionAttributes": [],
+                    "name": "END11",
+                    "label": "",
+                    "description": null,
+                    "id": "Endpoint_10",
+                    "text": "<p>Serum half-life (T-HALF) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_6",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_11",
+                    "extensionAttributes": [],
+                    "name": "END12",
+                    "label": "",
+                    "description": null,
+                    "id": "Endpoint_11",
+                    "text": "<p>Trough observed serum concentration (Cmin) of BMS-986015 and Ipilimumab</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_7",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  },
+                  {
+                    "id": "Endpoint_12",
+                    "extensionAttributes": [],
+                    "name": "END13",
+                    "label": "",
+                    "description": null,
+                    "id": "Endpoint_12",
+                    "text": "<p>Immunogenicity as measured by the incidence of Ipilimumab and anti-Killer cell immunoglobulin-like receptor (KIR) (BMS-986015) anti-drug antibodies (ADA)</p>",
+                    "dictionaryId": null,
+                    "notes": [],
+                    "instanceType": "Endpoint",
+                    "purpose": "",
+                    "level": {
+                      "id": "Code_627_8",
+                      "extensionAttributes": [],
+                      "code": "C139173",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Secondary Endpoint",
+                      "instanceType": "Code"
+                    }
+                  }
+                ]
+              }
+            ],
+            "population": {
+              "id": "StudyDesignPopulation_1",
+              "extensionAttributes": [],
+              "name": "POP1",
+              "label": "",
+              "description": "Subjects With Selected Advanced Tumor",
+              "includesHealthySubjects": false,
+              "plannedEnrollmentNumber": {
+                "id": "Quantity_8",
+                "extensionAttributes": [],
+                "value": 150.0,
+                "unit": null,
+                "instanceType": "Quantity"
+              },
+              "plannedCompletionNumber": null,
+              "plannedSex": [
+                {
+					"id": "Code_620_b",
+					"extensionAttributes": [],
+					"code": "C16576",
+					"codeSystem": "http://www.cdisc.org",
+					"codeSystemVersion": "2025-09-26",
+					"decode": "Female",
+					"instanceType": "Code"
+					},
+					{
+					"id": "Code_620_d",
+					"extensionAttributes": [],
+					"code": "C20197",
+					"codeSystem": "http://www.cdisc.org",
+					"codeSystemVersion": "2025-09-26",
+					"decode": "Male",
+					"instanceType": "Code"
+					}
+              ],
+              "criterionIds": [
+                "EligibilityCriterion_1",
+                "EligibilityCriterion_2",
+                "EligibilityCriterion_3",
+                "EligibilityCriterion_4",
+                "EligibilityCriterion_5",
+                "EligibilityCriterion_6",
+                "EligibilityCriterion_7",
+                "EligibilityCriterion_8",
+                "EligibilityCriterion_9",
+                "EligibilityCriterion_10",
+                "EligibilityCriterion_11",
+                "EligibilityCriterion_12"
+              ],
+              "plannedAge": {
+                "id": "Range_1_u",
+                "extensionAttributes": [],
+                "minValue": {
+                  "id": "Quantity_9",
+                  "extensionAttributes": [],
+                  "value": 18.0,
+                  "unit": {
+                    "id": "AliasCode_251",
+                    "extensionAttributes": [],
+                    "standardCode": {
+                      "id": "Code_618",
+                      "extensionAttributes": [],
+                      "code": "C29848",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Year",
+                      "instanceType": "Code"
+                    },
+                    "standardCodeAliases": [],
+                    "instanceType": "AliasCode"
+                  },
+                  "instanceType": "Quantity"
+                },
+                "maxValue": {
+                  "id": "Quantity_10",
+                  "extensionAttributes": [],
+                  "value": 120.0,
+                  "unit": {
+                    "id": "AliasCode_252",
+                    "extensionAttributes": [],
+                    "standardCode": {
+                      "id": "Code_619",
+                      "extensionAttributes": [],
+                      "code": "C29848",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Year",
+                      "instanceType": "Code"
+                    },
+                    "standardCodeAliases": [],
+                    "instanceType": "AliasCode"
+                  },
+                  "instanceType": "Quantity"
+                },
+                "isApproximate": false,
+                "instanceType": "Range"
+              },
+              "notes": [],
+              "instanceType": "StudyDesignPopulation",
+              "cohorts": []
+            },
+            "scheduleTimelines": [
+              {
+                "id": "ScheduleTimeline_4",
+                "extensionAttributes": [],
+                "name": "Main Timeline",
+                "label": "Main Timeline",
+                "description": "This is the main timeline for the study design.",
+                "mainTimeline": true,
+                "entryCondition": "Potential subject identified",
+                "entryId": "ScheduledActivityInstance_9",
+                "exits": [
+                  {
+                    "id": "ScheduleTimelineExit_4",
+                    "extensionAttributes": [],
+                    "instanceType": "ScheduleTimelineExit"
+                  }
+                ],
+                "timings": [
+                  {
+                    "id": "Timing_1",
+                    "extensionAttributes": [],
+                    "name": "TIM1",
+                    "label": "Screening",
+                    "description": "Screening timing",
+                    "type": {
+                      "id": "Code_20",
+                      "extensionAttributes": [],
+                      "code": "C201357",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Before",
+                      "instanceType": "Code"
+                    },
+                    "value": "P28D",
+                    "valueLabel": "4 weeks",
+                    "relativeToFrom": {
+                      "id": "Code_21",
+                      "extensionAttributes": [],
+                      "code": "C201355",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Start to Start",
+                      "instanceType": "Code"
+                    },
+                    "relativeFromScheduledInstanceId": "ScheduledActivityInstance_9",
+                    "relativeToScheduledInstanceId": "ScheduledActivityInstance_10",
+                    "windowLower": "P0D",
+                    "windowUpper": "P27D",
+                    "windowLabel": "Day -28 to -1",
+                    "instanceType": "Timing"
+                  },
+				  {
+                    "id": "Timing_2",
+                    "extensionAttributes": [],
+                    "name": "TIM2",
+                    "label": "Day 1",
+                    "description": "Day 1 anchor",
+                    "type": {
+                      "id": "Code_61t",
+                      "extensionAttributes": [],
+                      "code": "C201358",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Fixed Reference",
+                      "instanceType": "Code"
+                    },
+                    "value": "P0D",
+                    "valueLabel": "Anchor",
+                    "relativeToFrom": {
+                      "id": "Code_62",
+                      "extensionAttributes": [],
+                      "code": "C201355",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Start to Start",
+                      "instanceType": "Code"
+                    },
+                    "relativeFromScheduledInstanceId": "ScheduledActivityInstance_10",
+                    "relativeToScheduledInstanceId": "ScheduledActivityInstance_10",
+                    "windowLower": null,
+                    "windowUpper": null,
+                    "windowLabel": "",
+                    "instanceType": "Timing"
+                  }
+                ],
+                "instances": [
+                  {
+                    "id": "ScheduledActivityInstance_9",
+                    "extensionAttributes": [],
+                    "name": "SCREEN1",
+                    "label": "Screen One",
+                    "description": "-",
+                    "defaultConditionId": "ScheduledActivityInstance_10",
+                    "epochId": "StudyEpoch_1",
+                    "instanceType": "ScheduledActivityInstance",
+                    "timelineId": "ScheduleTimeline_1",
+                    "timelineExitId": null,
+                    "activityIds": [
+                      "Activity_1",
+                      "Activity_2",
+                      "Activity_3",
+                      "Activity_4",
+                      "Activity_5",
+                      "Activity_6",
+                      "Activity_7",
+                      "Activity_8",
+                      "Activity_9",
+                      "Activity_10"
+                    ],
+                    "encounterId": "Encounter_1"
+                  },
+                  {
+                    "id": "ScheduledActivityInstance_10",
+                    "extensionAttributes": [],
+                    "name": "DOSE",
+                    "label": "First Dose - Day 1",
+                    "description": "-",
+                    "defaultConditionId": null,
+                    "epochId": null,
+                    "instanceType": "ScheduledActivityInstance",
+                    "timelineId": null,
+                    "timelineExitId": "ScheduleTimelineExit_4",
+                    "activityIds": [],
+                    "encounterId": null
+                  }
+                ],
+                "plannedDuration": null,
+                "instanceType": "ScheduleTimeline"
+              },
+              {
+                "id": "ScheduleTimeline_1",
+                "extensionAttributes": [],
+                "name": "History Timeline",
+                "label": "History Timeline",
+                "description": "Timing of periods of the patients history relative to screening enabling EHR record matching.",
+                "mainTimeline": false,
+                "entryCondition": "Patient birth or entering the registration",
+                "entryId": "SA_01_MIN120Y",
+                "exits": [
+                  {
+                    "id": "ScheduleTimelineExit_1",
+                    "extensionAttributes": [],
+                    "instanceType": "ScheduleTimelineExit"
+                  }
+                ],
+				"instances": [
+					{
+					  "id": "SA_01_MIN120Y",
+					  "name": "MIN120Y",
+					  "defaultConditionId": "SA_02_MIN3Y",
+					  "instanceType": "ScheduledActivityInstance",
+					  "activityIds": [
+						"Activity_5"]
+					},
+					{
+					  "id": "SA_05_MIN6M",
+					  "name": "MIN6M",
+					  "defaultConditionId": "SA_06_MIN1M",
+					  "instanceType": "ScheduledActivityInstance",
+					  "activityIds": [
+						"Activity_6",
+						"Activity_7",
+						"Activity_8"]
+					},
+					{
+					  "id": "SA_09_SCR",
+					  "name": "SCR",
+					  "defaultConditionId": null,
+					  "timelineExitId": "ScheduleTimelineExit_1",
+					  "instanceType": "ScheduledActivityInstance",					  
+					  "activityIds": [
+						"Activity_1",
+						"Activity_2",
+						"Activity_3",
+						"Activity_4",
+						"Activity_9",
+						"Activity_10"]
+					}
+				],
+                "timings": [
+					{
+					  "id": "Tim_01",
+					  "name": "TMIN120Y",
+					  "valueLabel": "Year -120",
+					  "value": "P120Y",
+					  "windowLabel": "within last 120 years",
+					  "windowLower": "P0D",
+					  "windowUpper": "P120Y",
+					  "type": {
+								  "id": "Code_01",
+								  "extensionAttributes": [],
+								  "code": "C201357",
+								  "codeSystem": "http://www.cdisc.org",
+								  "codeSystemVersion": "2025-09-26",
+								  "decode": "Before",
+								  "instanceType": "Code"
+								},
+					  "relativeToFrom": {
+						  "id": "Code_21_1",
+						  "extensionAttributes": [],
+						  "code": "C201355",
+						  "codeSystem": "http://www.cdisc.org",
+						  "codeSystemVersion": "2025-09-26",
+						  "decode": "Start to Start",
+						  "instanceType": "Code"
+						},
+					  "relativeFromScheduledInstanceId": "SA_01_MIN120Y",
+					  "relativeToScheduledInstanceId": "SA_09_SCR"
+					},
+					{
+					  "id": "Tim_02",
+					  "name": "P6M",
+					  "valueLabel": "Month -6",
+					  "value": "P6M",
+					  "windowLabel": "within 6 months before",
+					  "windowLower": "P0D",
+					  "windowUpper": "P6M",
+					  "type": {
+								  "id": "Code_03",
+								  "extensionAttributes": [],
+								  "code": "C201357",
+								  "codeSystem": "http://www.cdisc.org",
+								  "codeSystemVersion": "2025-09-26",
+								  "decode": "Before",
+								  "instanceType": "Code"
+								},
+                    "relativeToFrom": {
+                      "id": "Code_21_2",
+                      "extensionAttributes": [],
+                      "code": "C201355",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Start to Start",
+                      "instanceType": "Code"
+                    },
+					  "relativeFromScheduledInstanceId": "SA_05_MIN6M",
+					  "relativeToScheduledInstanceId": "SA_09_SCR"
+					},
+					{
+					  "id": "Tim_03",
+					  "name": "P0D",
+					  "valueLabel": "Screening index",
+					  "value": "P0D",
+					  "type": {
+								  "id": "Code_61",
+								  "extensionAttributes": [],
+								  "code": "C201358",
+								  "codeSystem": "http://www.cdisc.org",
+								  "codeSystemVersion": "2025-09-26",
+								  "decode": "Fixed Reference",
+								  "instanceType": "Code"
+								},
+							"relativeToFrom": {
+							  "id": "Code_21_3",
+							  "extensionAttributes": [],
+							  "code": "C201355",
+							  "codeSystem": "http://www.cdisc.org",
+							  "codeSystemVersion": "2025-09-26",
+							  "decode": "Start to Start",
+							  "instanceType": "Code"
+							},
+					  "relativeFromScheduledInstanceId": "SA_09_SCR",
+					  "relativeToScheduledInstanceId": "SA_09_SCR"
+					}
+                ],
+                "plannedDuration": null,
+                "instanceType": "ScheduleTimeline"
+              }
+            ],
+            "biospecimenRetentions": [],
+            "documentVersionIds": [],
+            "eligibilityCriteria": [
+              {
+                "id": "EligibilityCriterion_1",
+                "extensionAttributes": [],
+                "name": "IN01",
+                "label": "Indication",
+                "description": "",
+                "category": {
+                  "id": "Code_638",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "01",
+                "criterionItemId": "EligibilityCriterionItem_1",
+                "nextId": "EligibilityCriterion_2",
+                "previousId": null,
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_2",
+                "extensionAttributes": [],
+                "name": "IN02",
+                "label": "Lesions",
+                "description": "",
+                "category": {
+                  "id": "Code_639",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "02",
+                "criterionItemId": "EligibilityCriterionItem_2",
+                "nextId": "EligibilityCriterion_3",
+                "previousId": "EligibilityCriterion_1",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_3",
+                "extensionAttributes": [],
+                "name": "IN03",
+                "label": "Biopsies",
+                "description": "",
+                "category": {
+                  "id": "Code_640",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "03",
+                "criterionItemId": "EligibilityCriterionItem_3",
+                "nextId": "EligibilityCriterion_4",
+                "previousId": "EligibilityCriterion_2",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_4",
+                "extensionAttributes": [],
+                "name": "IN04",
+                "label": "ECOG",
+                "description": "",
+                "category": {
+                  "id": "Code_641",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "04",
+                "criterionItemId": "EligibilityCriterionItem_4",
+                "nextId": "EligibilityCriterion_5",
+                "previousId": "EligibilityCriterion_3",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_5",
+                "extensionAttributes": [],
+                "name": "IN05",
+                "label": "Life expectancy",
+                "description": "",
+                "category": {
+                  "id": "Code_642",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "05",
+                "criterionItemId": "EligibilityCriterionItem_5",
+                "nextId": "EligibilityCriterion_6",
+                "previousId": "EligibilityCriterion_4",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_6",
+                "extensionAttributes": [],
+                "name": "IN06",
+                "label": "Lab values",
+                "description": "",
+                "category": {
+                  "id": "Code_643",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "06",
+                "criterionItemId": "EligibilityCriterionItem_6",
+                "nextId": "EligibilityCriterion_7",
+                "previousId": "EligibilityCriterion_5",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_7",
+                "extensionAttributes": [],
+                "name": "IN07",
+                "label": "Thyroid function",
+                "description": "",
+                "category": {
+                  "id": "Code_644",
+                  "extensionAttributes": [],
+                  "code": "C25532",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "INCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "07",
+                "criterionItemId": "EligibilityCriterionItem_7",
+                "nextId": "EligibilityCriterion_8",
+                "previousId": "EligibilityCriterion_6",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_8",
+                "extensionAttributes": [],
+                "name": "EX01",
+                "label": "Prior Study",
+                "description": "",
+                "category": {
+                  "id": "Code_645",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "EXCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "08",
+                "criterionItemId": "EligibilityCriterionItem_8",
+                "nextId": "EligibilityCriterion_9",
+                "previousId": "EligibilityCriterion_7",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_9",
+                "extensionAttributes": [],
+                "name": "EX02",
+                "label": "Brain metastasis",
+                "description": "",
+                "category": {
+                  "id": "Code_646",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "EXCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "09",
+                "criterionItemId": "EligibilityCriterionItem_9",
+                "nextId": "EligibilityCriterion_10",
+                "previousId": "EligibilityCriterion_8",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_10",
+                "extensionAttributes": [],
+                "name": "EX03",
+                "label": "Autoimmune Disease",
+                "description": "",
+                "category": {
+                  "id": "Code_647",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "EXCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "10",
+                "criterionItemId": "EligibilityCriterionItem_10",
+                "nextId": "EligibilityCriterion_11",
+                "previousId": "EligibilityCriterion_9",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_11",
+                "extensionAttributes": [],
+                "name": "EX04",
+                "label": "Prior Therapy",
+                "description": "",
+                "category": {
+                  "id": "Code_648",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "EXCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "11",
+                "criterionItemId": "EligibilityCriterionItem_11",
+                "nextId": "EligibilityCriterion_12",
+                "previousId": "EligibilityCriterion_10",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              },
+              {
+                "id": "EligibilityCriterion_12",
+                "extensionAttributes": [],
+                "name": "EX05",
+                "label": "Neuropathy",
+                "description": "",
+                "category": {
+                  "id": "Code_649",
+                  "extensionAttributes": [],
+                  "code": "C25370",
+                  "codeSystem": "http://www.cdisc.org",
+                  "codeSystemVersion": "2025-09-26",
+                  "decode": "EXCLUSION",
+                  "instanceType": "Code"
+                },
+                "identifier": "12",
+                "criterionItemId": "EligibilityCriterionItem_12",
+                "nextId": "EligibilityCriterion_13",
+                "previousId": "EligibilityCriterion_11",
+                "notes": [],
+                "instanceType": "EligibilityCriterion"
+              }
+            ],
+            "analysisPopulations": [],
+            "notes": [],
+            "instanceType": "InterventionalStudyDesign",
+            "subTypes": [],
+            "model": {
+              "id": "Code_156",
+              "extensionAttributes": [],
+              "code": "C82640",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "SINGLE GROUP",
+              "instanceType": "Code"
+            },
+            "intentTypes": [
+              {
+                "id": "Code_152",
+                "extensionAttributes": [],
+                "code": "C49656",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Treatment Study",
+                "instanceType": "Code"
+              }
+            ],
+            "blindingSchema": {
+              "id": "AliasCode_23",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_151",
+                "extensionAttributes": [],
+                "code": "C49659",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "OPEN LABEL",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            }
+          }
+        ],
+        "titles": [
+          {
+            "id": "StudyTitle_2",
+            "extensionAttributes": [],
+            "text": "Safety Study of BMS-986015 (Anti-KIR) in Combination With Ipilimumab in Subjects With Selected Advanced Tumor",
+            "type": {
+              "id": "Code_9",
+              "extensionAttributes": [],
+              "code": "C207615",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Brief Study Title",
+              "instanceType": "Code"
+            },
+            "instanceType": "StudyTitle"
+          },
+          {
+            "id": "StudyTitle_3",
+            "extensionAttributes": [],
+            "text": "A Phase 1 Study of BMS-986015, an Anti-KIR Monoclonal Antibody, Administered With Ipilimumab, an Anti-CTLA4 Monoclonal Antibody, in Subjects With Select Advanced Solid Tumors",
+            "type": {
+              "id": "Code_10",
+              "extensionAttributes": [],
+              "code": "C207616",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Official Study Title",
+              "instanceType": "Code"
+            },
+            "instanceType": "StudyTitle"
+          }
+        ],
+        "eligibilityCriterionItems": [
+          {
+            "id": "EligibilityCriterionItem_1",
+            "extensionAttributes": [],
+            "name": "IN01",
+            "label": null,
+            "description": null,
+            "text": "<p>Histologic confirmation of one of the following solid tumors that is advanced (unresectable or metastatic) for dose escalation or cohort expansion:<usdm:tag name=\"indic_1\"/>, <usdm:tag name=\"indic_2\"/>, <usdm:tag name=\"indic_3\"/></p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_2",
+            "extensionAttributes": [],
+            "name": "IN02",
+            "label": null,
+            "description": null,
+            "text": "<p>At least one measurable lesion at baseline by Computed tomography (CT) or Magnetic resonance imaging (MRI) as per <usdm:tag name=\"bc_recist_1\"/></p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_3",
+            "extensionAttributes": [],
+            "name": "IN03",
+            "label": null,
+            "description": null,
+            "text": "<p>Biopsies: Subjects in the melanoma cohort must have at least 1 tumor site that can be biopsied at acceptable clinical risk</p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_4",
+            "extensionAttributes": [],
+            "name": "IN04",
+            "label": null,
+            "description": null,
+            "text": "<p><usdm:tag name=\"bc_ecog_1\"/> of 0 or 1</p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_5",
+            "extensionAttributes": [],
+            "name": "IN05",
+            "label": null,
+            "description": null,
+            "text": "<p>Estimated life expectancy of >= 12 weeks</p>",
+			"dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_6",
+            "extensionAttributes": [],
+            "name": "IN06",
+            "label": null,
+            "description": null,
+            "text": "<p><usdm:tag name=\"bc_wbc_1\"/> &gt;=2000/&#181;L, <usdm:tag name=\"bc_neut_1\"/> &gt;=1500/&#181;L, <usdm:tag name=\"bc_plat_1\"/> &gt;= 100x1000/&#181;L, <usdm:tag name=\"bc_hgb_1\"/> &gt;= 8.5 g/dL, <usdm:tag name=\"bc_crcl_1\"/> &lt;= 1.5 X upper limit of normal (ULN) mL/min, <usdm:tag name=\"bc_alt_1\"/> and <usdm:tag name=\"bc_ast_1\"/> &lt;= 3x ULN</p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_7",
+            "extensionAttributes": [],
+            "name": "IN07",
+            "label": null,
+            "description": null,
+            "text": "<p>Normal <usdm:tag name=\"bcCat_thyr_1\"/> or be on stable hormone supplementation</p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_8",
+            "extensionAttributes": [],
+            "name": "IN08",
+            "label": null,
+            "description": null,
+            "text": "<p>Participation in any prior clinical study with BMS-936558 or ipilimumab that has overall survival listed as a primary/co-primary endpoint</p>",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_9",
+            "extensionAttributes": [],
+            "name": "EX01",
+            "label": null,
+            "description": null,
+            "text": "<p>Subjects with known or suspected <usdm:tag name=\"contraIndic_1\"/></p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_10",
+            "extensionAttributes": [],
+            "name": "EX02",
+            "label": null,
+            "description": null,
+            "text": "<p>Subjects with active autoimmune disease, uncontrolled or significant cardiovascular disease</p>",
+            "dictionaryId": null,
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_11",
+            "extensionAttributes": [],
+            "name": "EX03",
+            "label": null,
+            "description": null,
+            "text": "<p>Prior therapy with anti- Cytotoxic T-Lymphocyte Antigen 4 (CTLA4) antibody or anti- Killer cell immunoglobulin-like receptor (KIR) antibody</p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          },
+          {
+            "id": "EligibilityCriterionItem_12",
+            "extensionAttributes": [],
+            "name": "EX04",
+            "label": null,
+            "description": null,
+            "text": "<p>Grade 2 <usdm:tag name=\"contraIndic_2\"/></p>",
+            "dictionaryId": "SyntaxTemplateDictionary_1",
+            "notes": [],
+            "instanceType": "EligibilityCriterionItem"
+          }
+        ],
+        "narrativeContentItems": [],
+        "abbreviations": [],
+        "roles": [
+          {
+            "id": "StudyRole_1",
+            "extensionAttributes": [],
+            "name": "ROLE_1",
+            "label": "Sponsor",
+            "description": "",
+            "code": {
+              "id": "Code_670",
+              "extensionAttributes": [],
+              "code": "C70793",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Sponsor",
+              "instanceType": "Code"
+            },
+            "appliesToIds": ["StudyVersion_1"],
+            "assignedPersons": [],
+            "organizationIds": [
+              "Organization_1"
+            ],
+            "masking": {
+              "id": "Masking_1",
+              "extensionAttributes": [],
+              "text": "Masked",
+              "isMasked": false,
+              "instanceType": "Masking"
+            },
+            "notes": [],
+            "instanceType": "StudyRole"
+          },		  
+          {
+            "id": "StudyRole_2",
+            "extensionAttributes": [],
+            "name": "ROLE_2",
+            "label": "Investigator",
+            "description": "",
+            "code": {
+              "id": "Code_670_b",
+              "extensionAttributes": [],
+              "code": "C25936",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Investigator",
+              "instanceType": "Code"
+            },
+            "appliesToIds": ["InterventionalStudyDesign_1"],
+            "assignedPersons": [],
+            "organizationIds": [],
+            "masking": {
+              "id": "Masking_2",
+              "extensionAttributes": [],
+              "text": "Masked",
+              "isMasked": false,
+              "instanceType": "Masking"
+            },
+            "notes": [],
+            "instanceType": "StudyRole"
+          }
+        ],
+        "organizations": [
+          {
+            "id": "Organization_1",
+            "extensionAttributes": [],
+            "name": "BMS",
+            "label": "Bristol-Myers Squibb",
+            "type": {
+              "id": "Code_1",
+              "extensionAttributes": [],
+              "code": "C54149",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Pharmaceutical Company",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "not available",
+            "legalAddress": null,
+            "managedSites": [],
+            "instanceType": "Organization"
+          },
+          {
+            "id": "Organization_2",
+            "extensionAttributes": [],
+            "name": "CT-GOV",
+            "label": "ClinicalTrials.gov",
+            "type": {
+              "id": "Code_3",
+              "extensionAttributes": [],
+              "code": "C93453",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Clinical Study Registry",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "USGOV",
+            "identifier": "CT-GOV",
+            "legalAddress": {
+              "id": "Address_2",
+              "extensionAttributes": [],
+              "text": "National Library of Medicine, Bethesda, 8600 Rockville Pike, MD, 20894, United States of America",
+              "lines": [
+                "National Library of Medicine"
+              ],
+              "city": "Bethesda",
+              "district": "8600 Rockville Pike",
+              "state": "MD",
+              "postalCode": "20894",
+              "country": {
+                "id": "Code_4",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [],
+            "instanceType": "Organization"
+          }
+        ],
+        "studyInterventions": [
+          {
+            "id": "StudyIntervention_1",
+            "extensionAttributes": [],
+            "name": "LIR",
+            "label": "Lirilumab",
+            "description": null,
+            "role": {
+              "id": "Code_611",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Experimental Intervention",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_612",
+              "extensionAttributes": [],
+              "code": "C1909",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "DRUG",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": null,
+            "codes": [],
+            "administrations": [],
+            "notes": [],
+            "instanceType": "StudyIntervention"
+          },
+          {
+            "id": "StudyIntervention_2",
+            "extensionAttributes": [],
+            "name": "IPI",
+            "label": "Ipilimumab",
+            "description": null,
+            "role": {
+              "id": "Code_611_a",
+              "extensionAttributes": [],
+              "code": "C41161",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Experimental Intervention",
+              "instanceType": "Code"
+            },
+            "type": {
+              "id": "Code_612_a",
+              "extensionAttributes": [],
+              "code": "C1909",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "DRUG",
+              "instanceType": "Code"
+            },
+            "minimumResponseDuration": {},
+            "codes": [],
+            "administrations": [],
+            "notes": [],
+            "instanceType": "StudyIntervention"
+          }
+        ],
+        "administrableProducts": [],
+        "medicalDevices": [],
+        "productOrganizationRoles": [],
+        "biomedicalConcepts": [
+          {
+            "id": "BiomedicalConcept_20",
+            "extensionAttributes": [],
+            "name": "Sex",
+            "label": "Sex",
+            "synonyms": [],
+            "reference": "/mdr/bc/packages/2025-04-01/biomedicalconcepts/C28421",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_130",
+                "extensionAttributes": [],
+                "name": "Sex",
+                "label": "Sex",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "string",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_174",
+                    "extensionAttributes": [],
+                    "name": "RC_C20197",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_482",
+                      "extensionAttributes": [],
+                      "code": "C20197",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Male",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_175",
+                    "extensionAttributes": [],
+                    "name": "RC_C16576",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_483",
+                      "extensionAttributes": [],
+                      "code": "C16576",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Female",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_173",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_484",
+                    "extensionAttributes": [],
+                    "code": "C28421",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Sex",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_131",
+                "extensionAttributes": [],
+                "name": "ColDT1",
+                "label": "Collection Date Time",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "datetime",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_174",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_485",
+                    "extensionAttributes": [],
+                    "code": "C82515",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Collection Date Time",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_175",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_486",
+                "extensionAttributes": [],
+                "code": "C28421",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Sex",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_21",
+            "extensionAttributes": [],
+            "name": "Race",
+            "label": "Race",
+            "synonyms": [
+              "Racial Group"
+            ],
+            "reference": "/mdr/bc/packages/2025-04-01/biomedicalconcepts/C17049",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_132",
+                "extensionAttributes": [],
+                "name": "Race",
+                "label": "Race",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "string",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_176",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_487",
+                    "extensionAttributes": [],
+                    "code": "C17049",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Race",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_133",
+                "extensionAttributes": [],
+                "name": "ColDT2",
+                "label": "Collection Date Time",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "datetime",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_177",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_488",
+                    "extensionAttributes": [],
+                    "code": "C82515",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Collection Date Time",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_178",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_489",
+                "extensionAttributes": [],
+                "code": "C17049",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Race",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_25",
+            "extensionAttributes": [],
+            "name": "ALT2",
+            "label": "Alanine aminotransferase (ALT)",
+            "synonyms": [
+              "ALT",
+              "SGPT",
+              "Alanine Aminotransferase Measurement"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations/ALTSERPL",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_147",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_1",
+                "label": "LBTESTCD",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_5",
+                    "extensionAttributes": [],
+                    "name": "RC_C67456_2",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                    "id": "Code_520t",
+                    "extensionAttributes": [],
+                    "code": "C64433",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "ALT",
+                    "instanceType": "Code"
+                  },
+                    "instanceType": "ResponseCode"
+                  }
+				
+				],
+                "code": {
+                  "id": "AliasCode_195",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_520",
+                    "extensionAttributes": [],
+                    "code": "C65047",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "CDISC SDTM Laboratory Test Code Terminology",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_148",
+                "extensionAttributes": [],
+                "name": "LBORRES_1",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_196",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_521",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_149",
+                "extensionAttributes": [],
+                "name": "LBORRESU_1",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_190",
+                    "extensionAttributes": [],
+                    "name": "RC_C67456_3",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_522",
+                      "extensionAttributes": [],
+                      "code": "C67456",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Unit per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_191",
+                    "extensionAttributes": [],
+                    "name": "RC_C67397_1",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_523",
+                      "extensionAttributes": [],
+                      "code": "C67397",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Microkatal per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_192",
+                    "extensionAttributes": [],
+                    "name": "RC_C67376_1",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_524",
+                      "extensionAttributes": [],
+                      "code": "C67376",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "International Unit per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_193",
+                    "extensionAttributes": [],
+                    "name": "RC_C70510_1",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_525",
+                      "extensionAttributes": [],
+                      "code": "C70510",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Nanokatal per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_197",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_526",
+                    "extensionAttributes": [],
+                    "code": "C67365",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Catalytic Activity Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_150",
+                "extensionAttributes": [],
+                "name": "LBSPEC_1",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+					{
+                    "id": "ResponseCode_190_01",
+                    "extensionAttributes": [],
+                    "name": "SERUM_PLASMA0",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                    "id": "Code_527_04",
+                    "extensionAttributes": [],
+                    "code": "C105706",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "SERUM OR PLASMA",
+                    "instanceType": "Code"
+                  },
+                    "instanceType": "ResponseCode"
+                  }
+				],
+                "code": {
+                  "id": "AliasCode_198t",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_527t",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_200",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_531",
+                "extensionAttributes": [],
+                "code": "C64433",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "ALT",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_28",
+            "extensionAttributes": [],
+            "name": "AST2",
+            "label": "Aspartate aminotransferase (AST)",
+            "synonyms": [
+              "AST",
+              "SGOT",
+              "Aspartate Aminotransferase Measurement"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations/ASTSERPL",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_161",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_4",
+                "label": "LBTESTCD",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+				{   "id": "ResponseCode_190_02",
+                    "extensionAttributes": [],
+                    "name": "AST",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                    "id": "Code_550t",
+                    "extensionAttributes": [],
+                    "code": "C64467",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "AST",
+                    "instanceType": "Code"
+                  },
+                    "instanceType": "ResponseCode"
+                  }
+				
+				],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_162",
+                "extensionAttributes": [],
+                "name": "LBORRES_51",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213t",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_163",
+                "extensionAttributes": [],
+                "name": "LBORRESU_31",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_203",
+                    "extensionAttributes": [],
+                    "name": "RC_C67456_3y",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_552",
+                      "extensionAttributes": [],
+                      "code": "C67456",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Unit per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_204",
+                    "extensionAttributes": [],
+                    "name": "RC_C67397_3",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_553",
+                      "extensionAttributes": [],
+                      "code": "C67397",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Microkatal per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  },
+                  {
+                    "id": "ResponseCode_205",
+                    "extensionAttributes": [],
+                    "name": "RC_C67376_3",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_554",
+                      "extensionAttributes": [],
+                      "code": "C67376",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "International Unit per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_214t",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555t",
+                    "extensionAttributes": [],
+                    "code": "C67365",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Catalytic Activity Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+			  {
+                "id": "BiomedicalConceptProperty_164",
+                "extensionAttributes": [],
+                "name": "LBSPEC_11",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+					{
+                    "id": "ResponseCode_190_09",
+                    "extensionAttributes": [],
+                    "name": "SERUM_PLASMA",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                    "id": "Code_527_09",
+                    "extensionAttributes": [],
+                    "code": "C105706",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "SERUM OR PLASMA",
+                    "instanceType": "Code"
+                  },
+                    "instanceType": "ResponseCode"
+                  }
+				],
+                "code": {
+                  "id": "AliasCode_198",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_527",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560",
+                "extensionAttributes": [],
+                "code": "C64467",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "AST",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_34",
+            "extensionAttributes": [],
+            "name": "PE_FIND",
+            "label": "Physical Examination Finding",
+            "synonyms": [],
+            "reference": "https://cdisc-org.github.io/COSMoS/export/cdisc_biomedical_concepts_latest.xlsx",
+            "properties": [],
+            "code": {
+              "id": "AliasCodeX_003",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "CodeX_005",
+                "extensionAttributes": [],
+                "code": "C83119",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Physical Examination Finding",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_35",
+            "extensionAttributes": [],
+            "name": "MH",
+            "label": "Medical History",
+            "synonyms": [],
+            "reference": "https://cdisc-org.github.io/COSMoS/export/cdisc_biomedical_concepts_latest.xlsx",
+            "properties": [{
+                "id": "BiomedicalConceptProperty_001",
+                "extensionAttributes": [],
+                "name": "MHTERM",
+                "label": "Reported term",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_212_01",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_550_01",
+                    "extensionAttributes": [],
+                    "code": "C83118",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Medical History Reported Term",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }],
+            "code": {
+              "id": "AliasCodeX_004",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "CodeX_006",
+                "extensionAttributes": [],
+                "code": "C200145",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Solicited Medical History",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+          {
+            "id": "BiomedicalConcept_39",
+            "extensionAttributes": [],
+            "name": "CM",
+            "label": "Concomitant Medications",
+            "synonyms": [],
+            "reference": "https://cdisc-org.github.io/COSMoS/export/cdisc_biomedical_concepts_latest.xlsx",
+            "properties": [{
+                "id": "BiomedicalConceptProperty_002",
+                "extensionAttributes": [],
+                "name": "AGENT",
+                "label": "Concomitant Agent",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_212_02",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_550_02",
+                    "extensionAttributes": [],
+                    "code": "C70902",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Concomitant Agent",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }],
+            "code": {
+              "id": "AliasCodeX_009",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "CodeX_013",
+                "extensionAttributes": [],
+                "code": "C53630",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Concomitant Therapy",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_01",
+            "extensionAttributes": [],
+            "name": "WBCBLD_01",
+            "label": "White blood cell (WBC)",
+            "synonyms": [
+              "WBC",
+              "White Blood Cells",
+              "Leukocyte count"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_003",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_5",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_7",
+                    "extensionAttributes": [],
+                    "name": "WBC",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550u",
+						"extensionAttributes": [],
+						"code": "C51948",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Leukocyte count",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_004",
+                "extensionAttributes": [],
+                "name": "LBORRES_4",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213u",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_03t",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_005",
+                "extensionAttributes": [],
+                "name": "LBORRESU_3",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_204_01",
+                    "extensionAttributes": [],
+                    "name": "RC_3b",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_553_03y",
+                      "extensionAttributes": [],
+                      "code": "C67255",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Billion per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_214u",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555u",
+                    "extensionAttributes": [],
+                    "code": "C67391",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Number Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_006",
+                "extensionAttributes": [],
+                "name": "LBSPEC_4y",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_6_1",
+                    "extensionAttributes": [],
+                    "name": "rc_BL",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_03",
+						"extensionAttributes": [],
+						"code": "C12434",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "BLOOD",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_01",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_03",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_03",
+                "extensionAttributes": [],
+                "code": "C51948",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Leukocyte count",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_02",
+            "extensionAttributes": [],
+            "name": "NEUT_01",
+            "label": "Neutrophils",
+            "synonyms": [
+              "Neutrophil count"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_007",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_4y",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_8t",
+                    "extensionAttributes": [],
+                    "name": "Neutrophils",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550v",
+						"extensionAttributes": [],
+						"code": "C51950",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Neutrophil count",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_008",
+                "extensionAttributes": [],
+                "name": "LBORRES_8",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213v",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_03u",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_009",
+                "extensionAttributes": [],
+                "name": "LBORRESU_81",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_204_09",
+                    "extensionAttributes": [],
+                    "name": "LBORRESU_NEUT",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_553_03",
+                      "extensionAttributes": [],
+                      "code": "C67255",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Billion per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_214v",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555v",
+                    "extensionAttributes": [],
+                    "code": "C67391",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Number Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_010",
+                "extensionAttributes": [],
+                "name": "LBSPEC_41",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_6t",
+                    "extensionAttributes": [],
+                    "name": "BLOOD_NEUT",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_09t",
+						"extensionAttributes": [],
+						"code": "C12434",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "BLOOD",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_5t",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_06",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_05",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_09w",
+                "extensionAttributes": [],
+                "code": "C51950",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Neutrophil count",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_03",
+            "extensionAttributes": [],
+            "name": "PLAT_01",
+            "label": "Platelets",
+            "synonyms": [
+              "Platelet count"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_011",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_91",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_8",
+                    "extensionAttributes": [],
+                    "name": "PLAT",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550w",
+						"extensionAttributes": [],
+						"code": "C51951",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Platelet count",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_012",
+                "extensionAttributes": [],
+                "name": "LBORRES_111",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213w",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_03v",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_013",
+                "extensionAttributes": [],
+                "name": "LBORRESU_82",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_204_11",
+                    "extensionAttributes": [],
+                    "name": "LBORRESU_PLAT",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_553_11",
+                      "extensionAttributes": [],
+                      "code": "C67255",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Billion per Liter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_214w",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555_4",
+                    "extensionAttributes": [],
+                    "code": "C67391",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Number Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_014",
+                "extensionAttributes": [],
+                "name": "LBSPEC_4",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_6u",
+                    "extensionAttributes": [],
+                    "name": "BLOOD_y",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_09u",
+						"extensionAttributes": [],
+						"code": "C12434",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "BLOOD",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_5",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_011",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_11t",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_09t",
+                "extensionAttributes": [],
+                "code": "C51951",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Platelet count",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_04",
+            "extensionAttributes": [],
+            "name": "TSH",
+            "label": "TSH",
+            "synonyms": [
+              "Thyrotropin Measurement"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_015",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_9",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_12",
+                    "extensionAttributes": [],
+                    "name": "TSH",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_12",
+						"extensionAttributes": [],
+						"code": "C64813",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Thyrotropin Measurement",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_016",
+                "extensionAttributes": [],
+                "name": "LBORRES_11",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213_12",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_12",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_017",
+                "extensionAttributes": [],
+                "name": "LBORRESU_8",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [  ],
+                "code": {
+                  "id": "AliasCode_214_11",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555_11",
+                    "extensionAttributes": [],
+                    "code": "C67365",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Catalytic Activity Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_018",
+                "extensionAttributes": [],
+                "name": "LBSPEC_42",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_11",
+                    "extensionAttributes": [],
+                    "name": "BLOOD_TSH",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_09",
+						"extensionAttributes": [],
+						"code": "C12434",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "BLOOD",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  },
+				  {
+                    "id": "ResponseCode_190_11b",
+                    "extensionAttributes": [],
+                    "name": "SERUMPLASMA_TSH",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_09b",
+						"extensionAttributes": [],
+						"code": "C105706",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "SERUM OR PLASMA",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_11",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_11",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_11",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_09u",
+                "extensionAttributes": [],
+                "code": "C64813",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Thyrotropin Measurement",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_05",
+            "extensionAttributes": [],
+            "name": "T3",
+            "label": "T3",
+            "synonyms": [
+              "Triiodothyronine Measurement"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_019",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_10",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_13",
+                    "extensionAttributes": [],
+                    "name": "T3a",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_13",
+						"extensionAttributes": [],
+						"code": "C74747",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Triiodothyronine Measurement",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_020",
+                "extensionAttributes": [],
+                "name": "LBORRES_12",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213_13",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_13",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_021",
+                "extensionAttributes": [],
+                "name": "LBORRESU_12",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_214_13",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555_13",
+                    "extensionAttributes": [],
+                    "code": "C48207",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Unit of Concentration",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_022",
+                "extensionAttributes": [],
+                "name": "LBSPEC_5",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+				  {
+                    "id": "ResponseCode_190_13x",
+                    "extensionAttributes": [],
+                    "name": "SERUMPLASMA_T3",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_13b",
+						"extensionAttributes": [],
+						"code": "C105706",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "SERUM OR PLASMA",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_13b",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_13b",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_13",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_09v",
+                "extensionAttributes": [],
+                "code": "C74747",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Triiodothyronine Measurement",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_06",
+            "extensionAttributes": [],
+            "name": "T4",
+            "label": "T4",
+            "synonyms": [
+              "Free Thyroxine Measurement"
+            ],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_023",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_13",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_14",
+                    "extensionAttributes": [],
+                    "name": "T3",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_14",
+						"extensionAttributes": [],
+						"code": "C170598",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Free Thyroxine Measurement",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_024",
+                "extensionAttributes": [],
+                "name": "LBORRES_14",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213_14",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_14",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_025",
+                "extensionAttributes": [],
+                "name": "LBORRESU_13",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_214_14",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555_14",
+                    "extensionAttributes": [],
+                    "code": "C71620",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "CDISC SDTM Unit of Measure Terminology",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_026",
+                "extensionAttributes": [],
+                "name": "LBSPEC_7",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+				  {
+                    "id": "ResponseCode_190_13b",
+                    "extensionAttributes": [],
+                    "name": "SERUMPLASMA_T4",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_14b",
+						"extensionAttributes": [],
+						"code": "C105706",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "SERUM OR PLASMA",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_14b",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_14b",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_14",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_14",
+                "extensionAttributes": [],
+                "code": "C170598",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Free Thyroxine Measurement",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_07",
+            "extensionAttributes": [],
+            "name": "RECIST",
+            "label": "Response Evaluation Criteria in Solid Tumors (RECIST) 1.1 criteria",
+            "synonyms": [],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_027",
+                "extensionAttributes": [],
+                "name": "RSTESTCD_01",
+                "label": "RSTESTCD",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_15",
+                    "extensionAttributes": [],
+                    "name": "RESP",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_15",
+						"extensionAttributes": [],
+						"code": "C96613",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Overall Response",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_028",
+                "extensionAttributes": [],
+                "name": "RSORRES_01",
+                "label": "RSORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213_15",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_15",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_029",
+                "extensionAttributes": [],
+                "name": "RSCAT_1",
+                "label": "RSCAT",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+				  {
+                    "id": "ResponseCode_190_15b",
+                    "extensionAttributes": [],
+                    "name": "RECIST",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_15b",
+						"extensionAttributes": [],
+						"code": "C124415",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "RECIST 1.1",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_15b",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_15b",
+                    "extensionAttributes": [],
+                    "code": "C25372",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "RSCAT",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_15",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_15",
+                "extensionAttributes": [],
+                "code": "C96613",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Overall Response",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_08",
+            "extensionAttributes": [],
+            "name": "ECOG",
+            "label": "Eastern Cooperative Oncology Group (ECOG) status",
+            "synonyms": [],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_030",
+                "extensionAttributes": [],
+                "name": "RSTESTCD_02",
+                "label": "RSTESTCD",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_16b",
+                    "extensionAttributes": [],
+                    "name": "RESP_02",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_16b",
+						"extensionAttributes": [],
+						"code": "C102408",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "ECOG - Performance Status",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_031",
+                "extensionAttributes": [],
+                "name": "RSORRES_02",
+                "label": "RSORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213_16",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_16",
+                    "extensionAttributes": [],
+                    "code": "C91106",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Clinical or Research Assessment Answer",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_032",
+                "extensionAttributes": [],
+                "name": "RSCAT_2",
+                "label": "RSCAT",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+				  {
+                    "id": "ResponseCode_190_16",
+                    "extensionAttributes": [],
+                    "name": "ECOGRESP",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_16",
+						"extensionAttributes": [],
+						"code": "C102116",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "ECOG",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_16",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_15",
+                    "extensionAttributes": [],
+                    "code": "C25372",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "RSCAT",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_16x",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_16x",
+                "extensionAttributes": [],
+                "code": "C102408",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "ECOG - Performance Status",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_09",
+            "extensionAttributes": [],
+            "name": "WBCHGB_01",
+            "label": "Hemoglobin",
+            "synonyms": [],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_033",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_77",
+                "label": "LBTESTCD",
+                "isRequired": false,
+                "isEnabled": false,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_77",
+                    "extensionAttributes": [],
+                    "name": "HGB",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_77",
+						"extensionAttributes": [],
+						"code": "C64848",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "Hemoglobin",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }],
+                "code": {},
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_044",
+                "extensionAttributes": [],
+                "name": "LBORRES_77",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_213_77",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_551_77",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_045",
+                "extensionAttributes": [],
+                "name": "LBORRESU_77",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_204_77",
+                    "extensionAttributes": [],
+                    "name": "RC_77",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_553_77",
+                      "extensionAttributes": [],
+                      "code": "C64783",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Gram per Deciliter",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_214_77",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_555_77",
+                    "extensionAttributes": [],
+                    "code": "C71620",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "CDISC SDTM Unit of Measure Terminology",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_046",
+                "extensionAttributes": [],
+                "name": "LBSPEC_77",
+                "label": "LBSPEC",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_772",
+                    "extensionAttributes": [],
+                    "name": "rc_77",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+						"id": "Code_550_772",
+						"extensionAttributes": [],
+						"code": "C12434",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "BLOOD",
+						"instanceType": "Code"
+					  },
+                    "instanceType": "ResponseCode"
+                  }
+				  ],
+                "code": {
+                  "id": "AliasCode_215_77",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_556_77",
+                    "extensionAttributes": [],
+                    "code": "C70713",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Biospecimen Type",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_217_77",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_560_77",
+                "extensionAttributes": [],
+                "code": "C64848",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Hemoglobin",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          },
+		  {
+            "id": "BiomedicalConcept_10",
+            "extensionAttributes": [],
+            "name": "CREATCLR",
+            "label": "Creatinine Clearance",
+            "synonyms": [],
+            "reference": "/mdr/specializations/sdtm/packages/2025-04-01/datasetspecializations/ALTSERPL",
+            "properties": [
+              {
+                "id": "BiomedicalConceptProperty_047",
+                "extensionAttributes": [],
+                "name": "LBTESTCD_88",
+                "label": "LBTESTCD",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [{
+                    "id": "ResponseCode_190_88",
+                    "extensionAttributes": [],
+                    "name": "RC_88",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                    "id": "Code_520_88",
+                    "extensionAttributes": [],
+                    "code": "C25747",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "CREATCLR",
+                    "instanceType": "Code"
+                  },
+                    "instanceType": "ResponseCode"
+                  }
+				
+				],
+                "code": {
+                  "id": "AliasCode_195_88",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_520_88_2",
+                    "extensionAttributes": [],
+                    "code": "C65047",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "CDISC SDTM Laboratory Test Code Terminology",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_048",
+                "extensionAttributes": [],
+                "name": "LBORRES_88",
+                "label": "LBORRES",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "float",
+                "responseCodes": [],
+                "code": {
+                  "id": "AliasCode_196_88",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_521_88",
+                    "extensionAttributes": [],
+                    "code": "C70856",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "Observation Result",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              },
+              {
+                "id": "BiomedicalConceptProperty_049",
+                "extensionAttributes": [],
+                "name": "LBORRESU_88",
+                "label": "LBORRESU",
+                "isRequired": true,
+                "isEnabled": true,
+                "datatype": "",
+                "responseCodes": [
+                  {
+                    "id": "ResponseCode_190_882",
+                    "extensionAttributes": [],
+                    "name": "RC_88_3",
+                    "label": "",
+                    "isEnabled": true,
+                    "code": {
+                      "id": "Code_522_88",
+                      "extensionAttributes": [],
+                      "code": "C64777",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Mililiter per Minute",
+                      "instanceType": "Code"
+                    },
+                    "instanceType": "ResponseCode"
+                  }
+                ],
+                "code": {
+                  "id": "AliasCode_197_88",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_526_88",
+                    "extensionAttributes": [],
+                    "code": "C71620",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "CDISC SDTM Unit of Measure Terminology",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
+                "notes": [],
+                "instanceType": "BiomedicalConceptProperty"
+              }
+            ],
+            "code": {
+              "id": "AliasCode_200_88",
+              "extensionAttributes": [],
+              "standardCode": {
+                "id": "Code_531_88",
+                "extensionAttributes": [],
+                "code": "C_extCrCl",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Creatinine Clearance",
+                "instanceType": "Code"
+              },
+              "standardCodeAliases": [],
+              "instanceType": "AliasCode"
+            },
+            "notes": [],
+            "instanceType": "BiomedicalConcept"
+          }
+        ],
+        "bcCategories": [
+		  {
+            "id": "BCCat_3",
+			"name": "Chem_Cat1",
+            "extensionAttributes": [],			
+			"description": "Biochemistry including ALAT, ASAT",
+			"label": "Biochemistry Category",
+            "code": null,
+			"childIds": [],
+			"memberIds": ["BiomedicalConcept_25","BiomedicalConcept_28","BiomedicalConcept_10"],
+            "instanceType": "BiomedicalConceptCategory",
+			"notes": []
+          },
+		  {
+            "id": "BCCat_4",
+			"name": "Hem_Cat1",
+            "extensionAttributes": [],			
+			"description": "Hematology including Leuco, neutro and platelet count",
+			"label": "Hematology Category",
+            "code": null,
+			"childIds": [],
+			"memberIds": ["BiomedicalConcept_01","BiomedicalConcept_02","BiomedicalConcept_03","BiomedicalConcept_09"],
+            "instanceType": "BiomedicalConceptCategory",
+			"notes": []
+          },
+		  {
+            "id": "BCCat_5",
+			"name": "Thyroid_Cat1",
+            "extensionAttributes": [],			
+			"description": "Thyroid function",
+			"label": "Thyroid function",
+            "code": null,
+			"childIds": [],
+			"memberIds": ["BiomedicalConcept_04","BiomedicalConcept_05","BiomedicalConcept_06"],
+            "instanceType": "BiomedicalConceptCategory",
+			"notes": []
+          }],
+        "bcSurrogates": [],
+        "dictionaries": [
+          {
+            "id": "SyntaxTemplateDictionary_1",
+            "extensionAttributes": [],
+            "name": "IE_Dict",
+            "label": "IE Dictionary",
+            "description": "Dictionary for IE",
+            "parameterMaps": [
+              {
+                "id": "ParameterMap_1",
+                "extensionAttributes": [],
+                "tag": "min_age",
+                "reference": "<usdm:ref klass=\"Quantity\" id=\"Quantity_9\" attribute=\"value\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_2",
+                "extensionAttributes": [],
+                "tag": "max_age",
+                "reference": "<usdm:ref klass=\"Quantity\" id=\"Quantity_10\" attribute=\"value\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_3",
+                "extensionAttributes": [],
+                "tag": "indic_1",
+                "reference": "<usdm:ref klass=\"Indication\" id=\"Indication_1\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_4",
+                "extensionAttributes": [],
+                "tag": "indic_2",
+                "reference": "<usdm:ref klass=\"Indication\" id=\"Indication_2\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_5",
+                "extensionAttributes": [],
+                "tag": "indic_3",
+                "reference": "<usdm:ref klass=\"Indication\" id=\"Indication_3\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_6",
+                "extensionAttributes": [],
+                "tag": "bc_recist_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_07\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_7",
+                "extensionAttributes": [],
+                "tag": "bc_ecog_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_08\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_8",
+                "extensionAttributes": [],
+                "tag": "bc_wbc_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_01\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_9",
+                "extensionAttributes": [],
+                "tag": "bc_neut_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_02\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_10",
+                "extensionAttributes": [],
+                "tag": "bc_plat_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_03\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_11",
+                "extensionAttributes": [],
+                "tag": "bc_hgb_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_09\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_12",
+                "extensionAttributes": [],
+                "tag": "bc_crcl_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_10\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_13",
+                "extensionAttributes": [],
+                "tag": "bc_alt_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_25\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_14",
+                "extensionAttributes": [],
+                "tag": "bc_ast_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConcept\" id=\"BiomedicalConcept_28\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_15",
+                "extensionAttributes": [],
+                "tag": "bcCat_thyr_1",
+                "reference": "<usdm:ref klass=\"BiomedicalConceptCategory\" id=\"BCCat_5\" attribute=\"label\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_16",
+                "extensionAttributes": [],
+                "tag": "contraIndic_1",
+                "reference": "<usdm:ref klass=\"ExtensionAttribute\" id=\"ClassExtLabel_1\" attribute=\"valueString\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              },
+              {
+                "id": "ParameterMap_17",
+                "extensionAttributes": [],
+                "tag": "contraIndic_2",
+                "reference": "<usdm:ref klass=\"ExtensionAttribute\" id=\"ClassExtLabel_2\" attribute=\"valueString\"></usdm:ref>",
+                "instanceType": "ParameterMap"
+              }			  
+            ],
+            "instanceType": "SyntaxTemplateDictionary"
+          }
+        ],
+        "conditions": [],
+        "notes": [],
+        "instanceType": "StudyVersion"
+      }
+    ],
+    "documentedBy": [],
+    "instanceType": "Study"
+  },
+  "usdmVersion": "4.0",
+  "systemName": "CDISC USDM E2J",
+  "systemVersion": "0.62.0"
+}
