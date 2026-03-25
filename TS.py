@@ -44,11 +44,7 @@ def Create_TS(wb, JsonInput):
             resultCdRef=definition.Parse_jsonata(codeSnip,data)
             codeSnip = ts_sheet.cell(row=i, column=11).value
             resultCdVer=definition.Parse_jsonata(codeSnip,data)
-            codeSnip = ts_sheet.cell(row=i, column=7).value        
-            codeSnipCd = ts_sheet.cell(row=i, column=9).value   
-            codeSnipCdRef = ts_sheet.cell(row=i, column=10).value   
-            codeSnipCdVer = ts_sheet.cell(row=i, column=11).value   
-    
+            
             # replace the apostrophes with spaces
             if result2 != " " or nfValue != " ":
                 if result2[0] == "{":  # check if the result is a list

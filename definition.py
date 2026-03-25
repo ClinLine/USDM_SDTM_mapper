@@ -34,16 +34,20 @@ def get_ID(ID_string):
 
 def string_to_list(input, result):
     n = 0 #letter it is looking at
-    while input[n] != "}": #looking for the end of the list
-        if input[n-1:n+2] == ", '" or input[n] in ["{"]: # looking for the start of a new item in the list
-            n += 1
-            m = n
-            while m+1 < len(input) and input[m+1] not in ("}") and input[m:m+3] not in ("', '"): # looking for the end of the item
-                m += 1
-            result.append(input[n:m+1]) # appending the item to the list
-            n = m + 1
-        else: 
-            n += 1
+    while n < len(input) and input[n] != "}" and input[n] != "]": #looking for the end of the list
+            if input[n-1:n+2] == ", '" or input[n-1:n+2] == ", """ or input[n] in ["{", "["]: # looking for the start of a new item in the list
+                print("n: ", n , "input[n-1:n+2]: ", input[n-1:n+2])
+                n += 1
+                m = n
+                while m+1 < len(input) and input[m+1] not in ["}", "]"] and input[m:m+3] not in ("', '") and input[m:m+3] not in (""", """): # looking for the end of the item
+                    m += 1
+                Res=input[n:m+1] 
+                result.append(Res) # appending the item to the list
+                n = m + 1
+            else: 
+                n += 1
+   # else:
+       # result.append(input)
 
 def string_to_list2(input, result): # new adapted string_to_list function (dec25)
     if input[0]=="{":
