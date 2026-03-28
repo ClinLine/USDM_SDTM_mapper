@@ -36,7 +36,7 @@ def string_to_list(input, result):
     n = 0 #letter it is looking at
     while n < len(input) and input[n] != "}" and input[n] != "]": #looking for the end of the list
             if input[n-1:n+2] == ", '" or input[n-1:n+2] == ", """ or input[n] in ["{", "["]: # looking for the start of a new item in the list
-                print("n: ", n , "input[n-1:n+2]: ", input[n-1:n+2])
+               # print("n: ", n , "input[n-1:n+2]: ", input[n-1:n+2])
                 n += 1
                 m = n
                 while m+1 < len(input) and input[m+1] not in ["}", "]"] and input[m:m+3] not in ("', '") and input[m:m+3] not in (""", """): # looking for the end of the item

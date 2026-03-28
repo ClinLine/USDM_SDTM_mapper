@@ -5,6 +5,7 @@ import TI
 import TE
 import TA
 import TV
+from create_define import Create_Define
 
 # Define the source json file you like to use
 JsonInput = "TestJson/CDISC_Pilot_Study_v4_FIXED.json"
@@ -19,7 +20,8 @@ if __name__ == "__main__":
     TS.Create_TS(wb, JsonInput)
     TI.Create_TI(wb, JsonInput)
     TE.Create_TE(wb, JsonInput)
-    TA.Create_TA(wb, JsonInput)
-    TV.Create_TV(wb, JsonInput)
+    ta_var = TA.Create_TA(wb, JsonInput)
+    TV.Create_TV(wb, JsonInput)    
+    Create_Define(wb,ta_var)
     wb.save(Output)
     wb.close()

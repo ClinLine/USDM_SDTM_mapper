@@ -8,33 +8,36 @@ def Create_TA(wb, JsonInput):
     ta_sheet = wb['TA']
     r = ta_sheet.max_row
     rem = []
+    ta_var = {}
     for i in range(2, ta_sheet.max_row + 1):
         j=i-1
+        ta_var[j] = []
         #swap the rows and columns in the TI sheet
-        varName=ta_sheet.cell(row=i, column=1).value
-        ta_sheet.cell(row=1, column=j).value = varName    
-        if i == 2: # varName == "STUDYID":
+        for c in range(1, 6):
+            ta_var[j].append(ta_sheet.cell(row=i, column=c).value)
+        ta_sheet.cell(row=1, column=j).value = ta_var[j][0]    # add variable name as column header (for excel output)
+        if ta_var[j][0] == "STUDYID":
             StudyIdCodeSnip = ta_sheet.cell(row=i, column=7).value
             StudyIDColumn = j
-        elif i == 3: # varName == "DOMAIN":
+        elif ta_var[j][0] == "DOMAIN":
             DomainResult =  ta_sheet.cell(row=i, column=8).value
             DomainColumn = j
-        elif i == 4: # varName == "ARMCD":
+        elif ta_var[j][0] == "ARMCD":
             ArmNameCodeSnip = ta_sheet.cell(row=i, column=7).value
             ArmNameColumn = j
-        elif i == 5: # varName == "ARM":
+        elif ta_var[j][0] == "ARM":
             ArmDescriptionCodeSnip = ta_sheet.cell(row=i, column=7).value
             ArmDescriptionColumn = j
-        elif i == 6: # varname == "TAETORD":
+        elif ta_var[j][0] == "TAETORD":
             TaetordCodeSnip = ta_sheet.cell(row=i, column=7).value
             TaetordColumn = j
-        elif i == 7: # varName == "ETCD":
+        elif ta_var[j][0] == "ETCD":
             EtcdCodeSnip = ta_sheet.cell(row=i, column=7).value
             EtcdColumn = j
-        elif i == 8: # varName == "ELEMENT":
+        elif ta_var[j][0] == "ELEMENT":
             ElementCodeSnip = ta_sheet.cell(row=i, column=7).value
             ElementColumn = j
-        elif i == 11: # varName == "EPOCH":
+        elif ta_var[j][0] == "EPOCH":
             EpochCodeSnip = ta_sheet.cell(row=i, column=7).value
             EpochColumn = j
         else:
@@ -151,3 +154,4 @@ def Create_TA(wb, JsonInput):
         for j in rem:
             for i in range(2, x + 1):
                 ta_sheet.cell(row=i, column=j).value = ""
+    return ta_var
