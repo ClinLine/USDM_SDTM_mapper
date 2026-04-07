@@ -362,6 +362,15 @@
                 "codeSystemVersion": "2025-09-26",
                 "decode": "Adaptive",
                 "instanceType": "Code"
+              },
+              {
+                "id": "Code_158xxx",
+                "extensionAttributes": [],
+                "code": "C46079",
+                "codeSystem": "http://www.cdisc.org",
+                "codeSystemVersion": "2025-09-26",
+                "decode": "Randomized",
+                "instanceType": "Code"
               }
             ],
             "encounters": [
@@ -3978,7 +3987,7 @@
                         "id": "ConditionAssignment_1",
                         "extensionAttributes": [],
                         "condition": "not willing to do online questionnaire",
-                        "conditionTargetId": "ScheduledActivityInstance_21",
+                        "conditionTargetId": "ScheduledActivityInstance_23",
                         "instanceType": "ConditionAssignment"
                         }]
                   },

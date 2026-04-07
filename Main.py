@@ -8,7 +8,7 @@ import TV
 from create_define import Create_Define
 
 # Define the source json file you like to use
-JsonInput = "TestJson/CDISC_Pilot_Study_v4_FIXED.json"
+JsonInput = "TestJson/CDISC_Pilot_Study_v4_FIXED_adapted.json"
 # define the mapping input file
 MapInput = "Maps/sdtm_mapping_paths.xlsx"
 # Define the resulting output file

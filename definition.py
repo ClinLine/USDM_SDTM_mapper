@@ -208,7 +208,6 @@ def Get_TagValue(tag,data):
     jsonataString = "study.versions.dictionaries.parameterMaps[tag='" + tag + "'].reference"
     expr = jsonata.Jsonata(jsonataString)
     reference = expr.evaluate(data)
-    # print("location : ", reference)
     if reference is None:
         value="//TAG NOT IN DICTIONARY//"
     else:
