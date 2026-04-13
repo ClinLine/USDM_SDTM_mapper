@@ -9,7 +9,8 @@ def Create_TA(wb, JsonInput):
     ta_sheet = wb['TA']
     r = ta_sheet.max_row
     rem = []
-    ta_var = {}
+    ta_var = {} # list of TA variable terms with their relevant information from the TA sheet, to be used for the creation of the define.xml
+    Cl_map = {} # dictionary to store the code list information for each variable, to be used for the creation of the define.xml
     for i in range(2, ta_sheet.max_row + 1):
         j=i-1
         ta_var[j] = []
@@ -62,10 +63,12 @@ def Create_TA(wb, JsonInput):
         resultArm=definition.Parse_jsonata(codeSnip=ArmDescriptionCodeSnip,data=data)
         resultArmName=definition.Parse_jsonata(codeSnip=ArmNameCodeSnip,data=data)
         epoch = definition.Parse_jsonata(codeSnip=EpochCodeSnip,data=data)
+
         resultArm2 = []
         resultArmName2 = []
         definition.string_to_list(resultArm, resultArm2)  # convert the string to a list
         definition.string_to_list(resultArmName, resultArmName2)  # convert the string to a list
+        
         resultEl=definition.Parse_jsonata(codeSnip=EtcdCodeSnip,data=data)
         resultElName=definition.Parse_jsonata(codeSnip=ElementCodeSnip,data=data)
         resultBranch=definition.Parse_jsonata(codeSnip=BranchCodeSnip,data=data)
@@ -128,13 +131,27 @@ def Create_TA(wb, JsonInput):
         for item in epoch2:
             epochId, epoch3 = definition.get_ID(item)  # extracting the ID from the string
             epochId2[epochId] = epoch3  # store the epoch code in a dictionary with the ID as key
+        # add arm names to codelist
+        armcd_terms=[]
         for item in resultArmName2:  
             ArmNameId, resultArmName3 = definition.get_ID(item)
             ArmNameId2[ArmNameId] = resultArmName3  # store the arm name in a dictionary with the ID as key
+            armcd_terms.append({"codedValue":resultArmName3})
+            Cl_map["ARM"] = { "OID": "CL.ARMCD", 
+                          "Name": "Arm",
+                          "dataType": "text",
+                          "codeListItems": armcd_terms}
+        
+        
+        arm_terms=[]
         for item in resultArm2:
             ArmId, resultArm3 = definition.get_ID(item)  # extracting the ID from the string
             ArmId2[ArmId] = resultArm3  # store the arm code in a dictionary with the ID as key
-               
+            arm_terms.append({"codedValue":resultArm3})
+            Cl_map["ARMCD"] = { "OID": "CL.ARM", 
+                            "Name": "Arm Code",
+                            "dataType": "text",
+                            "codeListItems": arm_terms}      
         # add trans information if applicable - epoch id needs to be resolved to epoch name still.
         for i in range(len(resultFromTrans)):
             fromId, resultFromTrans2 = definition.get_ID(resultFromTrans[i])  # extracting the ID from the string
@@ -161,7 +178,7 @@ def Create_TA(wb, JsonInput):
         for j in rem:
             for i in range(2, x + 1):
                 ta_sheet.cell(row=i, column=j).value = ""
-    return ta_var
+    return ta_var, Cl_map
 
 def AddTABranches(row_ids, prefix=""):
     if not row_ids:

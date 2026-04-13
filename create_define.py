@@ -1,20 +1,14 @@
 
 
 import xml.etree.cElementTree as ET
-import openpyxl
-#import xls2define
-import odmlib
-#from odmlib.define_2_0 import model as DEFINE
 import odmlib.ns_registry as NS
 
 
-def Create_Define(wb,ta_var):
+def Create_Define(wb,ta_var,ti_var,code_lists_map):
     _create_itemgroupdef_object(wb)
     content = _create_itemgroupdef_object(wb)
     _IGOID = "MDV1"
     IGVersion = "3.2.1"
-    ODM_PREFIX = "odm:"
-    XLMS_PREFIX = "xlms:"
     
     root = ET.Element("ODM", FileType="Snapshot", ODMVersion="1.3.2", CreationDateTime="2024-06-01T12:00:00", xmlns="http://www.cdisc.org/ns/odm/v1.3", XLMS_def="http://www.cdisc.org/ns/def/v2.1")
     study = ET.SubElement(root, "Study", OID="STUDY1")
@@ -28,37 +22,51 @@ def Create_Define(wb,ta_var):
             Description=ET.SubElement(domainElement, "Description")
             ET.SubElement(Description, "TranslatedText", xml_lang="en").text = content[domain][10]
             if content[domain][1] == "TA":
-                AddTARef(ta_var, ET, domainElement)
+                AddDomainRef(ta_var, ET,"TA",domainElement,codelists_map=code_lists_map)
+            if content[domain][1] == "TI":
+                AddDomainRef(ti_var, ET,"TI",domainElement)
     #         # ET.SubElement(domainElement, "def:Class", Name="TRIAL DESIGN")
     AddMethods(ta_var,ET,metaDataVersion)
+    add_code_list(code_lists_map, ET,metaDataVersion)
 
     tree=ET.ElementTree(root)
     tree.write("Output/Define.xml")
 
-def AddTARef(ta_var,ET,domainElement):
-    for var in ta_var:
-        if ta_var[var][0] is not None:
+def add_code_list(codelists_map, ET,ParentElement):
+    for item in codelists_map.items():
+        CL=codelists_map[item[0]]
+        codeList = ET.SubElement(ParentElement, "CodeList", OID=CL['OID'], Name=CL['Name'], DataType=CL['dataType'])
+        CI=CL['codeListItems']
+        for code in CI:
+            ET.SubElement(codeList, "EnumeratedItem", CodedValue=code['codedValue'])
+
+def AddDomainRef(vars,ET,domain,ParentElement,codelists_map=None):
+    for var in vars:
+        if vars[var][0] is not None:
            # print(ta_var[var])
-            if ta_var[var][0] == "STUDYID":
+            if vars[var][0] == "STUDYID":
                 itemOID = "IT.STUDYID"
             else:
-                itemOID = "IT.TA." + ta_var[var][0]
-            if ta_var[var][4] == "Req":
+                itemOID = "IT."+ domain + "." + vars[var][0]
+            if vars[var][4] == "Req":
                 isMandatory = "Yes"
             else:            
                 isMandatory = "No"
-            if ta_var[var][0] == "TAETORD":
+            if vars[var][0] == "TAETORD":
                 methodOID = "MT.TAETORD"
-                ET.SubElement(domainElement, "ItemRef", ItemOID=itemOID, Mandatory=isMandatory, OrderNumber=str(var), MethodOID=methodOID)  
+                ET.SubElement(ParentElement, "ItemRef", ItemOID=itemOID, Mandatory=isMandatory, OrderNumber=str(var), MethodOID=methodOID)  
+            elif codelists_map and vars[var][0] in codelists_map:
+                codeListOID = codelists_map[vars[var][0]]
+                ET.SubElement(ParentElement, "ItemRef", ItemOID=itemOID, Mandatory=isMandatory, OrderNumber=str(var), CodeListRef=codeListOID['OID'])
             else:
-                ET.SubElement(domainElement, "ItemRef", ItemOID=itemOID, Mandatory=isMandatory, OrderNumber=str(var))  
+                ET.SubElement(ParentElement, "ItemRef", ItemOID=itemOID, Mandatory=isMandatory, OrderNumber=str(var))  
 
-def AddMethods(ta_var,ET,metaDataVersion):
+def AddMethods(ta_var,ET,ParentElement):
     for var in ta_var:
         if ta_var[var][0] is not None:
             if ta_var[var][0] == "TAETORD":
                 methodOID = "MT.TAETORD"
-                Method=ET.SubElement(metaDataVersion, "MethodDef", OID=methodOID, Name="TAETORD Derivation Method", Type="Computation")
+                Method=ET.SubElement(ParentElement, "MethodDef", OID=methodOID, Name="TAETORD Derivation Method", Type="Computation")
                 Description=ET.SubElement(Method, "Description")
                 ET.SubElement(Description, "TranslatedText", xml_lang="en").text = "Sequential number identifying the order of epochs within an arm. Based on the previous and next epoch start date and time. The first epoch of an arm is assigned a TAETORD of 1."
 

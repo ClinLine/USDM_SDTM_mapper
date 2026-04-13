@@ -8,6 +8,8 @@ def Create_TI(wb, JsonInput):
     StudyIdCodeSnip = ""
     DomainResult = ""
     VersionCodeSnip = ""
+    ti_var = {}
+    
 
     for r in range(2, ti_sheet.max_row+2):
         if ti_sheet.cell(row=r, column=1).value is not None:
@@ -15,6 +17,10 @@ def Create_TI(wb, JsonInput):
 
     for i in range(2, overflowcolumn + 1):
         j=i-1
+        ti_var[j] = []
+        for c in range(1, 6):
+            ti_var[j].append(ti_sheet.cell(row=i, column=c).value)
+                
         #swap the rows and columns in the TI sheet
         varName=ti_sheet.cell(row=i, column=1).value
         ti_sheet.cell(row=1, column=j).value = varName    
@@ -124,3 +130,4 @@ def Create_TI(wb, JsonInput):
             for i in range(9, ti_sheet.max_column):
                 newname = f"IETEST{i-7}"
                 ti_sheet.cell(row=1, column=i).value = newname
+    return ti_var

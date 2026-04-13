@@ -16,12 +16,14 @@ Output = "Output/SDTM_Results.xlsx"
 
 if __name__ == "__main__":
     # Create the TS sheet based on the mapping and the json input
+    code_lists_map={}
     wb = openpyxl.load_workbook(MapInput)
     TS.Create_TS(wb, JsonInput)
-    TI.Create_TI(wb, JsonInput)
+    ti_var = TI.Create_TI(wb, JsonInput)
     TE.Create_TE(wb, JsonInput)
-    ta_var = TA.Create_TA(wb, JsonInput)
+    ta_var, ta_codes = TA.Create_TA(wb, JsonInput)
     TV.Create_TV(wb, JsonInput)    
-    Create_Define(wb,ta_var)
+    code_lists_map.update(ta_codes)
+    Create_Define(wb,ta_var,ti_var,code_lists_map)
     wb.save(Output)
     wb.close()

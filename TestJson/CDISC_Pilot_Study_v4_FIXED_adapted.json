@@ -2033,7 +2033,7 @@
                 "id": "StudyArm_1",
                 "extensionAttributes": [],
                 "name": "Placebo",
-                "label": "Placebo",
+                "label": "PL",
                 "description": "Placebo",
                 "type": {
                   "id": "Code_138",
@@ -2062,8 +2062,8 @@
                 "id": "StudyArm_2",
                 "extensionAttributes": [],
                 "name": "Xanomeline Low Dose",
-                "label": "Xanomeline Low Dose",
-                "description": "Active Substance",
+                "label": "ACTLOW",
+                "description": "Xanomeline Low Dose",
                 "type": {
                   "id": "Code_140",
                   "extensionAttributes": [],
@@ -2091,8 +2091,8 @@
                 "id": "StudyArm_3",
                 "extensionAttributes": [],
                 "name": "Xanomeline High Dose",
-                "label": "Xanomeline High Dose",
-                "description": "Active Substance",
+                "label": "ACTHIGH",
+                "description": "Xanomeline High Dose",
                 "type": {
                   "id": "Code_142",
                   "extensionAttributes": [],
