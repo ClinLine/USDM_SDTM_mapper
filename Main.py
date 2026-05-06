@@ -8,11 +8,11 @@ import TV
 from create_define import Create_Define
 
 # Define the source json file you like to use
-JsonInput = "TestJson/CDISC_Pilot_Study_v4_FIXED_adapted.json"
+JsonInput = "TestJson/NCT01750580_limited_tagged_resp.json"
 # define the mapping input file
 MapInput = "Maps/sdtm_mapping_paths.xlsx"
 # Define the resulting output file
-Output = "Output/SDTM_Results.xlsx"
+Output = "Output/NCT01750580_SDTM_TDM.xlsx"
 
 if __name__ == "__main__":
     # Create the TS sheet based on the mapping and the json input

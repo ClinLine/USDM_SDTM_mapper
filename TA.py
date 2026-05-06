@@ -137,7 +137,7 @@ def Create_TA(wb, JsonInput):
             ArmNameId, resultArmName3 = definition.get_ID(item)
             ArmNameId2[ArmNameId] = resultArmName3  # store the arm name in a dictionary with the ID as key
             armcd_terms.append({"codedValue":resultArmName3})
-            Cl_map["ARM"] = { "OID": "CL.ARMCD", 
+            Cl_map["ARM"] = { "OID": "CL.ARM", 
                           "Name": "Arm",
                           "dataType": "text",
                           "codeListItems": armcd_terms}
@@ -148,7 +148,7 @@ def Create_TA(wb, JsonInput):
             ArmId, resultArm3 = definition.get_ID(item)  # extracting the ID from the string
             ArmId2[ArmId] = resultArm3  # store the arm code in a dictionary with the ID as key
             arm_terms.append({"codedValue":resultArm3})
-            Cl_map["ARMCD"] = { "OID": "CL.ARM", 
+            Cl_map["ARMCD"] = { "OID": "CL.ARMCD", 
                             "Name": "Arm Code",
                             "dataType": "text",
                             "codeListItems": arm_terms}      
