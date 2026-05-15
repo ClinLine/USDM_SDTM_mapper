@@ -3,6 +3,8 @@
 import xml.etree.cElementTree as ET
 import odmlib.ns_registry as NS
 
+import definition
+
 
 def Create_Define(wb,ta_var,ti_var,code_lists_map):
     _create_itemgroupdef_object(wb)
@@ -16,7 +18,7 @@ def Create_Define(wb,ta_var,ti_var,code_lists_map):
     metaDataVersion = ET.SubElement(study, "MetaDataVersion", OID=_IGOID, Name="Metadata Version 1", Description="Metadata Version 1")
     ET.SubElement(metaDataVersion, "Standards", Name="SDTMIG", Type="IG", Version=IGVersion, CommentOID="COM.STD1")
     for domain in range(0, len(content)):
-        if content[domain][0] is not None:
+        if content[domain][0] is not None and content[domain][1] != "Name": # check if the domain name and OID are not empty
             # "OID","Name", "Repeating","Domain", "SASDatasetName", "IsReferenceData", "Purpose", "Class", "Structure","ArchiveLocationID","Description"
             domainElement = ET.SubElement(metaDataVersion, "ItemGroupDef", OID=content[domain][0], Name=content[domain][1], Domain=content[domain][3], Purpose=content[domain][6],SasDatasetName=content[domain][4], Repeating=content[domain][2], IsReferenceData=content[domain][5], Structure=content[domain][8], ArchiveLocation=content[domain][9], StandardOID=_IGOID)
             Description=ET.SubElement(domainElement, "Description")
@@ -26,6 +28,9 @@ def Create_Define(wb,ta_var,ti_var,code_lists_map):
             if content[domain][1] == "TI":
                 AddDomainRef(ti_var, ET,"TI",domainElement)
     #         # ET.SubElement(domainElement, "def:Class", Name="TRIAL DESIGN")
+            # add codelists for domain names
+            code_lists_map["CL." + content[domain][1] + ".DOMAIN"] = definition.domainClItem(content[domain][1], content[domain][10])
+    
     AddMethods(ta_var,ET,metaDataVersion)
     add_code_list(code_lists_map, ET,metaDataVersion)
 
@@ -35,10 +40,17 @@ def Create_Define(wb,ta_var,ti_var,code_lists_map):
 def add_code_list(codelists_map, ET,ParentElement):
     for item in codelists_map.items():
         CL=codelists_map[item[0]]
+        type = CL.get("codeListType")
         codeList = ET.SubElement(ParentElement, "CodeList", OID=CL['OID'], Name=CL['Name'], DataType=CL['dataType'])
         CI=CL['codeListItems']
         for code in CI:
-            ET.SubElement(codeList, "EnumeratedItem", CodedValue=code['codedValue'])
+            if type == "EnumeratedItem":
+                ET.SubElement(codeList, "EnumeratedItem", CodedValue=code['codedValue'])
+            else:
+                CodeListItem=ET.SubElement(codeList, "CodeListItem", CodedValue=code['code'])
+                decode=ET.SubElement(CodeListItem, "Decode")
+                ET.SubElement(decode, "TranslatedText", lang="en").text = code['codedValue']
+
 
 def AddDomainRef(vars,ET,domain,ParentElement,codelists_map=None):
     for var in vars:

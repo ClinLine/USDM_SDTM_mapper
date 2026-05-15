@@ -133,25 +133,29 @@ def Create_TA(wb, JsonInput):
             epochId2[epochId] = epoch3  # store the epoch code in a dictionary with the ID as key
         # add arm names to codelist
         armcd_terms=[]
+        arm_terms=[]
         for item in resultArmName2:  
             ArmNameId, resultArmName3 = definition.get_ID(item)
             ArmNameId2[ArmNameId] = resultArmName3  # store the arm name in a dictionary with the ID as key
             armcd_terms.append({"codedValue":resultArmName3})
-            Cl_map["ARM"] = { "OID": "CL.ARM", 
-                          "Name": "Arm",
-                          "dataType": "text",
-                          "codeListItems": armcd_terms}
-        
-        
-        arm_terms=[]
-        for item in resultArm2:
+            
+        for item in resultArm2:  
             ArmId, resultArm3 = definition.get_ID(item)  # extracting the ID from the string
             ArmId2[ArmId] = resultArm3  # store the arm code in a dictionary with the ID as key
-            arm_terms.append({"codedValue":resultArm3})
-            Cl_map["ARMCD"] = { "OID": "CL.ARMCD", 
+            arm_terms.append({"code": resultArm3, "codedValue": ArmNameId2[ArmId]})
+            
+        Cl_map["ARM"] = { "OID": "CL.ARM", 
+                          "Name": "Arm",
+                          "dataType": "text",
+                          "codeListType": "EnumeratedItem",
+                          "codeListItems": armcd_terms}
+        
+        Cl_map["ARMCD"] = { "OID": "CL.ARMCD", 
                             "Name": "Arm Code",
                             "dataType": "text",
+                            "codeListType": "CodeListItem",
                             "codeListItems": arm_terms}      
+        
         # add trans information if applicable - epoch id needs to be resolved to epoch name still.
         for i in range(len(resultFromTrans)):
             fromId, resultFromTrans2 = definition.get_ID(resultFromTrans[i])  # extracting the ID from the string
@@ -178,6 +182,7 @@ def Create_TA(wb, JsonInput):
         for j in rem:
             for i in range(2, x + 1):
                 ta_sheet.cell(row=i, column=j).value = ""
+                
     return ta_var, Cl_map
 
 def AddTABranches(row_ids, prefix=""):

@@ -14,6 +14,14 @@ def strip(stripped):
             done = True
     return stripped
 
+def domainClItem(domain, var):
+    return {"OID": "CL." + domain + ".DOMAIN",
+            "Name": "Domain Abbreviation (" + domain + ")",
+            "dataType": "text",
+            "codeListType": "CodeListItem",
+            "codeListItems": [{"code": domain,"codedValue": var}]} 
+
+
 def get_ID(ID_string):
     if len(ID_string) <2: # if the ID string is None, return empty strings
         return "", ""

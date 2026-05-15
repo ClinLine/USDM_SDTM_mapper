@@ -9,6 +9,7 @@ def Create_TI(wb, JsonInput):
     DomainResult = ""
     VersionCodeSnip = ""
     ti_var = {}
+    Cl_map = {} # dictionary to store the code list information for each variable, to be used for the creation of the define.xml
     
 
     for r in range(2, ti_sheet.max_row+2):
@@ -130,4 +131,5 @@ def Create_TI(wb, JsonInput):
             for i in range(9, ti_sheet.max_column):
                 newname = f"IETEST{i-7}"
                 ti_sheet.cell(row=1, column=i).value = newname
-    return ti_var
+
+    return ti_var, Cl_map

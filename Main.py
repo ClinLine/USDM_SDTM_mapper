@@ -19,11 +19,12 @@ if __name__ == "__main__":
     code_lists_map={}
     wb = openpyxl.load_workbook(MapInput)
     TS.Create_TS(wb, JsonInput)
-    ti_var = TI.Create_TI(wb, JsonInput)
+    ti_var, ti_codes = TI.Create_TI(wb, JsonInput)
     TE.Create_TE(wb, JsonInput)
     ta_var, ta_codes = TA.Create_TA(wb, JsonInput)
     TV.Create_TV(wb, JsonInput)    
     code_lists_map.update(ta_codes)
+    code_lists_map.update(ti_codes)
     Create_Define(wb,ta_var,ti_var,code_lists_map)
     wb.save(Output)
     wb.close()
