@@ -8,8 +8,7 @@
       {
         "id": "StudyVersion_1",
 		"extensionAttributes": [
-			{
-				"id": "ExtensionArray_1",
+			{	"id": "ExtensionArray_1",
 				"url": "//readi/providers",
 				"extensionAttributes": [
 				{
@@ -41,139 +40,412 @@
 					"instanceType": "ExtensionAttribute"
 				}],
 			    "instanceType": "ExtensionAttribute"},	
-			{"id": "ExtensionAttribute_3",
-			 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
-			 "valueExtensionClass":{
-					 "id": "ExtensionClass_ExpResp_1",
-					 "url": "https://cdisc.org/usdm/extension-ExpResponse/class1",
-					 "extensionAttributes": [
-					{
-						"id": "ClassAttr_1",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-name",
-						"valueString": "ECOG1",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_2",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-label",
-						"valueString": "ECOG 0-1",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_3",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-value",
-						"valueRange": {
-							"id": "Range_ER1",
+			{   "id": "ExtensionArray_2",
+				"url": "//CDISC/expResponses",
+				"extensionAttributes": [
+				{"id": "ExtensionAttribute_3",
+				 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ExpResp_1",
+						 "url": "https://cdisc.org/usdm/extension-ExpResponse/class_ExpectedResponse",
+						 "extensionAttributes": [
+						{
+							"id": "ClassAttr_1",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-name",
+							"valueString": "ECOG1",
 							"extensionAttributes": [],
-							"minValue": {
-							  "id": "Quantity_er9",
-							  "extensionAttributes": [],
-							  "value": 0,
-							  "unit": null,
-							  "instanceType": "Quantity"
-							},
-							"maxValue": {
-							  "id": "Quantity_er10",
-							  "extensionAttributes": [],
-							  "value": 1,
-							  "unit": null,
-							  "instanceType": "Quantity"
-							},
-							"isApproximate": false,
-							"instanceType": "Range"
-						  },
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_4",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-appliesTo",
-						"valueId": "EligibilityCriterionItem_4",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_5",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-forAssessment",
-						"valueId": "BiomedicalConcept_08",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_6",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-atTiming",
-						"valueId": "Timing_1",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					}
-					],
-					"instanceType": "ExtensionClass"
-				},
-			 "instanceType": "ExtensionAttribute"
-			},
-			{"id": "ExtensionAttribute_4",
-			 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
-			 "valueExtensionClass":{
-					 "id": "ExtensionClass_ExpResp_2",
-					 "url": "https://cdisc.org/usdm/extension-ExpResponse/class1",
-					 "extensionAttributes": [
-					{
-						"id": "ClassAttr_21",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-name",
-						"valueString": "NSCLC",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_22",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-label",
-						"valueString": "Non-Small Cell Lung Cancer (NSCLC)",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_23",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-value",
-						"valueCode": {
-							"id": "Code_604_23",
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_2",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-label",
+							"valueString": "ECOG 0-1",
 							"extensionAttributes": [],
-							"code": "254637007",
-							"codeSystem": "SNOMED",
-							"codeSystemVersion": "2025-02-01",
-							"decode": "Non-small cell lung cancer",
-							"instanceType": "Code"
-						  },
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_3",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-value",
+							"valueRange": {
+								"id": "Range_ER1",
+								"extensionAttributes": [],
+								"minValue": {
+								  "id": "Quantity_er9",
+								  "extensionAttributes": [],
+								  "value": 0,
+								  "unit": null,
+								  "instanceType": "Quantity"
+								},
+								"maxValue": {
+								  "id": "Quantity_er10",
+								  "extensionAttributes": [],
+								  "value": 1,
+								  "unit": null,
+								  "instanceType": "Quantity"
+								},
+								"isApproximate": false,
+								"instanceType": "Range"
+							  },
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_4",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-description",
+							"valueString": "ECOG of 0 or 1",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_5",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-appliesTo",
+							"valueId": "EligibilityCriterion_4",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_6",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-atTiming",
+							"valueId": "Tim_04",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_7",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-forAssessment",
+							"valueId": "BiomedicalConcept_08",  
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+						],
+						"instanceType": "ExtensionClass"
 					},
-					{
-						"id": "ClassAttr_24",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-appliesTo",
-						"valueId": "EligibilityCriterionItem_1",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_25",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-forAssessment",
-						"valueId": "BiomedicalConcept_35",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					},
-					{
-						"id": "ClassAttr_26",
-						"url": "https://cdisc.org/usdm/extension-ContraIndication-1/attribute-atTiming",
-						"valueId": "Timing_1",
-						"extensionAttributes": [],
-						"instanceType": "ExtensionAttribute"					
-					}
-					],
-					"instanceType": "ExtensionClass"
+				 "instanceType": "ExtensionAttribute"
 				},
-			 "instanceType": "ExtensionAttribute"
-			}
+				{"id": "ExtensionAttribute_4",
+				 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ExpResp_2",
+						 "url": "https://cdisc.org/usdm/extension-ExpResponse/class_ExpectedResponse",
+						 "extensionAttributes": [
+						{
+							"id": "ClassAttr_21",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-name",
+							"valueString": "NSCLC",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_22",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-label",
+							"valueString": "Non-Small Cell Lung Cancer (NSCLC)",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_23",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-value",
+							"valueCode": {
+								"id": "Code_604_23",
+								"extensionAttributes": [],
+								"code": "254637007",
+								"codeSystem": "SNOMED",
+								"codeSystemVersion": "2025-02-01",
+								"decode": "Non-small cell lung cancer",
+								"instanceType": "Code"
+							  },
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_24",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-description",
+							"valueString": "Solid tumor: Non-small cell lung cancer (NSCLC))",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_25",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-appliesTo",
+							"valueId": "EligibilityCriterion_1",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_26",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-atTiming",
+							"valueId": "Tim_01",  
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_27",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-forAssessment",
+							"valueId": "BiomedicalConcept_35",  
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+						],
+						"instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				},
+				{"id": "ExtensionAttribute_5",
+				 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ExpResp_3",
+						 "url": "https://cdisc.org/usdm/extension-ExpResponse/class_ExpectedResponse",
+						 "extensionAttributes": [
+						{
+							"id": "ClassAttr_31",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-name",
+							"valueString": "CRPC",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_32",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-label",
+							"valueString": "Castrate Resistant Prostate Cancer (CRPC)",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_33",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-value",
+							"valueCode": {
+								"id": "Code_604_33",
+								"extensionAttributes": [],
+								"code": " 427492003",
+								"codeSystem": "SNOMED",
+								"codeSystemVersion": "2025-02-01",
+								"decode": "Hormone refractory prostate cancer",
+								"instanceType": "Code"
+							  },
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_34",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-description",
+							"valueString": "Solid tumor: Castrate Resistant Prostate Cancer (CRPC)",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_35",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-appliesTo",
+							"valueId": "EligibilityCriterion_1",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_36",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-atTiming",
+							"valueId": "Tim_01",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_37",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-forAssessment",
+							"valueId": "BiomedicalConcept_35",  
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+						],
+						"instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				},
+				{"id": "ExtensionAttribute_6",
+				 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ExpResp_4",
+						 "url": "https://cdisc.org/usdm/extension-ExpResponse/class_ExpectedResponse",
+						 "extensionAttributes": [
+						{
+							"id": "ClassAttr_41",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-name",
+							"valueString": "MEL",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_42",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-label",
+							"valueString": "Melanoma (MEL)",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_43",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-value",
+							"valueCode": {
+								"id": "Code_604_43",
+								"extensionAttributes": [],
+								"code": " 372244006",
+								"codeSystem": "SNOMED",
+								"codeSystemVersion": "2025-02-01",
+								"decode": "Malignant melanoma",
+								"instanceType": "Code"
+							  },
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_44",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-description",
+							"valueString": "Solid tumor: Melanoma (MEL)",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_45",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-appliesTo",
+							"valueId": "EligibilityCriterion_1",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_46",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-atTiming",
+							"valueId": "Tim_01",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_47",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-forAssessment",
+							"valueId": "BiomedicalConcept_35",  
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+						],
+						"instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				},
+				{"id": "ExtensionAttribute_7",
+				 "url": "https://cdisc.org/usdm/extension-ExpResponse/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ExpResp_5",
+						 "url": "https://cdisc.org/usdm/extension-ExpResponse/class_ExpectedResponse",
+						 "extensionAttributes": [
+						{
+							"id": "ClassAttr_51",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-name",
+							"valueString": "BR_MET",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_52",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-label",
+							"valueString": "Brain Metastasis",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_53",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-value",
+							"valueCode": {
+								"id": "Code_604_53",
+								"extensionAttributes": [],
+								"code": "94225005",
+							    "codeSystem": "SNOMED",
+							    "codeSystemVersion": "2025-02-01",
+							    "decode": "Metastatic malignant neoplasm to brain",
+							  	"instanceType": "Code"
+							  },
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_54",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-description",
+							"valueString": "Brain metastasis",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_55",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-appliesTo",
+							"valueId": "EligibilityCriterion_9",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_56",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-atTiming",
+							"valueId": "Tim_01",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_57",
+							"url": "https://cdisc.org/usdm/extension-ExpResponse-1/attribute-forAssessment",
+							"valueId": "BiomedicalConcept_35",  
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						}
+						],
+						"instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				}],
+				"instanceType": "ExtensionAttribute"},
+			{   "id": "ExtensionArray_3",
+				"url": "//CDISC/expResponseNode",
+				"extensionAttributes": [
+				{"id": "ExtensionAttribute_3b",
+				 "url": "https://cdisc.org/usdm/extension-ExpResponseNode/classAttribute1",
+				 "valueExtensionClass":{
+						 "id": "ExtensionClass_ExpRespNode_1",
+						 "url": "https://cdisc.org/usdm/extension-ExpResponseNode/class1",
+						 "extensionAttributes": [
+						{
+							"id": "ClassAttr_902",
+							"url": "https://cdisc.org/usdm/extension-ExpResponseNode-1/attribute-operator",
+							"valueString": "AND",
+							"extensionAttributes": [],
+							"instanceType": "ExtensionAttribute"					
+						},
+						{
+							"id": "ClassAttr_903",
+							"url": "https://cdisc.org/usdm/extension-ExpResponseNode-1/array-responses",							"extensionAttributes": [
+								{
+								"id": "ClassAttr_90301",
+								"url": "https://cdisc.org/usdm/extension-ExpResponseNode-1/response-reference",
+								"valueId": "ExtensionClass_ExpResp_2",
+								"extensionAttributes": [],
+								"instanceType": "ExtensionAttribute"					
+							    },
+								{
+								"id": "ClassAttr_90302",
+								"url": "https://cdisc.org/usdm/extension-ExpResponseNode-1/response-reference",
+								"valueId": "ExtensionClass_ExpResp_3",
+								"extensionAttributes": [],
+								"instanceType": "ExtensionAttribute"					
+							    },
+								{
+								"id": "ClassAttr_90303",
+								"url": "https://cdisc.org/usdm/extension-ExpResponseNode-1/response-reference",
+								"valueId": "ExtensionClass_ExpResp_4",
+								"extensionAttributes": [],
+								"instanceType": "ExtensionAttribute"					
+							    }
+							],
+							"instanceType": "ExtensionAttribute"					
+						}
+						],
+						"instanceType": "ExtensionClass"
+					},
+				 "instanceType": "ExtensionAttribute"
+				}],
+				"instanceType": "ExtensionAttribute"}
+		
+			
 		],
 			
         "versionIdentifier": "2",
@@ -222,7 +494,7 @@
           {
             "id": "StudyIdentifier_1",
             "extensionAttributes": [],
-            "text": "Sponsor Identifier tbd",
+            "text": "CA223-002",
             "scopeId": "Organization_1",
             "instanceType": "StudyIdentifier"
           },
@@ -355,7 +627,17 @@
                 "decode": "Phase I Trial",
                 "instanceType": "Code"
               },
-              "standardCodeAliases": [],
+              "standardCodeAliases": [
+				{
+                "id": "Code_160_alias",
+                "extensionAttributes": [],
+                "code": "phase-1",
+                "codeSystem": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+                "codeSystemVersion": "NA",
+                "decode": "Phase 1",
+                "instanceType": "Code"
+              }
+			  ],
               "instanceType": "AliasCode"
             },
             "therapeuticAreas": [
@@ -1378,7 +1660,7 @@
 				{
 					"id": "ExtTransAttr_2",
 					"url": "http://cdisc.org/usdm/extensions/extensionR-1/languages",
-					"extensionAtrtibutes": [
+					"extensionAttributes": [
 						{
 							"id": "extensionAttributes_3",
 							"url": "http://cdisc.org/usdm/extensions/extensionR-2/language",
@@ -1408,7 +1690,7 @@
 									"instanceType": "ExtensionAttribute"
 								}			
 								],
-								"instanceType": "extensionClass"
+								"instanceType": "ExtensionClass"
 							},
 							"instanceType": "ExtensionAttribute"
 						},
@@ -1441,7 +1723,7 @@
 										"instanceType": "ExtensionAttribute"
 									}		
 									],
-									"instanceType": "extensionCLass"
+									"instanceType": "ExtensionClass"
 								},
 							"instanceType": "ExtensionAttribute"
 							}
@@ -1520,7 +1802,7 @@
                 "name": "OBJ1",
                 "label": "Primary",
                 "description": "Main objective",
-                "text": "<p>Not available.</p>",
+                "text": "<p>Primary objective texts not available from ClinicalTrials.gov.</p>",
                 "dictionaryId": null,
                 "notes": [],
                 "instanceType": "Objective",
@@ -1539,7 +1821,7 @@
                     "extensionAttributes": [{
 						"id": "ExtTransAttr_3",
 						"url": "http://cdisc.org/usdm/extensions/extensionR-1/languages",
-						"extensionAtrtibutes": [
+						"extensionAttributes": [
 							{
 								"id": "extensionAttributes_5",
 								"url": "http://cdisc.org/usdm/extensions/extensionR-2/language",
@@ -1576,9 +1858,9 @@
 										"instanceType": "ExtensionAttribute"
 									}									
 									],
-									"instanceType": "extensionCLass"
+									"instanceType": "ExtensionClass"
 								},
-								"instanceType": "extensionAttribute"
+								"instanceType": "ExtensionAttribute"
 							},
 							{
 								"id": "extensionAttributes_6",
@@ -1616,7 +1898,7 @@
 											"instanceType": "ExtensionAttribute"
 										}										
 										],
-										"instanceType": "extensionCLass"
+										"instanceType": "ExtensionClass"
 									},
 								"instanceType": "ExtensionAttribute"
 								}
@@ -1649,7 +1931,7 @@
                 "name": "OBJ2",
                 "label": "Secondary",
                 "description": "Safety",
-                "text": "<p>Not available.</p>",
+                "text": "<p>Secondary objective texts not available from ClinicalTrials.gov.</p>",
                 "dictionaryId": null,
                 "notes": [],
                 "instanceType": "Objective",
@@ -2725,12 +3007,24 @@
 					{
 					  "id": "SA_05_MIN6M",
 					  "name": "MIN6M",
-					  "defaultConditionId": "SA_09_SCR",
+					  "defaultConditionId": "SA_06_MIN4W",
 					  "instanceType": "ScheduledActivityInstance",
 					  "activityIds": [
 						"Activity_6",
 						"Activity_7",
 						"Activity_8"]
+					},
+					{
+					  "id": "SA_06_MIN4W",
+					  "name": "MIN4W",
+					  "defaultConditionId": "SA_09_SCR",
+					  "instanceType": "ScheduledActivityInstance",
+					  "activityIds": [
+						"Activity_2",
+						"Activity_3",
+						"Activity_4",
+						"Activity_9",
+						"Activity_10"]
 					},
 					{
 					  "id": "SA_09_SCR",
@@ -2739,12 +3033,7 @@
 					  "timelineExitId": "ScheduleTimelineExit_1",
 					  "instanceType": "ScheduledActivityInstance",					  
 					  "activityIds": [
-						"Activity_1",
-						"Activity_2",
-						"Activity_3",
-						"Activity_4",
-						"Activity_9",
-						"Activity_10"]
+						"Activity_1"]
 					}
 				],
                 "timings": [
@@ -2775,7 +3064,8 @@
 						  "instanceType": "Code"
 						},
 					  "relativeFromScheduledInstanceId": "SA_01_MIN120Y",
-					  "relativeToScheduledInstanceId": "SA_09_SCR"
+					  "relativeToScheduledInstanceId": "SA_09_SCR",
+					  "instanceType": "Timing"
 					},
 					{
 					  "id": "Tim_02",
@@ -2794,7 +3084,7 @@
 								  "decode": "Before",
 								  "instanceType": "Code"
 								},
-                    "relativeToFrom": {
+                      "relativeToFrom": {
                       "id": "Code_21_2",
                       "extensionAttributes": [],
                       "code": "C201355",
@@ -2804,7 +3094,8 @@
                       "instanceType": "Code"
                     },
 					  "relativeFromScheduledInstanceId": "SA_05_MIN6M",
-					  "relativeToScheduledInstanceId": "SA_09_SCR"
+					  "relativeToScheduledInstanceId": "SA_09_SCR",
+					  "instanceType": "Timing"
 					},
 					{
 					  "id": "Tim_03",
@@ -2820,7 +3111,7 @@
 								  "decode": "Fixed Reference",
 								  "instanceType": "Code"
 								},
-							"relativeToFrom": {
+					  "relativeToFrom": {
 							  "id": "Code_21_3",
 							  "extensionAttributes": [],
 							  "code": "C201355",
@@ -2830,7 +3121,38 @@
 							  "instanceType": "Code"
 							},
 					  "relativeFromScheduledInstanceId": "SA_09_SCR",
-					  "relativeToScheduledInstanceId": "SA_09_SCR"
+					  "relativeToScheduledInstanceId": "SA_09_SCR",
+					  "instanceType": "Timing"
+					},
+					{
+					  "id": "Tim_04",
+					  "name": "P4W",
+					  "valueLabel": "Week -4",
+					  "value": "P0D",
+					  "windowLabel": "within 4 weeks before",
+					  "windowLower": "P4W",
+					  "windowUpper": "P0D",
+					  "type": {
+								  "id": "Code_03_t4",
+								  "extensionAttributes": [],
+								  "code": "C201357",
+								  "codeSystem": "http://www.cdisc.org",
+								  "codeSystemVersion": "2025-09-26",
+								  "decode": "Before",
+								  "instanceType": "Code"
+								},
+                      "relativeToFrom": {
+                      "id": "Code_21_2_4",
+                      "extensionAttributes": [],
+                      "code": "C201355",
+                      "codeSystem": "http://www.cdisc.org",
+                      "codeSystemVersion": "2025-09-26",
+                      "decode": "Start to Start",
+                      "instanceType": "Code"
+                    },
+					  "relativeFromScheduledInstanceId": "SA_06_MIN4W",
+					  "relativeToScheduledInstanceId": "SA_09_SCR",
+					  "instanceType": "Timing"
 					}
                 ],
                 "plannedDuration": null,
@@ -3152,7 +3474,7 @@
             "extensionAttributes": [{
 				"id": "ExtTransAttr_1",
 				"url": "http://cdisc.org/usdm/extensions/extensionR-1/languages",
-				"extensionAtrtibutes": [
+				"extensionAttributes": [
 				{
 					"id": "extensionAttributes_1",
 					"url": "http://cdisc.org/usdm/extensions/extensionR-2/language",
@@ -3189,7 +3511,7 @@
 							"instanceType": "ExtensionAttribute"
 						}			
 						],
-						"instanceType": "ExtensionCLass"
+						"instanceType": "ExtensionClass"
 					},
 					"instanceType": "ExtensionAttribute"
 				},
@@ -3229,7 +3551,7 @@
 								"instanceType": "ExtensionAttribute"
 							}			
 							],
-							"instanceType": "ExtensionCLass"
+							"instanceType": "ExtensionClass"
 						},
 					"instanceType": "ExtensionAttribute"
 					}
@@ -3477,7 +3799,6 @@
             },
             "identifierScheme": "DUNS",
             "identifier": "not available",
-            "legalAddress": null,
             "managedSites": [],
             "instanceType": "Organization"
           },
@@ -3520,6 +3841,336 @@
               "instanceType": "Address"
             },
             "managedSites": [],
+            "instanceType": "Organization"
+          },
+		  {
+            "id": "Organization_3",
+            "extensionAttributes": [],
+            "name": "FLOR",
+            "label": "FLorida Locations",
+            "type": {
+              "id": "Code_3_o1",
+              "extensionAttributes": [],
+              "code": "C18240",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Academic Institution",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "Not available",
+            "legalAddress": {
+              "id": "Address_2_01",
+              "extensionAttributes": [],
+              "text": "Tampa, Florida, United States, 33612",
+              "lines": [],
+              "city": null,
+              "district": null,
+              "state": "FL",
+              "postalCode": "33612",
+              "country": {
+                "id": "Code_4_01",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [
+			{
+				"id": "MS001",
+				"name": "FLOR01",
+				"label": "H. Lee Moffitt Cancer Center and Research Institute",
+				"country": {
+					"id": "Code_4b_01",
+					"extensionAttributes": [],
+					"code": "USA",
+					"codeSystem": "ISO 3166 1 alpha3",
+					"codeSystemVersion": "2020-08",
+					"decode": "United States of America",
+					"instanceType": "Code"
+                },
+			    "instanceType": "StudySite"
+			}
+			],
+            "instanceType": "Organization"
+          },
+		  {
+            "id": "Organization_4",
+            "extensionAttributes": [],
+            "name": "MAS",
+            "label": "Massachusetts Locations",
+            "type": {
+              "id": "Code_3_o2",
+              "extensionAttributes": [],
+              "code": "C18240",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Academic Institution",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "Not available",
+            "legalAddress": {
+              "id": "Address_2_02",
+              "extensionAttributes": [],
+              "text": "Boston, Massachusetts, United States, 02215",
+              "lines": [],
+              "city": null,
+              "district": null,
+              "state": "MS",
+              "postalCode": "02215",
+              "country": {
+                "id": "Code_4_02",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [
+			{
+				"id": "MS002",
+				"name": "MAS01",
+				"label": "Dana Farber Cancer Institute",
+				"country": {
+					"id": "Code_4b_02",
+					"extensionAttributes": [],
+					"code": "USA",
+					"codeSystem": "ISO 3166 1 alpha3",
+					"codeSystemVersion": "2020-08",
+					"decode": "United States of America",
+					"instanceType": "Code"
+                },
+			    "instanceType": "StudySite"
+			}
+			],
+            "instanceType": "Organization"
+          },
+		  {
+            "id": "Organization_5",
+            "extensionAttributes": [],
+            "name": "MIN",
+            "label": "Minnesota Locations",
+            "type": {
+              "id": "Code_3_o3",
+              "extensionAttributes": [],
+              "code": "C18240",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Academic Institution",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "Not available",
+            "legalAddress": {
+              "id": "Address_2_03",
+              "extensionAttributes": [],
+              "text": "Minneapolis, Minnesota, United States, 55455",
+              "lines": [],
+              "city": null,
+              "district": null,
+              "state": "MN",
+              "postalCode": "55455",
+              "country": {
+                "id": "Code_4_03",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [
+			{
+				"id": "MS003",
+				"name": "MIN01",
+				"label": "University of Minnesota",
+				"country": {
+					"id": "Code_4b_03",
+					"extensionAttributes": [],
+					"code": "USA",
+					"codeSystem": "ISO 3166 1 alpha3",
+					"codeSystemVersion": "2020-08",
+					"decode": "United States of America",
+					"instanceType": "Code"
+                },
+			    "instanceType": "StudySite"
+			}
+			],
+            "instanceType": "Organization"
+          },
+		  {
+            "id": "Organization_6",
+            "extensionAttributes": [],
+            "name": "NY",
+            "label": "New York Locations",
+            "type": {
+              "id": "Code_3_o4",
+              "extensionAttributes": [],
+              "code": "C18240",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Academic Institution",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "Not available",
+            "legalAddress": {
+              "id": "Address_2_04",
+              "extensionAttributes": [],
+              "text": "New York, New York, United States, 10065",
+              "lines": [],
+              "city": null,
+              "district": null,
+              "state": "FL",
+              "postalCode": "10065",
+              "country": {
+                "id": "Code_4_04",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [
+			{
+				"id": "MS004",
+				"name": "NY01",
+				"label": "Memorial Sloan Kettering Cancer Ctr",
+				"country": {
+					"id": "Code_4b_04",
+					"extensionAttributes": [],
+					"code": "USA",
+					"codeSystem": "ISO 3166 1 alpha3",
+					"codeSystemVersion": "2020-08",
+					"decode": "United States of America",
+					"instanceType": "Code"
+                },
+			    "instanceType": "StudySite"
+			}
+			],
+            "instanceType": "Organization"
+          },
+		  {
+            "id": "Organization_7",
+            "extensionAttributes": [],
+            "name": "OHIO",
+            "label": "Ohio Locations",
+            "type": {
+              "id": "Code_3_o5",
+              "extensionAttributes": [],
+              "code": "C18240",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Academic Institution",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "Not available",
+            "legalAddress": {
+              "id": "Address_2_05",
+              "extensionAttributes": [],
+              "text": "Columbus, Ohio, United States, 43210",
+              "lines": [],
+              "city": null,
+              "district": null,
+              "state": "FL",
+              "postalCode": "43210",
+              "country": {
+                "id": "Code_4_05",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [
+			{
+				"id": "MS005",
+				"name": "OHIO01",
+				"label": "THe Ohio State University",
+				"country": {
+					"id": "Code_4b_05",
+					"extensionAttributes": [],
+					"code": "USA",
+					"codeSystem": "ISO 3166 1 alpha3",
+					"codeSystemVersion": "2020-08",
+					"decode": "United States of America",
+					"instanceType": "Code"
+                },
+			    "instanceType": "StudySite"
+			}
+			],
+            "instanceType": "Organization"
+          },
+		  {
+            "id": "Organization_8",
+            "extensionAttributes": [],
+            "name": "TENN",
+            "label": "Tennessee Locations",
+            "type": {
+              "id": "Code_3_o6",
+              "extensionAttributes": [],
+              "code": "C18240",
+              "codeSystem": "http://www.cdisc.org",
+              "codeSystemVersion": "2025-09-26",
+              "decode": "Academic Institution",
+              "instanceType": "Code"
+            },
+            "identifierScheme": "DUNS",
+            "identifier": "Not available",
+            "legalAddress": {
+              "id": "Address_2_06",
+              "extensionAttributes": [],
+              "text": "Nashville, Tennessee, United States, 37203",
+              "lines": [],
+              "city": null,
+              "district": null,
+              "state": "FL",
+              "postalCode": "37203",
+              "country": {
+                "id": "Code_4_06",
+                "extensionAttributes": [],
+                "code": "USA",
+                "codeSystem": "ISO 3166 1 alpha3",
+                "codeSystemVersion": "2020-08",
+                "decode": "United States of America",
+                "instanceType": "Code"
+              },
+              "instanceType": "Address"
+            },
+            "managedSites": [
+			{
+				"id": "MS006",
+				"name": "TENN01",
+				"label": "Sarah Cannon Research Institute",
+				"country": {
+					"id": "Code_4b_06",
+					"extensionAttributes": [],
+					"code": "USA",
+					"codeSystem": "ISO 3166 1 alpha3",
+					"codeSystemVersion": "2020-08",
+					"decode": "United States of America",
+					"instanceType": "Code"
+                },
+			    "instanceType": "StudySite"
+			}
+			],
             "instanceType": "Organization"
           }
         ],
@@ -3578,7 +4229,7 @@
               "decode": "DRUG",
               "instanceType": "Code"
             },
-            "minimumResponseDuration": {},
+            "minimumResponseDuration": null,
             "codes": [],
             "administrations": [],
             "notes": [],
@@ -3807,22 +4458,22 @@
                 "label": "LBTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
-                "datatype": "",
+                "datatype": "string",
                 "responseCodes": [{
                     "id": "ResponseCode_190_5",
                     "extensionAttributes": [],
                     "name": "RC_C67456_2",
-                    "label": "",
+                    "label": null,
                     "isEnabled": true,
                     "code": {
-                    "id": "Code_520t",
-                    "extensionAttributes": [],
-                    "code": "C64433",
-                    "codeSystem": "http://www.cdisc.org",
-                    "codeSystemVersion": "2025-09-26",
-                    "decode": "ALT",
-                    "instanceType": "Code"
-                  },
+						"id": "Code_520t",
+						"extensionAttributes": [],
+						"code": "C64433",
+						"codeSystem": "http://www.cdisc.org",
+						"codeSystemVersion": "2025-09-26",
+						"decode": "ALT",
+						"instanceType": "Code"
+					  },
                     "instanceType": "ResponseCode"
                   }
 				
@@ -4051,7 +4702,7 @@
                 "label": "LBTESTCD",
                 "isRequired": true,
                 "isEnabled": true,
-                "datatype": "",
+                "datatype": "string",
                 "responseCodes": [
 				{   "id": "ResponseCode_190_02",
                     "extensionAttributes": [],
@@ -4071,7 +4722,21 @@
                   }
 				
 				],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v001",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v001",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -4317,7 +4982,16 @@
                 "decode": "Solicited Medical History",
                 "instanceType": "Code"
               },
-              "standardCodeAliases": [],
+              "standardCodeAliases": [
+				   {
+					"id": "CodeX_006_loinc",
+					"extensionAttributes": [],
+					"code": "75323-6",
+					"codeSystem": "http://loinc.org",
+					"codeSystemVersion": "NA",
+					"decode": "Condition",
+					"instanceType": "Code"
+				  }],
               "instanceType": "AliasCode"
             },
             "notes": [],
@@ -4412,7 +5086,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v021",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v021",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -4577,7 +5265,7 @@
                     "isEnabled": true,
                     "code": {
 						"id": "Code_550v",
-						"extensionAttributes": [],
+						"extensionAttributes": [], 
 						"code": "C51950",
 						"codeSystem": "http://www.cdisc.org",
 						"codeSystemVersion": "2025-09-26",
@@ -4586,7 +5274,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v002",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v002",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -4760,7 +5462,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v003",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v003",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -4934,7 +5650,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v004",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v004",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -5107,7 +5837,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v005",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v005",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -5264,7 +6008,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v006",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v006",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -5419,7 +6177,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v007",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v007",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -5547,7 +6319,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v008",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v008",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },
@@ -5636,7 +6422,15 @@
                 "decode": "ECOG - Performance Status",
                 "instanceType": "Code"
               },
-              "standardCodeAliases": [],
+              "standardCodeAliases": [{
+                "id": "Code_560_16x_loinc",
+                "extensionAttributes": [],
+                "code": "89247-1",
+                "codeSystem": "http://loinc.org",
+                "codeSystemVersion": "NA",
+                "decode": "ECOG Performance Status Score",
+                "instanceType": "Code"
+              }],
               "instanceType": "AliasCode"
             },
             "notes": [],
@@ -5675,7 +6469,21 @@
 					  },
                     "instanceType": "ResponseCode"
                   }],
-                "code": {},
+                "code": {
+                  "id": "AliasCode_v009",
+                  "extensionAttributes": [],
+                  "standardCode": {
+                    "id": "Code_v009",
+                    "extensionAttributes": [],
+                    "code": "EXT0101",
+                    "codeSystem": "http://www.cdisc.org",
+                    "codeSystemVersion": "2025-09-26",
+                    "decode": "placeholder",
+                    "instanceType": "Code"
+                  },
+                  "standardCodeAliases": [],
+                  "instanceType": "AliasCode"
+                },
                 "notes": [],
                 "instanceType": "BiomedicalConceptProperty"
               },

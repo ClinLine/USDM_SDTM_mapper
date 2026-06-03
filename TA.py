@@ -50,10 +50,9 @@ def Create_TA(wb, JsonInput):
             TatransColumn = j
         else:
             rem.append(j)
+        for k in range(1, ta_sheet.max_column + 1):
+            ta_sheet.cell(row=i, column=k).value = "" # clear any existing information in the TA sheet to avoid confusion
     
-    for i in range(r, ta_sheet.max_column):
-        for j in range(1, r):
-            ta_sheet.cell(row=j, column=i).value = ""
     # Print the value in the first and seventh column of each row in the 'TS Parameters' sheet
     with open(JsonInput, 'r') as file:
         data=json.load (file)

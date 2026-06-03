@@ -10,7 +10,6 @@ def Create_TI(wb, JsonInput):
     VersionCodeSnip = ""
     ti_var = {}
     Cl_map = {} # dictionary to store the code list information for each variable, to be used for the creation of the define.xml
-    
 
     for r in range(2, ti_sheet.max_row+2):
         if ti_sheet.cell(row=r, column=1).value is not None:

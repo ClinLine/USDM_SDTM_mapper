@@ -5,8 +5,27 @@ import odmlib.ns_registry as NS
 
 import definition
 
+def Create_Define_json(wb, code_lists_map):
+    content = _create_itemgroupdef_object(wb)
+    define_json = {}
+    for domain in range(0, len(content)):
+        if content[domain][0] is not None and content[domain][1] != "Name": # check if the domain name and OID are not empty
+            define_json[content[domain][1]] = {
+                "OID": content[domain][0],
+                "name": content[domain][3],
+                "label": content[domain][10],
+                "domain": content[domain][3],
+                "SASDatasetName": content[domain][4],
+                "isReferenceData": content[domain][5],
+                "purpose": content[domain][6],
+                "class": content[domain][7],
+                "structure": content[domain][8],
+                "archiveLocationID": content[domain][9],
+                "description": content[domain][10]
+            }
+    return define_json
 
-def Create_Define(wb,ta_var,ti_var,code_lists_map):
+def Create_Define_XML(wb,all_vars,code_lists_map):
     _create_itemgroupdef_object(wb)
     content = _create_itemgroupdef_object(wb)
     _IGOID = "MDV1"
@@ -24,14 +43,18 @@ def Create_Define(wb,ta_var,ti_var,code_lists_map):
             Description=ET.SubElement(domainElement, "Description")
             ET.SubElement(Description, "TranslatedText", xml_lang="en").text = content[domain][10]
             if content[domain][1] == "TA":
-                AddDomainRef(ta_var, ET,"TA",domainElement,codelists_map=code_lists_map)
+                AddDomainRef(all_vars["TA"], ET,"TA",domainElement,codelists_map=code_lists_map)
             if content[domain][1] == "TI":
-                AddDomainRef(ti_var, ET,"TI",domainElement)
+                AddDomainRef(all_vars["TI"], ET,"TI",domainElement)
+            if content[domain][1] == "TS":
+                AddDomainRef(all_vars["TS"], ET,"TS",domainElement)
+
     #         # ET.SubElement(domainElement, "def:Class", Name="TRIAL DESIGN")
             # add codelists for domain names
             code_lists_map["CL." + content[domain][1] + ".DOMAIN"] = definition.domainClItem(content[domain][1], content[domain][10])
     
-    AddMethods(ta_var,ET,metaDataVersion)
+    AddItemDef(all_vars, ET, metaDataVersion)
+    AddMethods(all_vars["TA"],ET,metaDataVersion)
     add_code_list(code_lists_map, ET,metaDataVersion)
 
     tree=ET.ElementTree(root)
@@ -81,6 +104,59 @@ def AddMethods(ta_var,ET,ParentElement):
                 Method=ET.SubElement(ParentElement, "MethodDef", OID=methodOID, Name="TAETORD Derivation Method", Type="Computation")
                 Description=ET.SubElement(Method, "Description")
                 ET.SubElement(Description, "TranslatedText", xml_lang="en").text = "Sequential number identifying the order of epochs within an arm. Based on the previous and next epoch start date and time. The first epoch of an arm is assigned a TAETORD of 1."
+
+def AddItemDef(all_vars, ET,ParentElement):
+    """
+    Adds ItemDef elements for each variable in the domain.
+    
+    vars structure expected:
+        vars[order] = [Name, Label, DataType, Length, Core, ...]
+    """
+    def AddSubGroupvars(vars, ET, domain, ParentElement):
+        for var in vars:
+            if vars[var][0] is not None:
+                # Determine OID
+                if vars[var][0] == "STUDYID":
+                    itemOID = "IT.STUDYID"
+                else:
+                    itemOID = "IT." + domain + "." + vars[var][0]
+                
+                # Extract variable attributes
+                name = vars[var][0]
+                label = vars[var][1] if len(vars[var]) > 1 and vars[var][1] else name
+                data_type = vars[var][2] if len(vars[var]) > 2 and vars[var][2] else "text"
+                length =  None
+                
+                # Map data types to Define-XML types
+                dtype_map = {
+                    "Char": "text",
+                    "Num": "integer",
+                    "Float": "float",
+                    "Date": "date",
+                    "DateTime": "datetime"
+                }
+                xml_dtype = dtype_map.get(data_type, "text")
+                
+                # Build ItemDef attributes
+                item_attrs = {
+                    "OID": itemOID,
+                    "Name": name,
+                    "DataType": xml_dtype,
+                    "SASFieldName": name
+                }
+                if length:
+                    item_attrs["Length"] = str(length)
+                
+                # Create ItemDef element
+                item_def = ET.SubElement(ParentElement, "ItemDef", **item_attrs)
+                
+                # Add Description
+                description = ET.SubElement(item_def, "Description")
+                translated_text = ET.SubElement(description, "TranslatedText", xml_lang="en")
+                translated_text.text = label
+    for dom in all_vars:
+        print(f"Adding ItemDef for domain {dom}")
+        AddSubGroupvars(all_vars[dom], ET, dom, ParentElement)
 
 def _create_itemgroupdef_object(wb):
     """

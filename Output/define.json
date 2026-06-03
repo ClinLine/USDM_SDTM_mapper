@@ -1,0 +1,67 @@
+{
+  "TS": {
+    "OID": "IG.TS",
+    "name": "TS",
+    "label": "Trial Summary",
+    "domain": "TS",
+    "SASDatasetName": "TS",
+    "isReferenceData": "Yes",
+    "purpose": "Tabulation",
+    "class": null,
+    "structure": "One record per trial summary parameter value",
+    "archiveLocationID": "LF.TS",
+    "description": "Trial Summary"
+  },
+  "TA": {
+    "OID": "IG.TA",
+    "name": "TA",
+    "label": "Trial Arms",
+    "domain": "TA",
+    "SASDatasetName": "TA",
+    "isReferenceData": "Yes",
+    "purpose": "Tabulation",
+    "class": null,
+    "structure": "One record per arm and epoch",
+    "archiveLocationID": "LF.TA",
+    "description": "Trial Arms"
+  },
+  "TE": {
+    "OID": "IG.TE",
+    "name": "TE",
+    "label": "Trial Elements",
+    "domain": "TE",
+    "SASDatasetName": "TE",
+    "isReferenceData": "Yes",
+    "purpose": "Tabulation",
+    "class": null,
+    "structure": "One record per element",
+    "archiveLocationID": "LF.TE",
+    "description": "Trial Elements"
+  },
+  "TV": {
+    "OID": "IG.TV",
+    "name": "TV",
+    "label": "Trial Visits",
+    "domain": "TV",
+    "SASDatasetName": "TV",
+    "isReferenceData": "Yes",
+    "purpose": "Tabulation",
+    "class": null,
+    "structure": "One record per planned visit",
+    "archiveLocationID": "LF.TV",
+    "description": "Trial Visits"
+  },
+  "TI": {
+    "OID": "IG.TI",
+    "name": "TI",
+    "label": "Trial Inclusion and Exclusion Criteria",
+    "domain": "TI",
+    "SASDatasetName": "TI",
+    "isReferenceData": "Yes",
+    "purpose": "Tabulation",
+    "class": null,
+    "structure": "One record per eligibility criterion per study version",
+    "archiveLocationID": "LF.TI",
+    "description": "Trial Inclusion and Exclusion Criteria"
+  }
+}

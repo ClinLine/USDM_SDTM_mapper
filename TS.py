@@ -6,10 +6,16 @@ import definition
 def Create_TS(wb, JsonInput):
     ts0_sheet = wb['TS']
     ts_sheet = wb['TS Parameters']
+    ts_var = {}
+
     DomainResult = " "
     StudyIdCodeSnip = " "
     for i in range(2, ts0_sheet.max_row + 1):
         j=i-1
+        ts_var[j] = []
+        for c in range(1, 6):
+            ts_var[j].append(ts0_sheet.cell(row=i, column=c).value)
+        
         #swap the rows and columns in the TS sheet
         varName=ts0_sheet.cell(row=i, column=1).value
         ts0_sheet.cell(row=1, column=j).value = varName
@@ -114,3 +120,4 @@ def Create_TS(wb, JsonInput):
             ts_sheet.cell(row=i, column=10).value = resultCdRef
             ts_sheet.cell(row=i, column=11).value = resultCdVer
         file.close
+    return ts_var
