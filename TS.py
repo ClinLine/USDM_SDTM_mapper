@@ -2,6 +2,7 @@ import jsonata
 import json
 import openpyxl
 import definition
+import ResolveTags
 
 def Create_TS(wb, JsonInput):
     ts0_sheet = wb['TS']
@@ -79,7 +80,7 @@ def Create_TS(wb, JsonInput):
                         ts0_sheet.cell(row=x, column=4).value = id
                         ts0_sheet.cell(row=x, column=5).value = MapCode    
                         ts0_sheet.cell(row=x, column=6).value = MapName                
-                        ts0_sheet.cell(row=x, column=7).value = result4  
+                        ts0_sheet.cell(row=x, column=7).value = ResolveTags.ResolveTag(result4, data)
                         ts0_sheet.cell(row=x, column=8).value = " "   
                         if result2 == " ": ts0_sheet.cell(row=x, column=8).value = nfValue
                         if resultCd != " ":

@@ -155,7 +155,7 @@ def AddItemDef(all_vars, ET,ParentElement):
                 translated_text = ET.SubElement(description, "TranslatedText", xml_lang="en")
                 translated_text.text = label
     for dom in all_vars:
-        print(f"Adding ItemDef for domain {dom}")
+        #print(f"Adding ItemDef for domain {dom}")
         AddSubGroupvars(all_vars[dom], ET, dom, ParentElement)
 
 def _create_itemgroupdef_object(wb):

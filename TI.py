@@ -2,6 +2,7 @@ import jsonata
 import json
 import pandas as pd
 import definition
+import ResolveTags
 
 def Create_TI(wb, JsonInput):
     ti_sheet = wb['TI']
@@ -78,7 +79,7 @@ def Create_TI(wb, JsonInput):
         #Resolve tags in the restResultList
         for i in TestResultList:
             result4=TestResultList[i]
-            result4=definition.ResolveTag(result4,data)
+            result4=ResolveTags.ResolveTag(result4,data)
             TestResultList[i]=result4
 
         #Fill sheet
